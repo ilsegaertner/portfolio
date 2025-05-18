@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./src/style.css" rel="stylesheet" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <main class="mainpage m-auto p-2">
+      <header class="sticky top-0 bg-white z-10">
+        <nav class="flex items-center p-2 nav-list flex-wrap">
+          <a href="index.html" class="text-main!">Joachim Prügl </a>
+
+          <ul role="menubar" class="p-2 gap-2 hidden sm:flex ml-auto">
+            <li role="presentation">
+              <a href="about.html" role="menuitem" class="navigation-list__item"
+                >About
+              </a>
+            </li>
+            <li role="presentation">
+              <a href="work.html" role="menuitem" class="navigation-list__item"
+                >Work</a
+              >
+            </li>
+            <li role="presentation">
+              <a
+                href="contact.html"
+                role="menuitem"
+                class="navigation-list__item"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <button class="sm:hidden ml-auto" aria-label="Toggle Menu">
+            <span class="hamburger">X</span>
+          </button>
+        </nav>
+      </header>
+
+      <!-- main -->
+      <main class="">
+        <div class="image-wrapper relative">
+          <img
+            src="img/me4.webp"
+            alt="Profile picture of Joachim Prügl"
+            class="profile__portrait object-cover"
+          />
+
+          <h1
+            class="mb-3 text-center text-white absolute w-full flex items-center justify-center top-3/4"
+          >
+            Welcome!
+          </h1>
+        </div>
+
+        <p class="my-15 text-center">
+          I am <span class="font-bold">Joachim Prügl</span>, a Full-Stack Web
+          Developer from Berlin, Germany.
+        </p>
+
+        <ul
+          class="social-media-icons flex flex-wrap gap-2 mt-8 p-2 bg-background-gray items-center"
+        >
+          <li>
+            <a
+              href="https://www.linkedin.com/in/joachim-pruegl/"
+              target="_blank"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg"
+                width="30px"
+                height="30px"
+                alt="social-media-icon of linkedin"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/ilsegaertner" target="_blank">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+                width="30px"
+                height="30px"
+                alt="social-media-icon of GitHub"
+              />
+            </a>
+          </li>
+          <a href="work.html" class="button1 ml-auto font-bold text-white"
+            >See my projects</a
+          >
+        </ul>
+
+        <div class="stack-images-skillicons mt-12 text-center p-2">
+          <h4 class="font-bold">Tech Stack</h4>
+          <div
+            class="technologies-wrapper flex flex-wrap gap-5 justify-center mt-3 p-5"
+          >
+            <div class="technologies-item">
+              <span class="technologies-span invisible-item">HTML5</span>
+              <img
+                class="technologies-images"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                width="20px"
+              />
+            </div>
+            <div class="technologies-item">
+              <span class="technologies-span invisible-item">CSS</span>
+              <img
+                class="technologies-images"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+                width="20px"
+              />
+            </div>
+
+            <div class="technologies-item">
+              <span class="technologies-span invisible-item">JavaScript</span>
+              <img
+                class="technologies-images"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                width="20px"
+              />
+            </div>
+
+            <div class="technologies-item">
+              <span class="technologies-span invisible-item">Typescript</span>
+              <img
+                class="technologies-images"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+                width="20px"
+              />
+            </div>
+
+            <div class="technologies-item">
+              <span class="technologies-span invisible-item">React</span>
+              <img
+                class="technologies-images"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+                width="20px"
+              />
+            </div>
+
+            <div class="technologies-item">
+              <span class="technologies-span invisible-item">Angular</span>
+              <img
+                class="technologies-images"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg"
+                width="20px"
+              />
+            </div>
+
+            <div class="technologies-item">
+              <span class="technologies-span invisible-item">Mongo DB</span>
+              <img
+                class="technologies-images"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
+                width="20px"
+              />
+            </div>
+
+            <div class="technologies-item">
+              <span class="technologies-span invisible-item">NodeJS</span>
+              <img
+                class="technologies-images"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
+                width="20px"
+              />
+            </div>
+
+            <div class="technologies-item">
+              <span class="technologies-span invisible-item">React Native</span>
+              <img
+                class="technologies-images"
+                src="img/logos/react native.png"
+                width="20px"
+              />
+            </div>
+
+            <div class="technologies-item">
+              <span class="technologies-span invisible-item">Firebase</span>
+              <img
+                class="technologies-images"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg"
+                width="20px"
+              />
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- footer -->
+      <footer
+        class="page-footer flex items-start gap-2 flex-wrap mt-20 bg-background-gray p-2 flex-col"
+      >
+        <a class="legal-info font-weight-500" href="legal-info.html"
+          >Impressum</a
+        >
+        <a
+          class="font-weight-500"
+          href="assets/Pruegl-Joachim-Resume.pdf"
+          download
+          target="_blank"
+          >Download Resume</a
+        >
+        <div class="social-media flex flex-row justify-between w-full my-10">
+          <p class="findme font-weight-500">Find me on</p>
+
+          <div class="flex-row flex">
+            <a href="https://github.com/ilsegaertner" target="_blank"
+              ><img
+                src="img/github-mark-white.svg"
+                alt="Logo and Link for the Github platform"
+                width="25"
+                height="25" /></a
+            ><span
+              ><a href="https://twitter.com/JoachimPrugl" target="_blank"
+                ><img
+                  src="img/x_logo.svg"
+                  alt="Logo and Link for the Twitter platform"
+                  width="25"
+                  height="25" /></a></span
+            ><span
+              ><a
+                href="https://www.linkedin.com/in/joachim-pr%C3%BCgl/"
+                target="_blank"
+                ><img
+                  src="img/icons8-linkedin-128.svg"
+                  alt="Logo and Link for the LinkedIn platform"
+                  width="25"
+                  height="25" /></a
+            ></span>
+          </div>
+        </div>
+
+        <p class="copyright">© Copyright 2024 | joachimpruegl.me</p>
+      </footer>
+      <!-- <script src="js/tota11y.min.js"></script> -->
+    </main>
+    <script src="js/scripts.js" defer></script>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
