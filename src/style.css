@@ -16,6 +16,20 @@
 
   --background-gray: oklch(0.38 0 0);
   --main-text: #213547;
+  --background-main: #213547;
+}
+
+body {
+  margin: auto;
+  padding-inline: calc(var(--spacing) * 2);
+  /* max-width: 1000px; */
+}
+
+.project-list > * {
+  /* margin-block: calc(var(--spacing) * 10); */
+  border: 1px solid black;
+  padding: calc(var(--spacing) * 6);
+  border-radius: calc(var(--spacing) * 6);
 }
 
 /* 
@@ -31,15 +45,20 @@ a {
   font-weight: 500;
   /* color: #646cff; */
   /* color: white; */
+  /* color: red; */
   text-decoration: inherit;
 }
 a:hover {
   color: #535bf2;
 }
 
+main {
+  padding-top: calc(var(--spacing) * 6);
+}
+
 h1 {
   font-size: 3.2em;
-  line-height: 1.1;
+  /* line-height: 1.1; */
 }
 
 footer > * {
@@ -74,7 +93,7 @@ footer > * {
   color: #888;
 }
 
-button {
+/* button {
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
@@ -84,7 +103,7 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
-}
+} */
 button:hover {
   border-color: #646cff;
 }
@@ -112,6 +131,20 @@ button:focus-visible {
   gap: 10px;
 }
 
+.project-list__item {
+  background: white;
+}
+
+/* .project-list__item:nth-child(2) {
+  border: 1px solid green;
+}
+.project-list__item:nth-child(1) {
+  border: 1px solid red;
+}
+.project-list__item:nth-child(3) {
+  border: 1px solid blue;
+} */
+
 @layer utilities {
   .bg-background-gray {
     background-color: var(--background-gray);
@@ -119,5 +152,36 @@ button:focus-visible {
 
   .text-main {
     color: var(--main-text);
+  }
+
+  .bg-background-main {
+    background-color: var(--main-text);
+  }
+
+  header {
+    @apply sticky top-0  z-10;
+  }
+
+  /* .gradient-title {
+    @apply text-2xl mb-2 font-bold bg-gradient-to-r from-blue-400 to-fuchsia-400 bg-clip-text text-transparent;
+  } */
+  .gradient-title {
+    @apply text-2xl mb-2 font-bold;
+  }
+
+  .links-wrapper {
+    @apply flex my-13 justify-around  text-white rounded-2xl;
+  }
+
+  body {
+    @apply max-w-5xl;
+  }
+
+  picture {
+    @apply w-full h-48 overflow-hidden;
+  }
+
+  footer {
+    @apply flex items-start gap-2 flex-wrap p-2 flex-col;
   }
 }

@@ -8,8 +8,8 @@
     <title>Portfolio</title>
   </head>
   <body>
-    <main class="mainpage m-auto p-2">
-      <header class="sticky top-0 bg-white z-10">
+    <div>
+      <header class="">
         <nav class="flex items-center p-2 nav-list flex-wrap">
           <a href="index.html" class="text-main!">Joachim Prügl </a>
 
@@ -39,8 +39,7 @@
         </nav>
       </header>
 
-      <!-- main -->
-      <main class="">
+      <main>
         <div class="image-wrapper relative">
           <img
             src="img/me4.webp"
@@ -55,13 +54,13 @@
           </h1>
         </div>
 
-        <p class="my-15 text-center">
+        <p class="my-24 text-center">
           I am <span class="font-bold">Joachim Prügl</span>, a Full-Stack Web
           Developer from Berlin, Germany.
         </p>
 
         <ul
-          class="social-media-icons flex flex-wrap gap-2 mt-8 p-2 bg-background-gray items-center"
+          class="social-media-icons flex flex-wrap gap-2 mt-8 p-5 bg-background-gray items-center"
         >
           <li>
             <a
@@ -86,13 +85,15 @@
               />
             </a>
           </li>
-          <a href="work.html" class="button1 ml-auto font-bold text-white"
+          <a
+            href="work.html"
+            class="button1 ml-auto font-bold text-white text-2xl"
             >See my projects</a
           >
         </ul>
 
-        <div class="stack-images-skillicons mt-12 text-center p-2">
-          <h4 class="font-bold">Tech Stack</h4>
+        <div class="stack-images-skillicons mt-34 text-center p-2">
+          <h4 class="font-bold">My Tech Stack</h4>
           <div
             class="technologies-wrapper flex flex-wrap gap-5 justify-center mt-3 p-5"
           >
@@ -188,10 +189,7 @@
         </div>
       </main>
 
-      <!-- footer -->
-      <footer
-        class="page-footer flex items-start gap-2 flex-wrap mt-20 bg-background-gray p-2 flex-col"
-      >
+      <footer class="page-footer bg-background-gray">
         <a class="legal-info font-weight-500" href="legal-info.html"
           >Impressum</a
         >
@@ -202,7 +200,7 @@
           target="_blank"
           >Download Resume</a
         >
-        <div class="social-media flex flex-row justify-between w-full my-10">
+        <div class="social-media flex flex-row justify-between w-full my-2">
           <p class="findme font-weight-500">Find me on</p>
 
           <div class="flex-row flex">
@@ -232,10 +230,9 @@
           </div>
         </div>
 
-        <p class="copyright">© Copyright 2024 | joachimpruegl.me</p>
+        <p class="copyright text-xs">© Copyright 2024 | joachimpruegl.me</p>
       </footer>
-      <!-- <script src="js/tota11y.min.js"></script> -->
-    </main>
+    </div>
     <script src="js/scripts.js" defer></script>
     <script type="module" src="/src/main.js"></script>
   </body>
