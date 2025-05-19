@@ -8,10 +8,10 @@
     <title>Joachim Prügl's Portfolio - Web Development Projects</title>
   </head>
 
-  <body>
+  <body class="">
     <header class="">
       <nav class="flex items-center p-2 nav-list flex-wrap">
-        <a href="index.html" class="text-main!">Joachim Prügl </a>
+        <a href="index.html" class="text-main">Joachim Prügl </a>
 
         <ul role="menubar" class="p-2 gap-2 hidden sm:flex ml-auto">
           <li role="presentation">
@@ -20,7 +20,10 @@
             </a>
           </li>
           <li role="presentation">
-            <a href="work.html" role="menuitem" class="navigation-list__item"
+            <a
+              href="work.html"
+              role="menuitem"
+              class="navigation-list__item active"
               >Work</a
             >
           </li>
@@ -35,18 +38,51 @@
         </button>
       </nav>
     </header>
-    <main class="bg-gradient-to-bl from-gray-400 to-gray-800">
-      <h1
-        class="text-balance text-center py-20 leading-12 px-7 font-light text-white"
+    <!-- <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="2900"
+      height="5600"
+      preserveAspectRatio="none"
+      class="fixed top-0 left-0 w-full h-full -z-10"
+      style="min-height: 100%"
+    >
+      <path fill="#707070" d="M0 0h2900v5600H0z" />
+      <path
+        fill="#75dec6"
+        d="M2075 5600h232V4200h40V2800H1325V1400h102V0h1473v5600Z"
+      />
+      <path
+        fill="#bdc0db"
+        d="M2021 5600h-85V4200h415V2800h-62V1400h388V0h223v5600Z"
+      />
+    </svg> -->
+    <main class="">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1900 600"
+        preserveAspectRatio="none"
+        class="fixed inset-0 -z-10 w-full h-full"
       >
+        <path fill="#707070" d="M0 0h1900v1600H0z" />
+        <path
+          fill="#75dec6"
+          d="M1360 1600h152v-400h26V800H868V400h67V0h965v1600Z"
+        />
+        <path
+          fill="#bdc0db"
+          d="M1325 1600h-56v-400h272V800h-41V400h254V0h146v1600Z"
+        />
+      </svg>
+
+      <h1 class="text-balance text-center py-20 leading-12 px-7 font-light">
         What I've been working on...
       </h1>
 
       <ul
-        class="project-list grid sm:grid-cols-2 md:grid-cols-3 gap-4 p-4 my-10 -mx-6"
+        class="project-list grid sm:grid-cols-2 md:grid-cols-3 gap-x-16 gap-y-4 p-4 my-10"
       >
         <li id="Weather-App" class="project-list__item p-2">
-          <div class="pb-2 text-center mb-14">
+          <div class="pb-2 text-center">
             <h2 class="gradient-title">World Weather App</h2>
             <h4 class="text-balance leading-5">
               A Weather Web App displaying global weather data
@@ -67,7 +103,7 @@
 
               <a class="button2" href="weather-app.html">View</a>
             </div>
-            <div class="description">
+            <div class="description hidden">
               <div>
                 <span class="font-bold">Weather Application</span>, a
                 React-based project, provides users with real-time weather
@@ -75,19 +111,18 @@
                 responsive interface. Users can search for any city to view
                 current weather conditions, a five-day forecast, and live
                 weather icons. <button class="inline">See more</button>
-                <p class="hidden">
-                  The app also features a browser extension for quick access to
-                  weather data and maps directly from the browser. Additionally,
-                  the application adapts its background gradient to match
-                  current weather conditions, such as sunny, cloudy, or
-                  nighttime settings, creating a visual feedback. This project
-                  enhanced my skills in
-                  <span class="font-bold">React</span>, allowed me to integrate
-                  the <span class="font-bold">OpenWeatherMap API</span>, and
-                  taught me how to create smooth animations with
-                  <span class="font-bold">Framer Motion</span>. The interactive
-                  maps are powered by <span class="font-bold">Leaflet</span>.
-                </p>
+
+                The app also features a browser extension for quick access to
+                weather data and maps directly from the browser. Additionally,
+                the application adapts its background gradient to match current
+                weather conditions, such as sunny, cloudy, or nighttime
+                settings, creating a visual feedback. This project enhanced my
+                skills in
+                <span class="font-bold">React</span>, allowed me to integrate
+                the <span class="font-bold">OpenWeatherMap API</span>, and
+                taught me how to create smooth animations with
+                <span class="font-bold">Framer Motion</span>. The interactive
+                maps are powered by <span class="font-bold">Leaflet</span>.
               </div>
             </div>
           </div>
@@ -107,7 +142,7 @@
         </li>
 
         <li id="Angular-App" class="project-list__item p-2">
-          <div class="pb-2 text-center mb-14">
+          <div class="pb-2 text-center">
             <h2 class="gradient-title">Film Data Angular<br /></h2>
             <h4 class="text-balance">
               An Angular Application For An Arthouse Movie Database
@@ -129,7 +164,7 @@
               <a class="button2" href="cub-angular.html">View</a>
             </div>
 
-            <div class="description">
+            <div class="description hidden">
               <div>
                 <span class="font-weight-600">CUB Film Data (Angular)</span>, an
                 Angular-based project, stands as the frontend interface of a
@@ -139,23 +174,21 @@
                 about directors and genres, or edit their profile.
                 <br /><br />
                 <button>See More</button>
-                <p class="hidden">
-                  For the project I learnt
-                  <span class="font-weight-600">Typescript</span> and
-                  <span class="font-weight-600">Angular</span> which I found
-                  easier than React, generally structured and pleasant to work
-                  with. <br /><br />
-                  Prior to implementation,
-                  <a
-                    href="https://github.com/ilsegaertner/CUB-Film-Angular-client#user-content-user-storiesuser-flow-created-prior"
-                    target="_blank"
-                    class="Geist"
-                    >user stories</a
-                  >
-                  helped me to visualize necessary interfaces and routes (see
-                  link), aiding in the understanding of required operations and
-                  serving as a helpful visualization tool.
-                </p>
+                For the project I learnt
+                <span class="font-weight-600">Typescript</span> and
+                <span class="font-weight-600">Angular</span> which I found
+                easier than React, generally structured and pleasant to work
+                with. <br /><br />
+                Prior to implementation,
+                <a
+                  href="https://github.com/ilsegaertner/CUB-Film-Angular-client#user-content-user-storiesuser-flow-created-prior"
+                  target="_blank"
+                  class="Geist"
+                  >user stories</a
+                >
+                helped me to visualize necessary interfaces and routes (see
+                link), aiding in the understanding of required operations and
+                serving as a helpful visualization tool.
               </div>
             </div>
           </div>
@@ -183,7 +216,7 @@
         </li>
 
         <li id="Meet-App" class="project-list__item p-2">
-          <div class="pb-2 text-center mb-14">
+          <div class="pb-2 text-center">
             <h2 class="gradient-title">Meet App<br /></h2>
             <h4 class="text-balance">
               A React App For Developer Events In Different Cities
@@ -203,22 +236,20 @@
               <a class="button2" href="./meet.html">View</a>
             </div>
 
-            <div class="description">
+            <div class="description hidden">
               <div>
                 <span class="font-weight-600">Meet App</span> is a PWA
                 (Progressive Web Application) built in React. The application
                 gathers and displays upcoming developer-centric events in
                 different cities worldwide by connecting to a Google Calendar
                 API using OAuth authorization. <button>See more</button>
-                <p class="hidden">
-                  <br /><br />Designed to function across browsers, it also
-                  offers desktop installation and offline functionality
-                  providing users with a dynamic and accessible event
-                  exploration experience. <br /><br />
-                  This project was written in TDD (Test-Driven Development),
-                  prioritizing test-writing before code implementation to ensure
-                  robustness and reliability.
-                </p>
+                <br /><br />Designed to function across browsers, it also offers
+                desktop installation and offline functionality providing users
+                with a dynamic and accessible event exploration experience.
+                <br /><br />
+                This project was written in TDD (Test-Driven Development),
+                prioritizing test-writing before code implementation to ensure
+                robustness and reliability.
               </div>
             </div>
           </div>
@@ -240,7 +271,7 @@
         </li>
 
         <li id="Chat-App" class="project-list__item p-2">
-          <div class="pb-2 text-center mb-14">
+          <div class="pb-2 text-center">
             <h2 class="gradient-title">Mobile Chat App</h2>
             <h4 class="text-balance">
               A Chat App For Mobile Devices, Built In React Native
@@ -257,7 +288,7 @@
               <a class="button2" href="./mobile-chat-app.html">View</a>
             </div>
 
-            <div class="description">
+            <div class="description hidden">
               <p>
                 <span class="font-weight-600">Mobile Chat App</span> is an
                 intuitive mobile chat application developed with React Native.
@@ -278,7 +309,7 @@
         </li>
 
         <li id="React-App" class="project-list__item p-2">
-          <div class="pb-2 text-center mb-14">
+          <div class="pb-2 text-center">
             <h2 class="gradient-title">CUB Film Data React<br /></h2>
             <h4 class="text-balance">
               A React Application For An Arthouse Movie Database
@@ -300,7 +331,7 @@
               <a class="button2" href="./cub-react.html">View</a>
             </div>
 
-            <div class="description">
+            <div class="description hidden">
               <p class="text-class">
                 <span class="font-weight-600">CUB Film Data (React)</span>, a
                 React-based project, stands as the frontend interface of a movie
@@ -313,18 +344,16 @@
                 movies to their list of favorites.
               </p>
               <button>Show more</button>
-              <p class="hidden">
-                This Full-Stack Project comprehends the communication between
-                both client-side and server-side components showcasing
-                proficiency in APIs, web server frameworks, databases, business
-                logic, authentication, and data security.
-                <br />
-                <br />
-                This is a sister-project to
-                <a href="#Angular-App" class="font-weight-500"
-                  >CUB Film Data, Angular</a
-                >.
-              </p>
+              This Full-Stack Project comprehends the communication between both
+              client-side and server-side components showcasing proficiency in
+              APIs, web server frameworks, databases, business logic,
+              authentication, and data security.
+              <br />
+              <br />
+              This is a sister-project to
+              <a href="#Angular-App" class="font-weight-500"
+                >CUB Film Data, Angular</a
+              >.
             </div>
           </div>
 
@@ -352,9 +381,7 @@
         </li>
       </ul>
 
-      <section
-        class="flex flex-col items-center text-white font-medium py-50 gap-40"
-      >
+      <section class="flex flex-col items-center font-medium py-50 gap-40">
         <div>
           <img
             class="dev-icon_work"
@@ -371,7 +398,7 @@
         >
       </section>
     </main>
-    <footer class="page-footer bg-background-gray">
+    <footer class="page-footer">
       <a class="legal-info font-weight-500" href="legal-info.html">Impressum</a>
       <a
         class="font-weight-500"
