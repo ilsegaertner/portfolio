@@ -232,7 +232,7 @@ button:focus-visible {
   }
 
   header {
-    @apply sticky top-0  z-10;
+    @apply sticky top-0  z-10 bg-white;
   }
 
   /* .gradient-title {
