@@ -172,9 +172,12 @@ button:focus-visible {
 }
 
 .technologies-item {
-  display: flex;
+  /* display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 10px; */
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  justify-items: start;
 }
 
 .project-list__item {
@@ -263,7 +266,7 @@ button:focus-visible {
     @apply w-full h-48;
   }
 
-  footer {
+  .footer-links {
     @apply flex items-start gap-2 flex-wrap p-2 flex-col;
   }
 }

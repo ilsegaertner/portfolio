@@ -39,14 +39,30 @@
     </header>
 
     <main class="">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1900 600"
+        preserveAspectRatio="none"
+        class="fixed inset-0 -z-10 w-full h-full"
+      >
+        <path fill="#707070" d="M0 0h1900v1600H0z" />
+        <path
+          fill="#75dec6"
+          d="M1360 1600h152v-400h26V800H868V400h67V0h965v1600Z"
+        />
+        <path
+          fill="#bdc0db"
+          d="M1325 1600h-56v-400h272V800h-41V400h254V0h146v1600Z"
+        />
+      </svg>
       <!-- <h1 class="text-center mb-19">Contact</h1> -->
-      <h1 class="my-20 font-light text-center">Feel free to reach out!</h1>
+      <h1 class="my-20 font-light text-center">Leave me a message</h1>
 
       <div
         class="w-full m-auto sm:flex max-w-xs sm:max-w-7xl sm:justify-between items-baseline mb-52"
       >
         <div class="shadow-md rounded px-8 pt-6 pb-8 mb-4 basis-lg">
-          <h2 class="mb-8 font-bold">Leave me a message</h2>
+          <!-- <h2 class="mb-8 font-bold">Leave me a message</h2> -->
           <form
             id="fs-frm"
             name="simple-contact-form"
@@ -119,26 +135,10 @@
           </form>
         </div>
         <div class="shadow-md rounded px-8 pt-6 pb-8 mb-4">
-          <h2 class="mb-8 font-bold">Get in touch!</h2>
+          <!-- <h2 class="mb-8 font-bold">Get in touch!</h2> -->
 
           <span class="flex gap-3">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              height="30"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="tabler-icon tabler-icon-mail"
-            >
-              <path
-                d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"
-              ></path>
-              <path d="M3 7l9 6l9 -6"></path>
-            </svg>
+            <img src="./assets/mail.svg" width="30" alt="email-icon" />
             <a href="mailto:joachimpruegl@gmail.com">joachimpruegl@gmail.com</a>
           </span>
 
@@ -149,7 +149,7 @@
                 target="_blank"
               >
                 <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg"
+                  src="./assets/brand-linkedin.svg"
                   width="30"
                   alt="linkedin-icon"
                 />
@@ -158,16 +158,20 @@
             <li>
               <a href="https://github.com/ilsegaertner" target="_blank">
                 <img
-                  src="../Portfolio-website-copy/img/logos/github-mark-white.png"
+                  src="./assets/brand-github.svg"
                   style="width: 30px"
                   alt="github-icon"
                 />
               </a>
             </li>
             <li>
-              <a href="https://twitter.com/JoachimPrugl" target="_blank">
+              <a
+                href="https://twitter.com/JoachimPrugl"
+                target="_blank"
+                class="hover:text-gray-300"
+              >
                 <img
-                  src="../Portfolio-website-copy/img/icons/x-logo-white.png"
+                  src="./assets/brand-x.svg"
                   width="30px"
                   height="30px"
                   alt="twitter-icon"
@@ -180,45 +184,55 @@
     </main>
 
     <footer class="page-footer">
-      <a class="legal-info font-weight-500" href="legal-info.html">Impressum</a>
-      <a
-        class="font-weight-500"
-        href="assets/Pruegl-Joachim-Resume.pdf"
-        download
-        target="_blank"
-        >Download Resume</a
-      >
-      <div class="social-media flex flex-row justify-between w-full my-2">
-        <p class="findme font-weight-500">Find me on</p>
+      <div class="flex leading-5">
+        <div class="footer-links">
+          <a class="legal-info" href="legal-info.html">Impressum</a>
+          <a
+            class=""
+            href="assets/Pruegl-Joachim-Resume.pdf"
+            download
+            target="_blank"
+            >Download Resume</a
+          >
+        </div>
+        <div
+          class="social-media flex sm:flex-row justify-end gap-y-1 gap-x-4 w-full my-2 flex-col items-end"
+        >
+          <p>Find me on</p>
 
-        <div class="flex-row flex">
-          <a href="https://github.com/ilsegaertner" target="_blank"
-            ><img
-              src="img/github-mark-white.svg"
-              alt="Logo and Link for the Github platform"
-              width="25"
-              height="25" /></a
-          ><span
-            ><a href="https://twitter.com/JoachimPrugl" target="_blank"
+          <div class="flex-row flex">
+            <a href="https://github.com/ilsegaertner" target="_blank"
               ><img
-                src="img/x_logo.svg"
-                alt="Logo and Link for the Twitter platform"
-                width="25"
-                height="25" /></a></span
-          ><span
-            ><a
-              href="https://www.linkedin.com/in/joachim-pr%C3%BCgl/"
-              target="_blank"
-              ><img
-                src="img/icons8-linkedin-128.svg"
-                alt="Logo and Link for the LinkedIn platform"
+                src="./assets/brand-github.svg"
+                alt="Logo and Link for the Github platform"
                 width="25"
                 height="25" /></a
-          ></span>
+            ><span
+              ><a href="https://twitter.com/JoachimPrugl" target="_blank"
+                ><img
+                  src="./assets/brand-x.svg"
+                  alt="Logo and Link for the Twitter platform"
+                  width="25"
+                  height="25" /></a></span
+            ><span
+              ><a
+                href="https://www.linkedin.com/in/joachim-pr%C3%BCgl/"
+                target="_blank"
+                ><img
+                  src="./assets/brand-linkedin.svg"
+                  alt="Logo and Link for the LinkedIn platform"
+                  width="25"
+                  height="25" /></a
+            ></span>
+          </div>
         </div>
       </div>
-
-      <p class="copyright text-xs">© Copyright 2024 | joachimpruegl.me</p>
+      <div
+        class="text-xs -mt-10 text-center sm:-mt-6 pb-3 text-gray-300 flex flex-col sm:flex-row justify-center"
+      >
+        <p>© Copyright 2024 |</p>
+        <p>joachimpruegl.me</p>
+      </div>
     </footer>
     <script src="js/scripts.js" defer></script>
     <script type="module" src="/src/main.js"></script>

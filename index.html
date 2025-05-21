@@ -112,9 +112,9 @@
         <div
           class="stack-images-skillicons mt-34 text-center max-w-md mx-auto my-24 border-1 p-4"
         >
-          <h4 class="font-bold">My Tech Stack</h4>
+          <h4 class="font-bold mb-8">My Tech Stack</h4>
           <div
-            class="technologies-wrapper flex flex-wrap gap-5 justify-center mt-3 p-5"
+            class="technologies-wrapper grid grid-cols-2 gap-x-6 gap-y-3 justify-center mt-3"
           >
             <div class="technologies-item">
               <span class="technologies-span invisible-item">HTML5</span>
@@ -209,30 +209,33 @@
       </main>
 
       <footer class="page-footer">
-        <a class="legal-info font-weight-500" href="legal-info.html"
-          >Impressum</a
+      <div class="flex leading-5">
+        <div class="footer-links">
+          <a class="legal-info" href="legal-info.html">Impressum</a>
+          <a
+            class=""
+            href="assets/Pruegl-Joachim-Resume.pdf"
+            download
+            target="_blank"
+            >Download Resume</a
+          >
+        </div>
+        <div
+          class="social-media flex sm:flex-row justify-end gap-y-1 gap-x-4 w-full my-2 flex-col items-end"
         >
-        <a
-          class="font-weight-500"
-          href="assets/Pruegl-Joachim-Resume.pdf"
-          download
-          target="_blank"
-          >Download Resume</a
-        >
-        <div class="social-media flex flex-row justify-between w-full my-2">
-          <p class="findme font-weight-500">Find me on</p>
+          <p>Find me on</p>
 
           <div class="flex-row flex">
             <a href="https://github.com/ilsegaertner" target="_blank"
               ><img
-                src="img/github-mark-white.svg"
+                src="./assets/brand-github.svg"
                 alt="Logo and Link for the Github platform"
                 width="25"
                 height="25" /></a
             ><span
               ><a href="https://twitter.com/JoachimPrugl" target="_blank"
                 ><img
-                  src="img/x_logo.svg"
+                  src="./assets/brand-x.svg"
                   alt="Logo and Link for the Twitter platform"
                   width="25"
                   height="25" /></a></span
@@ -241,16 +244,21 @@
                 href="https://www.linkedin.com/in/joachim-pr%C3%BCgl/"
                 target="_blank"
                 ><img
-                  src="img/icons8-linkedin-128.svg"
+                  src="./assets/brand-linkedin.svg"
                   alt="Logo and Link for the LinkedIn platform"
                   width="25"
                   height="25" /></a
             ></span>
           </div>
         </div>
-
-        <p class="copyright text-xs">© Copyright 2024 | joachimpruegl.me</p>
-      </footer>
+      </div>
+      <div
+        class="text-xs -mt-10 text-center sm:-mt-6 pb-3 text-gray-300 flex flex-col sm:flex-row justify-center"
+      >
+        <p>© Copyright 2024 |</p>
+        <p>joachimpruegl.me</p>
+      </div>
+    </footer>
     </div>
     <script src="js/scripts.js" defer></script>
     <script type="module" src="/src/main.js"></script>
