@@ -9,10 +9,10 @@
   </head>
   <body class="">
     <header class="">
-      <nav class="flex items-center p-2 nav-list flex-wrap">
-        <a href="index.html" class="text-main active">Joachim Prügl </a>
+      <nav class="flex items-center p-3 nav-list flex-wrap">
+        <a href="index.html" class="text-main">Joachim Prügl </a>
 
-        <ul role="menubar" class="p-2 gap-2 hidden sm:flex ml-auto">
+        <ul role="menubar" class="gap-2 hidden sm:flex ml-auto">
           <li role="presentation">
             <a href="about.html" role="menuitem" class="navigation-list__item"
               >About
@@ -38,7 +38,7 @@
       </nav>
     </header>
 
-    <main class="">
+    <main>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1900 600"
@@ -56,10 +56,13 @@
         />
       </svg>
       <!-- <h1 class="text-center mb-19">Contact</h1> -->
-      <h1 class="my-20 font-light text-center">Leave me a message</h1>
+      <!-- <h1 class="my-20 font-light text-center">Leave me a message</h1> -->
+      <h1 class="my-20 font-light text-center">
+        I will reply to your message asap
+      </h1>
 
       <div
-        class="w-full m-auto sm:flex max-w-xs sm:max-w-7xl sm:justify-between items-baseline mb-52"
+        class="w-full m-auto sm:flex sm:max-w-7xl sm:justify-around items-baseline mb-52"
       >
         <div class="shadow-md rounded px-8 pt-6 pb-8 mb-4 basis-lg">
           <!-- <h2 class="mb-8 font-bold">Leave me a message</h2> -->
@@ -71,6 +74,7 @@
             method="post"
             class="form-action"
           >
+            <h2 class="font-bold mb-5">Contact</h2>
             <div class="mb-4">
               <label for="full-name" class="standard-label">Full Name</label>
               <input
@@ -129,15 +133,15 @@
             >
               Submit
             </button>
-            <p class="text-center text-gray-500 text-xs mt-8">
+            <!-- <p class="text-center text-gray-500 text-xs mt-8">
               I will reply to your message asap.
-            </p>
+            </p> -->
           </form>
         </div>
         <div class="shadow-md rounded px-8 pt-6 pb-8 mb-4">
-          <!-- <h2 class="mb-8 font-bold">Get in touch!</h2> -->
+          <h2 class="mb-8 font-bold">Get in touch</h2>
 
-          <span class="flex gap-3">
+          <span class="flex gap-3 mb-5">
             <img src="./assets/mail.svg" width="30" alt="email-icon" />
             <a href="mailto:joachimpruegl@gmail.com">joachimpruegl@gmail.com</a>
           </span>
@@ -189,14 +193,14 @@
           <a class="legal-info" href="legal-info.html">Impressum</a>
           <a
             class=""
-            href="assets/Pruegl-Joachim-Resume.pdf"
+            href="./assets/Pruegl-Joachim-Resumee.pdf"
             download
             target="_blank"
             >Download Resume</a
           >
         </div>
         <div
-          class="social-media flex sm:flex-row justify-end gap-y-1 gap-x-4 w-full my-2 flex-col items-end"
+          class="social-media flex sm:flex-row justify-end gap-y-1 gap-x-4 w-full flex-col items-end"
         >
           <p>Find me on</p>
 
@@ -228,7 +232,7 @@
         </div>
       </div>
       <div
-        class="text-xs -mt-10 text-center sm:-mt-6 pb-3 text-gray-300 flex flex-col sm:flex-row justify-center"
+        class="text-xs -mt-8 text-center sm:-mt-4 pb-3 text-gray-300 flex flex-col sm:flex-row justify-center gap-x-1"
       >
         <p>© Copyright 2024 |</p>
         <p>joachimpruegl.me</p>

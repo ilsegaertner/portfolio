@@ -222,7 +222,19 @@ button:focus-visible {
   border: 1px solid #707070;
 }
 
+.skill-flex-container {
+  display: flex;
+}
+
 @layer utilities {
+  main {
+    @apply p-3;
+  }
+
+  .skill-flex-container {
+    @apply gap-2;
+  }
+
   .bg-background-gray {
     background-color: var(--background-gray);
   }
@@ -266,7 +278,11 @@ button:focus-visible {
     @apply w-full h-48;
   }
 
+  footer {
+    @apply p-3;
+  }
+
   .footer-links {
-    @apply flex items-start gap-2 flex-wrap p-2 flex-col;
+    @apply flex items-start gap-2 flex-wrap flex-col;
   }
 }
