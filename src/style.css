@@ -59,6 +59,7 @@
 
 body {
   margin: auto;
+  color: var(--main-text);
   padding-inline: calc(var(--spacing) * 2);
   /* max-width: 1000px; */
   background-color: #ffffff;
@@ -229,6 +230,14 @@ button:focus-visible {
 
   .bg-background-main {
     background-color: var(--main-text);
+  }
+
+  .standard-label {
+    @apply block text-gray-700 text-sm font-bold mb-2;
+  }
+
+  .standard-input {
+    @apply shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-md;
   }
 
   header {
