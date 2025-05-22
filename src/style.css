@@ -310,7 +310,7 @@ button:focus-visible {
   }
 
   .about-cards {
-    @apply overflow-hidden border-1;
+    @apply overflow-hidden shadow-sm;
   }
 
   .ring-default {
