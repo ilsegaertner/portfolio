@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./src/style.css" rel="stylesheet" />
+    <title>Portfolio</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="flex items-center p-3 nav-list flex-wrap">
+        <a href="index.html" class="text-main">Joachim Prügl </a>
+
+        <ul role="menubar" class="gap-2 hidden sm:flex ml-auto">
+          <li role="presentation">
+            <a
+              href="about.html"
+              role="menuitem"
+              class="navigation-list__item active"
+              >About
+            </a>
+          </li>
+          <li role="presentation">
+            <a href="work.html" role="menuitem" class="navigation-list__item"
+              >Work</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="contact.html" role="menuitem" class="navigation-list__item"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <button class="sm:hidden ml-auto" aria-label="Toggle Menu">
+          <span class="hamburger">X</span>
+        </button>
+      </nav>
+    </header>
+
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1900 600"
+      preserveAspectRatio="none"
+      class="fixed inset-0 -z-10 w-full h-full"
+    >
+      <path fill="#707070" d="M0 0h1900v1600H0z" />
+      <path
+        fill="#75dec6"
+        d="M1360 1600h152v-400h26V800H868V400h67V0h965v1600Z"
+      />
+      <path
+        fill="#bdc0db"
+        d="M1325 1600h-56v-400h272V800h-41V400h254V0h146v1600Z"
+      />
+    </svg>
+
+    <main>
+      <h1 class="">CUB Film Data Angular</h1>
+      <h2>An Angular Application For An Arthouse Movie Database</h2>
+
+      <section class="mt-8">
+        <div class="links-wrapper bg-background-main">
+          <div class="livelinks">
+            <a
+              href="https://github.com/ilsegaertner/CUB-Film-Angular-client"
+              target="_blank"
+              >Github</a
+            >
+            <a
+              href="https://ilsegaertner.github.io/CUB-Film-Angular-client/"
+              target="_blank"
+              >Live</a
+            >
+          </div>
+        </div>
+
+        <a class="button2" href="./work.html">Back</a>
+
+        <div class="mt-8 sm:flex gap-7">
+          <p>
+            <span class="font-weight-600">CUB Film Data (Angular)</span>, an
+            Angular-based project, stands as the frontend interface of a movie
+            database (which I built previously as
+            <a href="#Rest-Api">REST-Api</a>
+            for the backend).<br /><br />
+            Users can browse through movies, get data about directors and
+            genres, or edit their profile.
+            <br /><br />
+
+            For the project I learnt
+            <span class="font-weight-600">Typescript</span> and
+            <span class="font-weight-600">Angular</span> which I found easier
+            than React, generally structured and pleasant to work with.
+            <br /><br />
+            Prior to implementation,
+            <a
+              href="https://github.com/ilsegaertner/CUB-Film-Angular-client#user-content-user-storiesuser-flow-created-prior"
+              target="_blank"
+              class="Geist"
+              >user stories</a
+            >
+            helped me to visualize necessary interfaces and routes (see link),
+            aiding in the understanding of required operations and serving as a
+            helpful visualization tool.
+          </p>
+
+          <picture class="mt-8">
+            <source
+              srcset="
+                img/documentation/CUB-Film-Angular-client_documentation/CUB-Film-Angular-client_documentation_08.webp
+              "
+              type="image/webp"
+              class="project-images"
+            />
+            <source
+              srcset="
+                img/documentation/CUB-Film-Angular-client_documentation/CUB-Film-Angular-client_documentation_08.png
+              "
+              type="image/png"
+              class="project-images"
+            />
+            <img
+              src="img/documentation/CUB-Film-Angular-client_documentation/CUB-Film-Angular-client_documentation_08.png"
+              alt="Image of the project called Appsource"
+              class="project-images"
+            />
+          </picture>
+
+          <div class="project-list__footer mt-8">
+            <h4>Technologies</h4>
+
+            <div class="technologies-wrapper">
+              <div class="technologies-item">
+                <span class="technologies-span">Angular</span>
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg"
+                />
+              </div>
+
+              <div class="technologies-item">
+                <span class="technologies-span">Typescript</span>
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+                />
+              </div>
+
+              <div class="technologies-item">
+                <span class="technologies-span">JavaScript</span>
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                />
+              </div>
+
+              <div class="technologies-item">
+                <span class="technologies-span">CSS3</span>
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+                />
+              </div>
+
+              <div class="technologies-item">
+                <span class="technologies-span">MongoDB</span>
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
+                />
+              </div>
+
+              <div class="technologies-item">
+                <span class="technologies-span">HTML5</span>
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="flex flex-col items-center font-medium py-50 gap-40 text-center"
+      >
+        <div>
+          <img
+            class="dev-icon_work"
+            src="./assets/mail.svg"
+            alt="image of a message icon"
+            width="80px
+      "
+            height="80px"
+          />
+        </div>
+        <span class="text-2xl">Interested in working together? </span>
+        <a href="mailto:joachimpruegl@gmail.com" class="text-xl"
+          >Send me a mail</a
+        >
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="footer-container">
+        <div class="footer-container_left">
+          <a class="legal-info font-weight-500" href="legal-info.html"
+            >Legal Info | Impressum</a
+          >
+          <a
+            class="font-weight-500"
+            href="assets/Pruegl-Joachim-Resume.pdf"
+            download
+            target="_blank"
+            >Download Resume</a
+          >
+        </div>
+        <div class="footer-container_right">
+          <p class="findme font-weight-500">Find me on</p>
+
+          <div class="social-media">
+            <a href="https://github.com/ilsegaertner" target="_blank"
+              ><img
+                src="img/github-mark-white.svg"
+                alt="Logo and Link for the Github platform"
+                width="25"
+                height="25" /></a
+            ><span
+              ><a href="https://twitter.com/JoachimPrugl" target="_blank"
+                ><img
+                  src="img/x_logo.svg"
+                  alt="Logo and Link for the Twitter platform"
+                  width="25"
+                  height="25" /></a></span
+            ><span
+              ><a
+                href="https://www.linkedin.com/in/joachim-pr%C3%BCgl/"
+                target="_blank"
+                ><img
+                  src="img/icons8-linkedin-128.svg"
+                  alt="Logo and Link for the LinkedIn platform"
+                  width="25"
+                  height="25" /></a
+            ></span>
+          </div>
+        </div>
+      </div>
+      <p class="copyright">© Copyright 2024 | joachimpruegl.me</p>
+    </footer>
+    <script src="js/scripts.js" defer></script>
+    <!-- <script src="js/tota11y.min.js"></script> -->
+  </body>
+</html>

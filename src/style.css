@@ -301,6 +301,9 @@ button:focus-visible {
     @apply flex items-start gap-2 flex-wrap flex-col;
   }
 
+  .livelinks {
+    @apply flex justify-between gap-2;
+  }
   /* .project-list {
     @apply ring-1 ring-black/15 p-12 shadow-md rounded;
   } */
