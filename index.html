@@ -56,32 +56,29 @@
             d="M1325 1600h-56v-400h272V800h-41V400h254V0h146v1600Z"
           />
         </svg>
-        <section
-          class="welcome-section sm:gap-24 sm:flex sm:items-center sm:flex-wrap ring-1 mt-4 ring-black/15 rounded"
-        >
+        <section class="grid sm:grid-cols-[1fr_1.5fr] mt-4 items-center gap-10">
           <div class="image-wrapper relative">
             <img
-              src="img/me4.webp"
+              src="./assets/front.jpg"
               alt="Profile picture of Joachim Prügl"
               class="profile__portrait object-cover"
             />
 
             <h1
-              class="mb-3 text-center text-white absolute w-full flex items-center justify-center top-3/4"
+              class="mb-3 text-7xl! text-center text-white absolute w-full flex items-center justify-center top-3/4 mix-blend-exclusion"
             >
               Welcome!
             </h1>
           </div>
 
-          <p class="my-24 text-center text-pretty">
-            I am <span class="font-bold">Joachim Prügl</span>, a Full-Stack Web
-            Developer from Berlin, Germany.
-          </p>
+          <div class="flex flex-col items-center sm:items-end gap-11 p-2">
+            <p class="text-pretty text-center sm:text-start">
+              I am <span class="font-bold">Joachim Prügl</span>, a Full-Stack
+              Web Developer from Berlin, Germany.
+            </p>
 
-          <ul
-            class="social-media-icons flex flex-wrap gap-2 flex-0! p-5 bg-background-gray items-center justify-center"
-          >
-            <!-- <li>
+            <ul class="bg-background-main rounded-3xl px-5">
+              <!-- <li>
               <a
                 href="https://www.linkedin.com/in/joachim-pruegl/"
                 target="_blank"
@@ -104,13 +101,14 @@
                 />
               </a>
             </li> -->
-            <a href="work.html" class="button1 font-bold text-white text-2xl"
-              >See my projects</a
-            >
-          </ul>
+              <a href="work.html" class="button1 font-bold text-white text-2xl"
+                >See my projects</a
+              >
+            </ul>
+          </div>
         </section>
         <div
-          class="stack-images-skillicons mt-34 text-center max-w-md mx-auto sm:mx-0 my-24 ring-1 ring-black/15 rounded p-4"
+          class="stack-images-skillicons mt-18 text-center max-w-md mb-43 p-4 ml-auto shadow-md"
         >
           <h4 class="font-bold mb-8">My Tech Stack</h4>
           <div

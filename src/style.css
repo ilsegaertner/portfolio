@@ -118,6 +118,9 @@ h1 {
   text-align: center;
 }
 
+.stack-images-skillicons {
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -184,8 +187,12 @@ button:focus-visible {
   background: white;
 }
 
-.welcome-section > * {
+/* .welcome-section > * {
   flex: 1;
+} */
+
+.profile__portrait {
+  clip-path: ellipse(31% 92% at 26% 44%);
 }
 
 .project-images {
@@ -224,6 +231,10 @@ button:focus-visible {
 
 .skill-flex-container {
   display: flex;
+}
+
+.about-cards img {
+  clip-path: ellipse(33% 135% at 31% 45%);
 }
 
 @layer utilities {
@@ -295,6 +306,14 @@ button:focus-visible {
   } */
 
   .project-list__item {
-    @apply shadow-md rounded;
+    @apply border-1;
+  }
+
+  .about-cards {
+    @apply overflow-hidden border-1;
+  }
+
+  .ring-default {
+    @apply ring-1 ring-black/15;
   }
 }
