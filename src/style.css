@@ -52,6 +52,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+  interpolate-size: allow-keywords;
+
   --background-gray: oklch(0.38 0 0);
   --main-text: #213547;
   --background-main: #213547;
@@ -196,8 +198,12 @@ button:focus-visible {
 } */
 
 .project-images {
-  width: 100%;
-  height: 200%;
+  /* width: 100%;
+  height: 200%; */
+  width: 50%;
+  height: 150%;
+  rotate: 20deg;
+  margin: 0 auto;
   object-fit: cover;
 }
 
@@ -206,6 +212,10 @@ button:focus-visible {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.project-picture-wrapper img {
+  border-radius: 8px;
 }
 /* 
 .project-list__item:nth-child(2) {

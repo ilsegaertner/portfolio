@@ -8,8 +8,8 @@
     <title>Portfolio</title>
   </head>
 
-  <body>
-    <header>
+  <body class="aboutpage">
+    <header class="">
       <nav class="flex items-center p-3 nav-list flex-wrap">
         <a href="index.html" class="text-main">Joachim Prügl </a>
 
@@ -56,27 +56,23 @@
       />
     </svg>
 
-    <main>
-      <div class="mx-auto max-w-2xl px-6 sm:px-0 lg:max-w-7xl">
+    <main class="">
+      <div class="mx-auto max-w-2xl sm:px-6 lg:max-w-7xl lg:px-8 mb-70">
         <!-- <h2 class="text-base/7 font-semibold text-indigo-400">
           Why Web Development?
         </h2> -->
-        <h1
-          class="mt-2 text-4xl py-20 tracking-tight text-pretty sm:text-5xl text-center"
-        >
+        <h1 class="text-4xl py-20 tracking-tight text-pretty sm:text-5xl">
           About Me
         </h1>
         <div
-          class="mt-10 grid grid-cols-1 gap-x-18 gap-y-2 lg:grid-cols-6 lg:grid-rows-2 p-10 pt-0"
+          class="mt-10 grid grid-cols-1 gap-12 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2"
         >
-          <div class="flex p-px lg:col-span-4">
-            <div class="about-cards">
-              <img
-                class="h-70 object-cover object-left mix"
-                src="./img/me4.webp"
-                alt=""
-              />
-              <div class="p-18 pb-4 -mt-10">
+          <div class="flex p-px lg:col-span-4 order-1">
+            <div
+              class="overflow-hidden shadow-md rounded max-lg:rounded-t-4xl lg:rounded-tl-4xl"
+            >
+              <img class="h-70" src="./img/me4.webp" alt="" />
+              <div class="p-10">
                 <h3 class="text-sm/4 font-semibold text-gray-400">
                   WebDev path
                 </h3>
@@ -107,13 +103,21 @@
               </div>
             </div>
           </div>
-          <div class="flex p-px lg:col-span-2">
-            <div class="about-cards">
+          <!-- Frontend Skills -->
+          <div
+            class="flex p-px lg:col-span-2 order-3 lg:order-2 mt-13 lg:-mt-42"
+          >
+            <div class="overflow-hidden shadow-md rounded lg:rounded-tr-4xl">
               <!-- <img
                 class="h-80 object-cover"
                 src="https://tailwindcss.com/plus-assets/img/component-images/bento-02-integrations.png"
                 alt=""
               /> -->
+              <img
+                class="h-50 object-cover"
+                src="./assets/frontend.svg"
+                alt=""
+              />
               <div class="p-10">
                 <h3 class="text-sm/4 font-semibold text-gray-800">Skills</h3>
                 <p class="mt-2 text-lg font-medium tracking-tight">
@@ -305,13 +309,20 @@
               </div>
             </div>
           </div>
-          <div class="p-px lg:col-span-2">
-            <div class="about-cards">
+          <!-- Backend Skills -->
+          <div class="p-px lg:col-span-2 order-4 lg:order-3 mt-6 lg:mt-14">
+            <div class="overflow-hidden shadow-md rounded lg:rounded-bl-4xl">
               <!-- <img
                 class="h-80 object-cover"
                 src="https://tailwindcss.com/plus-assets/img/component-images/bento-02-security.png"
                 alt=""
               /> -->
+
+              <img
+                class="h-50 object-cover"
+                src="./assets/backend2.svg"
+                alt=""
+              />
               <div class="p-10">
                 <h3 class="text-sm/4 font-semibold text-gray-400">Skills</h3>
                 <p class="mt-2 text-lg font-medium tracking-tight">
@@ -427,21 +438,25 @@
               </div>
             </div>
           </div>
-          <div class="p-px lg:col-span-4">
-            <div class="about-cards">
+
+          <!-- Text rest -->
+          <div class="p-px lg:col-span-4 order-2 lg:order-4 -mt-12">
+            <div
+              class="overflow-hidden shadow-md rounded max-lg:rounded-b-4xl lg:rounded-br-4xl"
+            >
               <!-- <img
                 class="h-80 object-cover object-left"
                 src="https://tailwindcss.com/plus-assets/img/component-images/bento-02-performance.png"
                 alt=""
               /> -->
-              <div class="p-18">
+              <div class="p-10">
                 <!-- <h3 class="text-sm/4 font-semibold text-gray-400">
                   Performance
                 </h3>
                 <p class="mt-2 text-lg font-medium tracking-tight text-white">
                   Lightning-fast builds
                 </p> -->
-                <div class="-mt-10 max-w-lg text-sm/6 text-gray-800">
+                <div class="mt-2 max-w-lg text-sm/6 text-gray-800">
                   <p>
                     In my personal life, I thrive on connections and
                     understanding. I have a natural curiosity about other
@@ -471,7 +486,7 @@
                       style="color: var(--main-red)"
                       >reach out</a
                     >
-                    to me to discuss potential projects together.
+                    to discuss potential projects together.
                   </p>
                 </div>
               </div>
