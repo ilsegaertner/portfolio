@@ -202,7 +202,7 @@ button:focus-visible {
   height: 200%; */
   width: 50%;
   height: 150%;
-  rotate: 20deg;
+  rotate: 7deg;
   margin: 0 auto;
   object-fit: cover;
 }
