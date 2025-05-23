@@ -191,9 +191,9 @@ button:focus-visible {
   flex: 1;
 } */
 
-.profile__portrait {
+/* .profile__portrait {
   clip-path: ellipse(31% 92% at 26% 44%);
-}
+} */
 
 .project-images {
   width: 100%;
@@ -233,9 +233,9 @@ button:focus-visible {
   display: flex;
 }
 
-.about-cards img {
+/* .about-cards img {
   clip-path: ellipse(33% 135% at 31% 45%);
-}
+} */
 
 @layer utilities {
   main {
