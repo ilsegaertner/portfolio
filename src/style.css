@@ -72,6 +72,7 @@ body {
   /* margin-block: calc(var(--spacing) * 10); */
   /* border: 1px solid black; */
   padding: calc(var(--spacing) * 6);
+  padding-bottom: calc(var(--spacing) * 14);
   /* border-radius: calc(var(--spacing) * 6); */
 }
 
@@ -118,9 +119,6 @@ h1 {
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-}
-
-.stack-images-skillicons {
 }
 
 .logo {
@@ -186,7 +184,8 @@ button:focus-visible {
 }
 
 .project-list__item {
-  background: white;
+  background: rgb(141, 137, 212);
+  clip-path: polygon(505% 44px, 7% 3px, -1% 381px);
 }
 
 .project-images {
@@ -231,6 +230,27 @@ button:focus-visible {
 
 .skill-flex-container {
   display: flex;
+}
+
+.skills h3 {
+  margin-top: calc(var(--spacing) * 4);
+}
+
+.skills hr {
+  color: #ccc;
+  margin-block: calc(var(--spacing) * 1);
+}
+
+.skill-pic {
+  margin: 49px 4px -9px -19px;
+}
+
+.interested {
+  margin: 8rem 8rem 2rem 0rem;
+}
+
+.send-mail {
+  margin: -1rem 0rem 0rem 7rem;
 }
 
 /* .about-cards img {
@@ -282,7 +302,7 @@ button:focus-visible {
   }
 
   .links-wrapper {
-    @apply flex justify-around text-white rounded-2xl absolute bottom-0 left-0 bg-black;
+    @apply flex justify-around text-white w-full  absolute bottom-0 left-0 p-1 px-2 bg-gradient-to-r from-[#213547]  to-amber-300;
   }
 
   body {
@@ -302,14 +322,14 @@ button:focus-visible {
   }
 
   .livelinks {
-    @apply flex justify-between gap-2;
+    @apply flex justify-between gap-8;
   }
   /* .project-list {
     @apply ring-1 ring-black/15 p-12 shadow-md rounded;
   } */
 
   .project-list__item {
-    @apply border-1 flex gap-16 p-2 relative;
+    @apply flex gap-16 p-2 relative;
   }
 
   .about-cards {
