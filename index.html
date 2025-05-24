@@ -8,77 +8,118 @@
     <title>Portfolio</title>
   </head>
   <body>
-    <div>
-      <header class="">
-        <nav class="flex items-center p-3 nav-list flex-wrap">
-          <a href="index.html" class="text-main active">Joachim Prügl </a>
+    <header class="">
+      <nav class="flex items-center p-3 nav-list flex-wrap">
+        <a href="index.html" class="text-main active">Joachim Prügl </a>
 
-          <ul role="menubar" class="gap-2 hidden sm:flex ml-auto">
-            <li role="presentation">
-              <a href="about.html" role="menuitem" class="navigation-list__item"
-                >About
-              </a>
-            </li>
-            <li role="presentation">
-              <a href="work.html" role="menuitem" class="navigation-list__item"
-                >Work</a
-              >
-            </li>
-            <li role="presentation">
-              <a
-                href="contact.html"
-                role="menuitem"
-                class="navigation-list__item"
-                >Contact</a
-              >
-            </li>
-          </ul>
-          <button class="sm:hidden ml-auto" aria-label="Toggle Menu">
-            <span class="hamburger">X</span>
-          </button>
-        </nav>
-      </header>
-
-      <main>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1900 600"
-          preserveAspectRatio="none"
-          class="fixed inset-0 -z-10 w-full h-full"
-        >
-          <path fill="#707070" d="M0 0h1900v1600H0z" />
-          <path
-            fill="#75dec6"
-            d="M1360 1600h152v-400h26V800H868V400h67V0h965v1600Z"
-          />
-          <path
-            fill="#bdc0db"
-            d="M1325 1600h-56v-400h272V800h-41V400h254V0h146v1600Z"
-          />
-        </svg>
-        <section class="grid sm:grid-cols-[1fr_1.5fr] mt-4 items-center gap-10">
-          <div class="image-wrapper relative mt-7">
-            <img
-              src="./assets/coder_1.svg"
-              alt="Profile picture of Joachim Prügl"
-              class="profile__portrait object-cover"
-            />
-
-            <h1
-              class="mb-3 text-7xl! text-center text-white absolute w-full flex items-center justify-center -top-8 mix-blend-exclusion"
+        <ul role="menubar" class="gap-2 hidden sm:flex ml-auto">
+          <li>
+            <button
+              class="sm:hidden"
+              aria-label="close Menu"
+              onclick="closeModal()"
             >
-              Welcome!
-            </h1>
-          </div>
+              <img src="./assets/close.svg" class="bg-white" />
+            </button>
+          </li>
+          <li role="presentation">
+            <a href="about.html" role="menuitem" class="navigation-list__item"
+              >About
+            </a>
+          </li>
+          <li role="presentation">
+            <a href="work.html" role="menuitem" class="navigation-list__item"
+              >Work</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="contact.html" role="menuitem" class="navigation-list__item"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <button
+          class="sm:hidden ml-auto"
+          aria-label="Toggle Menu"
+          onclick="openModal()"
+        >
+          <img src="./assets/menu.svg" class="bg-white" />
+        </button>
 
-          <div class="flex flex-col items-center sm:items-end gap-11 p-2">
-            <p class="text-pretty text-center sm:text-start">
-              I am <span class="font-bold">Joachim Prügl</span>, a Full-Stack
-              Web Developer from Berlin, Germany.
-            </p>
+        <!-- mobile nav -->
+        <ul
+          role="menubar"
+          class="absolute flex-col hidden w-1/2 top-0 p-4 bg-background-gray h-dvh right-0 text-right text-white"
+          id="menu-list"
+        >
+          <li>
+            <button
+              class="sm:hidden"
+              aria-label="close Menu"
+              onclick="closeModal()"
+            >
+              <img src="./assets/close.svg" class="bg-background-gray" />
+            </button>
+          </li>
+          <li role="presentation">
+            <a href="about.html" role="menuitem" class="navigation-list__item"
+              >About
+            </a>
+          </li>
+          <li role="presentation">
+            <a href="work.html" role="menuitem" class="navigation-list__item"
+              >Work</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="contact.html" role="menuitem" class="navigation-list__item"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-            <ul class="bg-background-main rounded-3xl px-5">
-              <!-- <li>
+    <main>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1900 600"
+        preserveAspectRatio="none"
+        class="fixed inset-0 -z-10 w-full h-full"
+      >
+        <path fill="#707070" d="M0 0h1900v1600H0z" />
+        <path
+          fill="#75dec6"
+          d="M1360 1600h152v-400h26V800H868V400h67V0h965v1600Z"
+        />
+        <path
+          fill="#bdc0db"
+          d="M1325 1600h-56v-400h272V800h-41V400h254V0h146v1600Z"
+        />
+      </svg>
+      <section class="grid sm:grid-cols-[1fr_1.5fr] mt-4 items-center gap-10">
+        <div class="image-wrapper relative mt-7">
+          <img
+            src="./assets/coder_1.svg"
+            alt="Profile picture of Joachim Prügl"
+            class="profile__portrait object-cover"
+          />
+
+          <h1
+            class="mb-3 text-7xl! text-center text-white absolute w-full flex items-center justify-center -top-8 mix-blend-exclusion"
+          >
+            Welcome!
+          </h1>
+        </div>
+
+        <div class="flex flex-col items-center sm:items-end gap-11 p-2">
+          <p class="text-pretty text-center sm:text-start">
+            I am <span class="font-bold">Joachim Prügl</span>, a Full-Stack Web
+            Developer from Berlin, Germany.
+          </p>
+
+          <ul class="bg-background-main rounded-3xl px-5">
+            <!-- <li>
               <a
                 href="https://www.linkedin.com/in/joachim-pruegl/"
                 target="_blank"
@@ -101,163 +142,163 @@
                 />
               </a>
             </li> -->
-              <a href="work.html" class="button1 font-bold text-white text-2xl"
-                >See my projects</a
-              >
-            </ul>
-          </div>
-        </section>
+            <a href="work.html" class="button1 font-bold text-white text-2xl"
+              >See my projects</a
+            >
+          </ul>
+        </div>
+      </section>
+      <div
+        class="stack-images-skillicons mt-29 text-center mb-43 p-4 ml-auto md:grid grid-cols-4"
+      >
+        <h4 class="font-bold mb-8 col-start-3">My Tech Stack</h4>
         <div
-          class="stack-images-skillicons mt-29 text-center mb-43 p-4 ml-auto md:grid grid-cols-4"
+          class="technologies-wrapper grid grid-cols-2 gap-x-6 gap-y-3 justify-center mt-3 col-start-3"
         >
-          <h4 class="font-bold mb-8 col-start-3">My Tech Stack</h4>
-          <div
-            class="technologies-wrapper grid grid-cols-2 gap-x-6 gap-y-3 justify-center mt-3 col-start-3"
-          >
-            <div class="technologies-item">
-              <span class="technologies-span invisible-item">HTML5</span>
-              <img
-                class="technologies-images"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
-                width="20px"
-              />
-            </div>
-            <div class="technologies-item">
-              <span class="technologies-span invisible-item">CSS</span>
-              <img
-                class="technologies-images"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
-                width="20px"
-              />
-            </div>
+          <div class="technologies-item">
+            <span class="technologies-span invisible-item">HTML5</span>
+            <img
+              class="technologies-images"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+              width="20px"
+            />
+          </div>
+          <div class="technologies-item">
+            <span class="technologies-span invisible-item">CSS</span>
+            <img
+              class="technologies-images"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+              width="20px"
+            />
+          </div>
 
-            <div class="technologies-item">
-              <span class="technologies-span invisible-item">JavaScript</span>
-              <img
-                class="technologies-images"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
-                width="20px"
-              />
-            </div>
+          <div class="technologies-item">
+            <span class="technologies-span invisible-item">JavaScript</span>
+            <img
+              class="technologies-images"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+              width="20px"
+            />
+          </div>
 
-            <div class="technologies-item">
-              <span class="technologies-span invisible-item">Typescript</span>
-              <img
-                class="technologies-images"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
-                width="20px"
-              />
-            </div>
+          <div class="technologies-item">
+            <span class="technologies-span invisible-item">Typescript</span>
+            <img
+              class="technologies-images"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+              width="20px"
+            />
+          </div>
 
-            <div class="technologies-item">
-              <span class="technologies-span invisible-item">React</span>
-              <img
-                class="technologies-images"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
-                width="20px"
-              />
-            </div>
+          <div class="technologies-item">
+            <span class="technologies-span invisible-item">React</span>
+            <img
+              class="technologies-images"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+              width="20px"
+            />
+          </div>
 
-            <div class="technologies-item">
-              <span class="technologies-span invisible-item">Angular</span>
-              <img
-                class="technologies-images"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg"
-                width="20px"
-              />
-            </div>
+          <div class="technologies-item">
+            <span class="technologies-span invisible-item">Angular</span>
+            <img
+              class="technologies-images"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg"
+              width="20px"
+            />
+          </div>
 
-            <div class="technologies-item">
-              <span class="technologies-span invisible-item">Mongo DB</span>
-              <img
-                class="technologies-images"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
-                width="20px"
-              />
-            </div>
+          <div class="technologies-item">
+            <span class="technologies-span invisible-item">Mongo DB</span>
+            <img
+              class="technologies-images"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
+              width="20px"
+            />
+          </div>
 
-            <div class="technologies-item">
-              <span class="technologies-span invisible-item">NodeJS</span>
-              <img
-                class="technologies-images"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
-                width="20px"
-              />
-            </div>
+          <div class="technologies-item">
+            <span class="technologies-span invisible-item">NodeJS</span>
+            <img
+              class="technologies-images"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
+              width="20px"
+            />
+          </div>
 
-            <div class="technologies-item">
-              <span class="technologies-span invisible-item">React Native</span>
-              <img
-                class="technologies-images"
-                src="img/logos/react native.png"
-                width="20px"
-              />
-            </div>
+          <div class="technologies-item">
+            <span class="technologies-span invisible-item">React Native</span>
+            <img
+              class="technologies-images"
+              src="img/logos/react native.png"
+              width="20px"
+            />
+          </div>
 
-            <div class="technologies-item">
-              <span class="technologies-span invisible-item">Firebase</span>
-              <img
-                class="technologies-images"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg"
-                width="20px"
-              />
-            </div>
+          <div class="technologies-item">
+            <span class="technologies-span invisible-item">Firebase</span>
+            <img
+              class="technologies-images"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg"
+              width="20px"
+            />
           </div>
         </div>
-      </main>
+      </div>
+    </main>
 
-      <footer class="page-footer">
-        <div class="flex leading-5">
-          <div class="footer-links">
-            <a class="legal-info" href="legal-info.html">Impressum</a>
-            <a
-              class=""
-              href="./assets/Pruegl-Joachim-Resumee.pdf"
-              download
-              target="_blank"
-              >Download Resume</a
-            >
-          </div>
-          <div
-            class="social-media flex sm:flex-row justify-end gap-y-1 gap-x-4 w-full flex-col items-end"
+    <footer class="page-footer">
+      <div class="flex leading-5">
+        <div class="footer-links">
+          <a class="legal-info" href="legal-info.html">Impressum</a>
+          <a
+            class=""
+            href="./assets/Pruegl-Joachim-Resumee.pdf"
+            download
+            target="_blank"
+            >Download Resume</a
           >
-            <p>Find me on</p>
+        </div>
+        <div
+          class="social-media flex sm:flex-row justify-end gap-y-1 gap-x-4 w-full flex-col items-end"
+        >
+          <p>Find me on</p>
 
-            <div class="flex-row flex">
-              <a href="https://github.com/ilsegaertner" target="_blank"
+          <div class="flex-row flex">
+            <a href="https://github.com/ilsegaertner" target="_blank"
+              ><img
+                src="./assets/brand-github.svg"
+                alt="Logo and Link for the Github platform"
+                width="25"
+                height="25" /></a
+            ><span
+              ><a href="https://twitter.com/JoachimPrugl" target="_blank"
                 ><img
-                  src="./assets/brand-github.svg"
-                  alt="Logo and Link for the Github platform"
+                  src="./assets/brand-x.svg"
+                  alt="Logo and Link for the Twitter platform"
+                  width="25"
+                  height="25" /></a></span
+            ><span
+              ><a
+                href="https://www.linkedin.com/in/joachim-pr%C3%BCgl/"
+                target="_blank"
+                ><img
+                  src="./assets/brand-linkedin.svg"
+                  alt="Logo and Link for the LinkedIn platform"
                   width="25"
                   height="25" /></a
-              ><span
-                ><a href="https://twitter.com/JoachimPrugl" target="_blank"
-                  ><img
-                    src="./assets/brand-x.svg"
-                    alt="Logo and Link for the Twitter platform"
-                    width="25"
-                    height="25" /></a></span
-              ><span
-                ><a
-                  href="https://www.linkedin.com/in/joachim-pr%C3%BCgl/"
-                  target="_blank"
-                  ><img
-                    src="./assets/brand-linkedin.svg"
-                    alt="Logo and Link for the LinkedIn platform"
-                    width="25"
-                    height="25" /></a
-              ></span>
-            </div>
+            ></span>
           </div>
         </div>
-        <div
-          class="text-xs -mt-8 text-center sm:-mt-4 pb-3 text-gray-300 flex flex-col sm:flex-row justify-center gap-x-1"
-        >
-          <p>© Copyright 2024 |</p>
-          <p>joachimpruegl.me</p>
-        </div>
-      </footer>
-    </div>
+      </div>
+      <div
+        class="text-xs -mt-8 text-center sm:-mt-4 pb-3 text-gray-300 flex flex-col sm:flex-row justify-center gap-x-1"
+      >
+        <p>© Copyright 2024 |</p>
+        <p>joachimpruegl.me</p>
+      </div>
+    </footer>
+
     <script src="js/scripts.js" defer></script>
     <script type="module" src="/src/main.js"></script>
   </body>
