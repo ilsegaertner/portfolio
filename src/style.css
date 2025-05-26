@@ -69,6 +69,18 @@ body {
   /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='296' height='296' viewBox='0 0 100 100'%3E%3Cg stroke='%23EEE4DE' stroke-width='2.1' stroke-opacity='0.26'%3E%3Crect fill='%23FFFDF5' x='-60' y='-60' width='66' height='240'/%3E%3C/g%3E%3C/svg%3E"); */
 }
 
+/* body::after {
+  content: "";
+  width: 1299px;
+  height: 1300px;
+  clip-path: ellipse(207px 179px at 0% 0%);
+  top: 0;
+  z-index: 10;
+  mix-blend-mode: difference;
+  position: absolute;
+  background-color: #707070;
+} */
+
 .project-list > * {
   /* margin-block: calc(var(--spacing) * 10); */
   /* border: 1px solid black; */
@@ -129,18 +141,17 @@ h1 {
   /* line-height: 1.1; */
 }
 
-h1::after {
+/* h1::after {
   content: "";
   position: absolute;
   width: 106%;
   height: 240px;
-  /* rotate: -5deg; */
   transform: scale(1.5);
   left: 0px;
   z-index: 0;
   background-color: #9d9d9d2e;
   top: -101px;
-}
+} */
 
 /* footer > * {
   color: white;
@@ -228,6 +239,7 @@ button:focus-visible {
   /* background: rgb(141, 137, 212);
   clip-path: polygon(505% 44px, 7% 3px, -1% 381px); */
   border: 1px solid;
+  gap: clamp(24px, 5vw, 4rem);
 }
 
 #menu-list li:hover {
@@ -249,6 +261,7 @@ button:focus-visible {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: calc(var(--spacing) * 2);
 }
 
 .project-picture-wrapper img {
@@ -333,6 +346,10 @@ button:focus-visible {
     @apply p-3;
   }
 
+  h1 {
+    @apply px-3;
+  }
+
   .skill-flex-container {
     @apply gap-2;
   }
@@ -385,7 +402,7 @@ button:focus-visible {
   }
 
   footer {
-    @apply p-3;
+    @apply p-3 mt-20;
   }
 
   .footer-links {
@@ -400,7 +417,7 @@ button:focus-visible {
   } */
 
   .project-list__item {
-    @apply flex gap-16 p-2 relative;
+    @apply flex gap-16 p-2 relative bg-white;
   }
 
   .about-cards {
