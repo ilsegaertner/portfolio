@@ -62,6 +62,7 @@
 body {
   margin: auto;
   color: var(--main-text);
+  /* font-size: clamp(1rem, 1.4vw, 1.6vw); */
   /* padding-inline: calc(var(--spacing) * 2); */
   /* max-width: 1000px; */
   background-color: #ffffff;
@@ -81,6 +82,18 @@ header ul a:active,
   color: #535bf2;
 }
 
+.intro-section p {
+  font-size: clamp(1rem, 1.1vw, 1.6vw);
+  max-width: 70%;
+}
+.intro-section p span {
+  font-size: (20px, 1.7vw, 1.8rem);
+}
+
+.call-to-action {
+  font-size: clamp(1.7rem, 1.7vw, 32px);
+}
+
 /* 
 body {
   margin: 0;
@@ -92,6 +105,9 @@ body {
 
 a {
   font-weight: 500;
+  font-size: clamp(1rem, 1.4vw, 20px);
+  /* font-size: clamp(1.7rem, 1.7vw, 32px); */
+
   /* color: #646cff; */
   /* color: white; */
   /* color: red; */
@@ -103,11 +119,27 @@ a:hover {
 
 main {
   padding-top: calc(var(--spacing) * 19);
+  position: relative;
+  overflow: hidden;
 }
 
 h1 {
-  font-size: 3.2em;
+  /* font-size: 3.2em; */
+  font-size: clamp(3.3vw, 3.2rem, 3.3rem);
   /* line-height: 1.1; */
+}
+
+h1::after {
+  content: "";
+  position: absolute;
+  width: 106%;
+  height: 240px;
+  /* rotate: -5deg; */
+  transform: scale(1.5);
+  left: 0px;
+  z-index: 0;
+  background-color: #9d9d9d2e;
+  top: -101px;
 }
 
 /* footer > * {
@@ -140,6 +172,14 @@ h1 {
 
 .read-the-docs {
   color: #888;
+}
+
+.unclamped {
+  font-size: 1rem;
+}
+
+.clamped {
+  font-size: clamp(1.2rem, 1.4vw, 22px);
 }
 
 /* button {
@@ -179,13 +219,15 @@ button:focus-visible {
   align-items: center;
   gap: 10px; */
   display: grid;
-  grid-template-columns: 2fr auto;
-  justify-items: start;
+  /* grid-template-columns: 2fr auto; */
+  grid-template-columns: repeat(auto-fit, minmax(clamp(62px, 4vw, 394px), 1fr));
+  justify-items: center;
 }
 
 .project-list__item {
-  background: rgb(141, 137, 212);
-  clip-path: polygon(505% 44px, 7% 3px, -1% 381px);
+  /* background: rgb(141, 137, 212);
+  clip-path: polygon(505% 44px, 7% 3px, -1% 381px); */
+  border: 1px solid;
 }
 
 #menu-list li:hover {
@@ -257,6 +299,23 @@ button:focus-visible {
 
 .send-mail {
   margin: -1rem 0rem 0rem 7rem;
+}
+
+.welcome {
+  font-size: clamp(21px, 15vw, 4.5rem);
+  overflow: hidden;
+}
+
+.technologies-span {
+  font-size: clamp(1vw, 1rem, 2rem);
+}
+
+.technologies-wrapper {
+  grid-template-columns: repeat(auto-fit, minmax(60px, auto));
+}
+
+.responsive-gap {
+  gap: clamp(calc(var(--spacing) * 11), 6vw, 14vw);
 }
 
 /* .about-cards img {
@@ -362,5 +421,9 @@ button:focus-visible {
 
   #menu-list li {
     @apply p-2 rounded;
+  }
+
+  .technologies-item {
+    @apply gap-2 py-1;
   }
 }
