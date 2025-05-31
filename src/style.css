@@ -336,15 +336,15 @@ button:focus-visible {
 } */
 
 @layer utilities {
-  header,
+  /* header,
   main,
   footer {
     @apply px-2;
-  }
+  } */
 
-  main {
+  /* main {
     @apply p-3;
-  }
+  } */
 
   h1 {
     @apply px-3;
@@ -390,7 +390,7 @@ button:focus-visible {
   }
 
   .links-wrapper {
-    @apply flex justify-around text-white w-full  absolute bottom-0 left-0 p-1 px-2 bg-gradient-to-r from-[#213547]  to-amber-300;
+    @apply flex justify-around text-white w-full  absolute bottom-0 left-0 p-1 px-2 bg-gradient-to-r from-gray-600  to-gray-200;
   }
 
   body {
@@ -438,6 +438,10 @@ button:focus-visible {
 
   #menu-list li {
     @apply p-2 rounded;
+  }
+
+  .skill-wrapper {
+    @apply self-start p-3  grid grid-cols-subgrid ring-1;
   }
 
   .technologies-item {
