@@ -445,7 +445,7 @@ button:focus-visible {
   }
 
   .education-item {
-    @apply mb-3;
+    @apply mb-3 p-2;
   }
   .education-item ul {
     @apply mt-2;
