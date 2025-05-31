@@ -443,4 +443,11 @@ button:focus-visible {
   .technologies-item {
     @apply gap-2 py-1;
   }
+
+  .education-item {
+    @apply mb-3;
+  }
+  .education-item ul {
+    @apply mt-2;
+  }
 }

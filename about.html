@@ -57,17 +57,19 @@
     </svg>
 
     <main class="">
-      <div class="mx-auto max-w-2xl sm:px-6 lg:max-w-7xl lg:px-8 mb-70">
-        <h1 class="text-4xl py-20 tracking-tight text-pretty sm:text-5xl">
+      <div class="mx-auto mb-70">
+        <h1
+          class="text-4xl py-20 tracking-tight text-pretty sm:text-5xl text-center"
+        >
           About Me
         </h1>
         <div
-          class="mt-10 grid grid-cols-1 sm:mt-16 lg:grid-cols-8 lg:grid-rows-2 gap-y-10 gap-x-5"
+          class="mt-10 grid grid-cols-1 sm:mt-16 lg:grid-cols-8 lg:grid-rows-2 gap-y-40 gap-x-5"
         >
-          <div class="img-wrapper">
+          <div class="img-wrapper p-3">
             <img class="h-70 object-cover" src="./img/me4.webp" alt="" />
           </div>
-          <div class="col-span-4">
+          <div class="col-span-4 p-3">
             <h3 class="text-sm/4 font-semibold text-gray-400">WebDev path</h3>
             <p class="mt-2 text-lg font-medium tracking-tight clamped">
               Hey, I’m Joachim — a web developer with roots in arts and sound,
@@ -95,7 +97,9 @@
             </p>
           </div>
           <!-- Frontend Skills -->
-          <div class="col-span-2 col-start-7 grid grid-cols-subgrid self-start">
+          <div
+            class="col-span-2 col-start-7 grid grid-cols-subgrid self-start p-3 -mt-18"
+          >
             <img class="object-cover" src="./assets/frontend.svg" alt="" />
             <div class="col-span-2">
               <h2 class="text-sm/4 font-semibold text-gray-400">Skills</h2>
@@ -290,7 +294,9 @@
             </div>
           </div>
           <!-- Backend Skills -->
-          <div class="grid grid-cols-subgrid row-start-2 col-span-2 self-start">
+          <div
+            class="grid grid-cols-subgrid row-start-2 col-span-2 self-start p-3 -mt-14"
+          >
             <img class="object-cover" src="./assets/backend2.svg" alt="" />
             <div class="col-span-2">
               <h2 class="text-sm/4 font-semibold text-gray-400">Skills</h2>
@@ -410,14 +416,14 @@
           </div>
 
           <!-- Text rest -->
-          <div class="col-start-4 col-span-4">
+          <div class="col-start-4 col-span-4 p-3">
             <div class="mt-2 max-w-lg text-sm/6 text-gray-800">
               <p>
                 I’m especially drawn to intercultural and social contexts.
                 Whether facilitating communication in diverse group settings or
-                mentoring language learners in Kenya and Germany, I’ve always
-                been interested in the nuances of human connection, and how
-                environments can be shaped to support it.
+                mentoring language learners, I’ve always been interested in the
+                nuances of human connection, and how environments can be shaped
+                to support it.
               </p>
               <br />
               <p>
@@ -438,6 +444,14 @@
               </p>
             </div>
           </div>
+
+          <a class="col-start-3 col-span-2 !text-4xl" href=""
+            >See my Projects</a
+          >
+
+          <a class="col-start-6 col-span-2 !text-4xl" href=""
+            >Download resumee</a
+          >
         </div>
       </div>
     </main>
