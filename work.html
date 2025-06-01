@@ -56,7 +56,7 @@
         d="M2021 5600h-85V4200h415V2800h-62V1400h388V0h223v5600Z"
       />
     </svg> -->
-    <main class="sm:grid grid-cols-2 gap-x-3">
+    <main class="sm:grid grid-cols-2 gap-x-3 lg:grid-cols-8">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1900 600"
@@ -74,15 +74,17 @@
         />
       </svg>
 
-      <h1 class="text-balance text-center py-20 leading-12 col-span-2">
+      <h1
+        class="text-balance text-center py-20 leading-12 col-span-4 lg:col-start-3"
+      >
         What I've been working on...
       </h1>
 
       <ul
-        class="project-list grid sm:grid-cols-2 lg:grid-cols-3 gap-x-16 gap-y-4 my-10 col-span-3 px-3"
+        class="project-list grid sm:grid-cols-2 lg:grid-cols-subgrid gap-y-4 my-10 col-start-1 col-end-9 px-3"
       >
         <li id="Weather-App" class="project-list__item">
-          <div>
+          <div class="card-heading-wrapper">
             <h2 class="gradient-title">
               <a href="weather-app.html">World Weather App</a>
             </h2>
@@ -121,7 +123,7 @@
           </picture>
           <div class="links-wrapper">
             <div class="livelinks">
-              <div>
+              <div class="flex flex-col-reverse flex-wrap">
                 <a
                   href="https://github.com/ilsegaertner/world-weather"
                   target="_blank"
@@ -139,7 +141,7 @@
         </li>
 
         <li id="Angular-App" class="project-list__item">
-          <div>
+          <div class="card-heading-wrapper">
             <h2 class="gradient-title">
               <a href="cub-angular.html">Film Data Angular</a><br />
             </h2>
@@ -183,7 +185,7 @@
           </picture>
           <div class="links-wrapper">
             <div class="livelinks">
-              <div>
+              <div class="flex flex-col-reverse flex-wrap">
                 <a
                   href="https://github.com/ilsegaertner/CUB-Film-Angular-client"
                   target="_blank"
@@ -201,7 +203,7 @@
         </li>
 
         <li id="Meet-App" class="project-list__item">
-          <div>
+          <div class="card-heading-wrapper">
             <h2 class="gradient-title">
               <a href="./meet.html">Meet App</a><br />
             </h2>
@@ -235,7 +237,7 @@
           </picture>
           <div class="links-wrapper">
             <div class="livelinks">
-              <div>
+              <div class="flex flex-col-reverse flex-wrap">
                 <a
                   href="https://github.com/ilsegaertner/Meet-app"
                   target="_blank"
@@ -251,7 +253,7 @@
         </li>
 
         <li id="Chat-App" class="project-list__item">
-          <div>
+          <div class="card-heading-wrapper">
             <h2 class="gradient-title">
               <a href="./mobile-chat-app.html">Mobile Chat App</a>
             </h2>
@@ -288,7 +290,7 @@
         </li>
 
         <li id="React-App" class="project-list__item">
-          <div>
+          <div class="card-heading-wrapper">
             <h2 class="gradient-title">
               <a href="./cub-react.html">CUB Film Data React</a><br />
             </h2>
@@ -329,26 +331,117 @@
           </picture>
           <div class="links-wrapper">
             <div class="livelinks">
-              <div>
+              <div class="flex flex-col flex-wrap">
                 <a
                   href="https://github.com/ilsegaertner/CUB-film-data-client"
                   target="_blank"
-                  >Github</a
-                >
-                <a href="https://cub-film-data.netlify.app/" target="_blank"
-                  >Live</a
-                >
+                  class="card-link"
+                  >Github
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="15"
+                    height="15"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-link"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M9 15l6 -6" />
+                    <path
+                      d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464"
+                    />
+                    <path
+                      d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://cub-film-data.netlify.app/"
+                  target="_blank"
+                  class="card-link"
+                  >Live
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="15"
+                    height="15"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-link"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M9 15l6 -6" />
+                    <path
+                      d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464"
+                    />
+                    <path
+                      d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"
+                    />
+                  </svg>
+                </a>
 
-                <a href="cub-casestudy.html" target="_blank">Case Study</a>
+                <a href="cub-casestudy.html" target="_blank" class="card-link">
+                  Case Study
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="15"
+                    height="15"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-link"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M9 15l6 -6" />
+                    <path
+                      d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464"
+                    />
+                    <path
+                      d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"
+                    />
+                  </svg>
+                </a>
               </div>
-              <a class="button2" href="./cub-react.html">View</a>
+              <a class="card-link" href="./cub-react.html"
+                >View
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-link"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M9 15l6 -6" />
+                  <path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464" />
+                  <path
+                    d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"
+                  />
+                </svg>
+              </a>
             </div>
           </div>
         </li>
       </ul>
 
       <section
-        class="flex flex-col items-center font-medium py-70 text-center bg-gray-100 col-start-2 -mt-50 mx-3 sm:mx-0"
+        class="flex flex-col items-center font-medium py-70 text-center bg-gray-100 col-span-9 -mt-50 mx-3 sm:mx-0"
       >
         <div class="flex items-center gap-9 w-full justify-center interested">
           <img
@@ -361,9 +454,12 @@
           <span class="text-2xl">Interested in working together? </span>
         </div>
         <div class="flex items-center gap-3.5 send-mail">
-          <a href="mailto:joachimpruegl@gmail.com" class="text-xl"
-            >Send me a mail</a
+          <a
+            href="mailto:joachimpruegl@gmail.com"
+            class="text-xl call-to-action-secondary"
           >
+            Send me a mail
+          </a>
           <img
             src="./assets/mail3.svg"
             width="25px
