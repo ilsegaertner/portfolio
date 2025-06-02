@@ -61,7 +61,6 @@
 body {
   margin: auto;
   color: var(--main-text);
-
   background-color: #ffffff;
 }
 
@@ -183,7 +182,7 @@ button:focus-visible {
 
   rotate: 7deg;
   /* margin: 0 auto; */
-  margin: -3px 18px auto;
+  /* margin: -3px 18px auto; */
   object-fit: cover;
 }
 
