@@ -81,7 +81,7 @@ header ul a:active,
   font-size: (20px, 1.7vw, 1.8rem);
 }
 
-.call-to-action {
+.call-to-action-main {
   font-size: clamp(1.7rem, 1.7vw, 32px);
 }
 
@@ -159,9 +159,9 @@ button:focus-visible {
   a:hover {
     color: #747bff;
   }
-  button {
+  /* button {
     background-color: #f9f9f9;
-  }
+  } */
 }
 
 .technologies-item {
@@ -187,8 +187,11 @@ button:focus-visible {
 }
 
 .project-picture-wrapper {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
+  overflow: hidden;
+  width: 100%;
+  height: 180px;
 
   padding: calc(var(--spacing) * 2);
 }
@@ -236,7 +239,7 @@ button:focus-visible {
 }
 
 .responsive-gap {
-  gap: clamp(calc(var(--spacing) * 11), 6vw, 14vw);
+  gap: clamp(calc(var(--spacing) * 14), 6vw, 14vw);
 }
 
 .project-list li:nth-of-type(1) {
@@ -293,6 +296,17 @@ button:focus-visible {
 }
 
 @layer utilities {
+  /* .project-list li:nth-of-type(1),
+  .project-list li:nth-of-type(2),
+  .project-list li:nth-of-type(3),
+  .project-list li:nth-of-type(4),
+  .project-list li:nth-of-type(5),
+  .project-list li:nth-of-type(n) .card-heading-wrapper,
+  .project-list li:nth-of-type(n) .links-wrapper,
+  .project-list li:nth-of-type(n) .project-picture-wrapper {
+    @apply col-span-1 col-start-1 col-end-1;
+  } */
+
   h1 {
     @apply px-3;
   }
@@ -341,7 +355,7 @@ button:focus-visible {
   }
 
   picture {
-    @apply w-full max-h-40;
+    @apply w-full;
   }
 
   footer {
@@ -372,10 +386,10 @@ button:focus-visible {
     @apply ring-gray-400 shadow-sm cursor-pointer;
   }
 
-  .card-heading-wrapper,
+  /* .card-heading-wrapper,
   .project-picture-wrapper {
     @apply basis-1/2;
-  }
+  } */
 
   .card-heading-wrapper h2 {
     @apply leading-5 pb-2;
@@ -397,8 +411,12 @@ button:focus-visible {
     @apply ring-1 ring-black/15;
   }
 
-  .details > * {
+  /* .details > * {
     @apply col-start-1 col-span-2;
+  } */
+
+  .details {
+    @apply self-start;
   }
 
   .bullet-list > * {
@@ -406,7 +424,7 @@ button:focus-visible {
   }
 
   .details-subheading {
-    @apply font-semibold py-3;
+    @apply font-semibold py-8 col-span-2;
   }
 
   .education-item ul {
@@ -442,5 +460,9 @@ button:focus-visible {
 
   .call-to-action-secondary {
     @apply rounded-md bg-white px-2.5 py-1.5 text-sm font-semibold text-gray-900 shadow-xs ring-1 ring-gray-300 ring-inset hover:bg-gray-50;
+  }
+
+  .picture-wrapper-details {
+    @apply snap-start overflow-hidden min-w-55 sm:min-w-auto rounded-md min-h-76 sm:min-h-auto max-h-70 cursor-grab;
   }
 }

@@ -56,17 +56,17 @@
       />
     </svg>
 
-    <main class="mx-auto mb-70">
+    <main class="mx-auto mb-70 p-3">
       <h1
         class="text-4xl py-20 tracking-tight text-pretty sm:text-5xl text-center"
       >
         About Me
       </h1>
       <div
-        class="mt-10 grid grid-cols-1 sm:grid-cols-4 md:grid-cols-6 sm:mt-16 lg:grid-cols-8 lg:grid-rows-auto gap-x-3 sm:gap-x-6 gap-y-18 sm:gap-y-30 md:gap-y-50 lg:gap-y-60"
+        class="mt-10 sm:grid sm:grid-cols-1 md:grid-cols-6 sm:mt-16 lg:grid-cols-8 lg:grid-rows-auto gap-x-3 sm:gap-x-6 gap-y-18 sm:gap-y-30"
       >
-        <div class="img-wrapper p-1 sm:p-3 col-span-2">
-          <img class="h-70 object-cover" src="./img/me4.webp" alt="" />
+        <div class="img-wrapper p-1 col-span-4 sm:p-3 sm:col-span-2">
+          <img class="sm:h-70 object-cover" src="./img/me4.webp" alt="" />
         </div>
         <div class="col-span-4 sm:col-span-4 p-1 sm:p-3">
           <h3 class="text-sm/4 font-semibold text-gray-400">WebDev path</h3>
@@ -88,18 +88,9 @@
         </div>
 
         <div
-          class="row-start-2 grid grid-cols-subgrid col-start-1 col-end-9 bg-gray-400 pt-60 pb-30 px-3 text-white"
+          class="row-start-2 sm:grid sm:grid-cols-subgrid col-start-1 col-end-9 bg-gray-400 py-11 px-3 text-white"
         >
-          <!-- <div class="relative">
-  <div class="absolute inset-0 flex items-center" aria-hidden="true">
-    <div class="w-full border-t border-gray-300"></div>
-  </div>
-  <div class="relative flex justify-center">
-    <span class="bg-white px-3 text-base font-semibold text-gray-900">Skills</span>
-  </div>
-</div> -->
-
-          <h2 class="font-bold text-4xl lg:-mt-33 text-white">Skills</h2>
+          <h2 class="font-bold text-4xl text-white">Skills</h2>
           <!-- Frontend Skills -->
           <div
             class="col-span-2 sm:col-span-3 col-start-1 sm:col-start-3 skill-wrapper"
@@ -419,7 +410,7 @@
         </div>
         <!-- Text rest -->
         <div
-          class="col-start-1 col-span-7 p-3 row-start-3 grid grid-cols-subgrid text-sm/6"
+          class="col-start-1 col-span-7 row-start-3 sm:grid sm:grid-cols-subgrid text-sm/6 mt-10"
         >
           <p class="col-start-1 col-span-3">
             After completing a Full Stack Web Development Bootcamp, I deepened
@@ -457,11 +448,14 @@
       </div>
     </main>
     <div
-      class="flex justify-center gap-10 bg-gradient-to-b from-gray-800 to-gray-400 text-white min-h-30 items-center mb-70"
+      class="flex flex-col sm:flex-row justify-center gap-10 min-h-30 items-center mb-70 p-10"
     >
-      <a class="!text-4xl" href="work.html">See my Projects</a>
-
-      <a class="!text-4xl" href="">Download resumee</a>
+      <button class="call-to-action-secondary">
+        <a class="" href="">Download resumee</a>
+      </button>
+      <button class="call-to-action">
+        <a class="" href="work.html">See my Projects</a>
+      </button>
     </div>
 
     <img src="./assets/computer_illustration.svg" class="m-auto" width="500" />
