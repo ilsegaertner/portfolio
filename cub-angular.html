@@ -5,7 +5,7 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./src/style.css" rel="stylesheet" />
-    <title>Portfolio</title>
+    <title>Joachim Prügl | Frontend Developer Portfolio</title>
   </head>
 
   <body>
@@ -56,17 +56,19 @@
       />
     </svg>
 
-    <main class="sm:grid sm:grid-cols-2 gap-y-7 gap-x-19 p-5">
-      <h1 class="p-0">CUB Film Data Angular</h1>
-      <h2 class="col-start-1">
-        An Angular Application For An Arthouse Movie Database
+    <main class="sm:grid sm:grid-cols-3 gap-y-0 gap-x-19 p-5">
+      <h1 class="p-0 leading-14 col-span-2 font-bold">CUB Film Data Angular</h1>
+
+      <h2 class="col-start-1 col-span-2 text-balance">
+        An Angular App for Exploring Arthouse Films
       </h2>
+      <p class="card-stack-info col-start-1 col-span-2">
+        React · JavaScript · MongoDB · Express · CSS
+      </p>
 
-      <section class="relative col-span-2">
-        <a class="" href="./work.html">Back</a>
-
-        <div class="mt-8 sm:flex gap-20">
-          <p class="flex-1">
+      <section class="relative col-span-2 col-start-1 grid grid-cols-subgrid">
+        <div class="mt-8 grid grid-cols-subgrid col-start-1 col-span-2 details">
+          <!-- <p class="flex-1">
             <span class="font-weight-600">CUB Film Data (Angular)</span>, an
             Angular-based project, stands as the frontend interface of a movie
             database (which I built previously as
@@ -91,19 +93,56 @@
             helped me to visualize necessary interfaces and routes (see link),
             aiding in the understanding of required operations and serving as a
             helpful visualization tool.
+          </p> -->
+          <h3 class="details-subheading">What It Is</h3>
+          <p class="flex-1">
+            CUB Film Data is a single-page web app that allows users to browse
+            arthouse films, learn more about directors and genres, and manage
+            their user account. It connects to a REST API I built previously and
+            serves as a frontend interface for movie exploration.
           </p>
-
-          <picture class="-mt-20 flex-1 p-10 pb-0">
-            <img
-              src="img/documentation/CUB-Film-Angular-client_documentation/CUB-Film-Angular-client_documentation_08.webp"
-              alt="Image of the project called CUB Angular"
-              class="project-images"
-            />
-          </picture>
+          <h4 class="details-subheading">What I Did</h4>
+          <p>
+            I built the entire frontend using Angular and TypeScript. I
+            structured the app into modular components — including a main view,
+            movie cards, modals for director/genre details, and a profile
+            section. I also handled routing, form validation, and API
+            integration.
+          </p>
+          <h5 class="details-subheading">Key Features</h5>
+          <ul class="bullet-list">
+            <li>User registration, login, and profile updates</li>
+            <li>Movie browsing with detailed views (using Angular modals)</li>
+            <li>Filtering/search functionality</li>
+            <li>Account management (including delete account)</li>
+          </ul>
+          <h6 class="details-subheading">Why</h6>
+          <p>
+            This was my first major project using Angular after working in
+            React. I quickly saw the strengths of Angular’s architecture —
+            particularly its separation of concerns and use of services. I also
+            learned to work more systematically: planning user flows with
+            stories, organizing SCSS using design tokens, and thinking in
+            reusable UI modules.
+          </p>
+          <h6 class="details-subheading">What I took away</h6>
+          <p>
+            This project deepened my understanding of TypeScript and client-side
+            architecture. It also taught me to balance structure and flexibility
+            — not just in code, but in UX. Most importantly, it gave me
+            confidence in building real-world apps from scratch.
+          </p>
         </div>
       </section>
 
-      <div class="sm:flex items-center w-full self-start justify-between">
+      <div class="flex flex-col gap-20 justify-between">
+        <picture class="">
+          <img
+            src="img/documentation/CUB-Film-Angular-client_documentation/CUB-Film-Angular-client_documentation_08.webp"
+            alt="Image of the project called CUB Angular"
+            class="project-images"
+          />
+        </picture>
         <div class="livelinks">
           <a
             href="https://github.com/ilsegaertner/CUB-Film-Angular-client"
@@ -174,9 +213,13 @@
           </div>
         </div>
       </div>
-
+      <a
+        class="col-start-1 items-start mt-20 call-to-action-secondary"
+        href="./work.html"
+        >Back</a
+      >
       <section
-        class="flex flex-col py-30 w-full items-center justify-around font-medium mb-30 bg-gray-100 mt-80"
+        class="grid grid-cols-subgrid col-span-4 py-30 w-full items-center font-medium mb-30 bg-gray-100 mt-80"
       >
         <div class="flex items-center gap-9 justify-center flex-col -mt-55">
           <img

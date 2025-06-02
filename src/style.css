@@ -265,10 +265,13 @@ button:focus-visible {
   grid-column: span 2;
 }
 .project-list li:nth-of-type(3) {
-  grid-column: 4/6;
+  grid-column: 1/6;
+}
+.project-list li:nth-of-type(3) .card-heading-wrapper {
+  grid-column: span 4;
 }
 .project-list li:nth-of-type(3) .links-wrapper {
-  grid-column: span 2;
+  grid-column: span 5;
 }
 .project-list li:nth-of-type(4) {
   grid-column: 6/9;
@@ -331,7 +334,7 @@ button:focus-visible {
     @apply text-2xl mb-2 font-bold bg-gradient-to-r from-blue-400 to-fuchsia-400 bg-clip-text text-transparent;
   } */
   .gradient-title {
-    @apply text-2xl mb-2 font-bold;
+    @apply text-2xl font-bold;
   }
 
   body {
@@ -376,11 +379,15 @@ button:focus-visible {
   }
 
   .card-heading-wrapper h2 {
-    @apply leading-5 pb-5;
+    @apply leading-5 pb-2;
   }
 
   .card-link {
     @apply flex flex-row items-center gap-1;
+  }
+
+  .card-stack-info {
+    @apply text-gray-500 text-xs py-2;
   }
 
   .about-cards {
@@ -389,6 +396,18 @@ button:focus-visible {
 
   .ring-default {
     @apply ring-1 ring-black/15;
+  }
+
+  .details > * {
+    @apply col-start-1 col-span-2;
+  }
+
+  .bullet-list > * {
+    @apply list-disc ml-8;
+  }
+
+  .details-subheading {
+    @apply font-semibold py-3;
   }
 
   .education-item ul {
@@ -419,7 +438,7 @@ button:focus-visible {
   }
 
   .call-to-action {
-    @apply rounded-md bg-indigo-50 px-3 py-2 text-sm font-semibold text-indigo-600 shadow-xs hover:bg-indigo-100;
+    @apply rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white  shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600;
   }
 
   .call-to-action-secondary {
