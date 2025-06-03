@@ -10,10 +10,19 @@
 
   <body class="aboutpage">
     <header class="">
-      <nav class="flex items-center p-3 nav-list flex-wrap">
+      <nav class="flex items-center p-3 nav-list flex-wrap z-40 relative">
         <a href="index.html" class="text-main">Joachim Prügl </a>
 
-        <ul role="menubar" class="gap-2 hidden sm:flex ml-auto">
+        <ul role="menubar" class="gap-8 hidden sm:flex ml-auto">
+          <li>
+            <button
+              class="sm:hidden"
+              aria-label="close Menu"
+              onclick="closeModal()"
+            >
+              <img src="./assets/close.svg" class="bg-white" />
+            </button>
+          </li>
           <li role="presentation">
             <a
               href="about.html"
@@ -33,10 +42,60 @@
             >
           </li>
         </ul>
-        <button class="sm:hidden ml-auto" aria-label="Toggle Menu">
-          <span class="hamburger">X</span>
+        <button
+          class="sm:hidden ml-auto"
+          aria-label="Toggle Menu"
+          onclick="openModal()"
+        >
+          <img src="./assets/menu.svg" class="bg-white" />
         </button>
       </nav>
+
+      <div
+        id="blur-overlay"
+        class="fixed inset-0 z-30 bg-transparent backdrop-blur-2xl opacity-0 pointer-events-none transition-opacity duration-100 sm:hidden"
+        aria-hidden="true"
+      ></div>
+
+      <!-- mobile nav -->
+      <ul
+        role="menubar"
+        class="fixed hover:cursor-pointer flex-col opacity-0 translate-x-full pointer-events-none transition-all duration-200 ease-in-out w-2/3 z-50 top-0 p-4 bg-[#262828] h-lvh right-0 text-right text-white sm:hidden"
+        id="menu-list"
+      >
+        <button
+          class="sm:hidden"
+          aria-label="close Menu"
+          onclick="closeModal()"
+        >
+          <img src="./assets/close2.svg" class="text-white" />
+        </button>
+
+        <li role="presentation">
+          <a
+            href="about.html"
+            role="menuitem"
+            class="navigation-list__item nav-mobile-item"
+            >About
+          </a>
+        </li>
+        <li role="presentation">
+          <a
+            href="work.html"
+            role="menuitem"
+            class="navigation-list__item nav-mobile-item"
+            >Work</a
+          >
+        </li>
+        <li role="presentation">
+          <a
+            href="contact.html"
+            role="menuitem"
+            class="navigation-list__item nav-mobile-item"
+            >Contact</a
+          >
+        </li>
+      </ul>
     </header>
 
     <svg
@@ -66,7 +125,11 @@
         class="mt-10 sm:grid sm:grid-cols-1 md:grid-cols-6 sm:mt-16 lg:grid-cols-8 lg:grid-rows-auto gap-x-3 sm:gap-x-6 gap-y-18 sm:gap-y-30"
       >
         <div class="img-wrapper col-span-4 p-3 sm:col-span-2">
-          <img class="sm:h-70 object-cover" src="./img/me4.webp" alt="" />
+          <img
+            class="sm:h-70 object-cover max-w-70 sm:max-w-full"
+            src="./img/me4.webp"
+            alt=""
+          />
         </div>
         <div class="col-span-4 sm:col-span-4 p-3">
           <h3 class="text-sm/4 font-semibold text-gray-400">WebDev path</h3>
@@ -91,7 +154,7 @@
           class="row-start-2 sm:grid sm:grid-cols-subgrid col-start-1 col-end-9 bg-[#252525] text-white"
         >
           <h2
-            class="font-bold text-4xl text-gray-800 bg-gray-200 p-3 col-span-2 row-span-2"
+            class="font-bold text-4xl text-gray-800 bg-gray-200 p-3 py-10 sm:py-20 col-span-2 row-span-2 skills-heading"
           >
             Skills
           </h2>
@@ -452,13 +515,15 @@
       </div>
     </main>
     <div
-      class="flex flex-col sm:flex-row justify-center gap-10 items-center mb-70 p-10"
+      class="flex flex-col sm:flex-row justify-center gap-10 items-center mb-45 p-10"
     >
       <button class="call-to-action-secondary">
-        <a class="" href="">Download resumee</a>
+        <a class="" href="assets/Prügl-Joachim-Resumee.pdf">Download resumee</a>
       </button>
       <button class="call-to-action">
-        <a class="" href="work.html">See my Projects</a>
+        <a class="hover:text-white! hover:cursor-pointer" href="work.html"
+          >See my Projects</a
+        >
       </button>
     </div>
 

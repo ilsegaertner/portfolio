@@ -9,16 +9,22 @@
   </head>
 
   <body>
-    <header>
-      <nav class="flex items-center p-3 nav-list flex-wrap">
-        <a href="index.html" class="text-main">Joachim Prügl </a>
+    <header class="">
+      <nav class="flex items-center p-3 nav-list flex-wrap z-40 relative">
+        <a href="index.html" class="text-main ">Joachim Prügl </a>
 
-        <ul role="menubar" class="gap-2 hidden sm:flex ml-auto">
+        <ul role="menubar" class="gap-8 hidden sm:flex ml-auto">
+          <li>
+            <button
+              class="sm:hidden"
+              aria-label="close Menu"
+              onclick="closeModal()"
+            >
+              <img src="./assets/close.svg" class="bg-white" />
+            </button>
+          </li>
           <li role="presentation">
-            <a
-              href="about.html"
-              role="menuitem"
-              class="navigation-list__item active"
+            <a href="about.html" role="menuitem" class="navigation-list__item"
               >About
             </a>
           </li>
@@ -33,10 +39,60 @@
             >
           </li>
         </ul>
-        <button class="sm:hidden ml-auto" aria-label="Toggle Menu">
-          <span class="hamburger">X</span>
+        <button
+          class="sm:hidden ml-auto"
+          aria-label="Toggle Menu"
+          onclick="openModal()"
+        >
+          <img src="./assets/menu.svg" class="bg-white" />
         </button>
       </nav>
+
+      <div
+        id="blur-overlay"
+        class="fixed inset-0 z-30 bg-transparent backdrop-blur-2xl opacity-0 pointer-events-none transition-opacity duration-100 sm:hidden"
+        aria-hidden="true"
+      ></div>
+
+      <!-- mobile nav -->
+      <ul
+        role="menubar"
+        class="fixed hover:cursor-pointer flex-col opacity-0 translate-x-full pointer-events-none transition-all duration-200 ease-in-out w-2/3 z-50 top-0 p-4 bg-[#262828] h-lvh right-0 text-right text-white sm:hidden"
+        id="menu-list"
+      >
+        <button
+          class="sm:hidden"
+          aria-label="close Menu"
+          onclick="closeModal()"
+        >
+          <img src="./assets/close2.svg" class="text-white" />
+        </button>
+
+        <li role="presentation">
+          <a
+            href="about.html"
+            role="menuitem"
+            class="navigation-list__item nav-mobile-item"
+            >About
+          </a>
+        </li>
+        <li role="presentation">
+          <a
+            href="work.html"
+            role="menuitem"
+            class="navigation-list__item nav-mobile-item"
+            >Work</a
+          >
+        </li>
+        <li role="presentation">
+          <a
+            href="contact.html"
+            role="menuitem"
+            class="navigation-list__item nav-mobile-item"
+            >Contact</a
+          >
+        </li>
+      </ul>
     </header>
 
     <svg
@@ -57,7 +113,7 @@
     </svg>
 
     <main class="sm:grid sm:grid-cols-4 gap-y-0 gap-x-10">
-      <div class="col-span-2 col-start-1 p-3">
+      <div class="col-span-2 col-start-1 p-8">
         <h1 class="p-0 leading-14 col-span-2 font-bold">
           CUB Film Data Angular
         </h1>
@@ -69,7 +125,7 @@
           React · JavaScript · MongoDB · Express · CSS
         </p>
       </div>
-      <picture class="picture-wrapper-details col-start-3 col-span-2 p-3">
+      <picture class="picture-wrapper-details col-start-3 col-span-2 p-8">
         <img
           src="img/documentation/CUB-Film-Angular-client_documentation/cub-angular-iphone.png"
           alt="Image of the project called Cub Film Angular"
@@ -78,7 +134,7 @@
       </picture>
 
       <section
-        class="relative col-span-2 col-start-1 sm:grid sm:grid-cols-subgrid bg-gray-200 p-3 lg:-mt-18"
+        class="relative col-span-2 col-start-1 sm:grid sm:grid-cols-subgrid bg-gray-200 p-8 lg:-mt-18"
       >
         <div
           class="sm:grid sm:grid-cols-subgrid sm:col-start-1 sm:col-span-2 details"
@@ -127,7 +183,7 @@
       </section>
 
       <div
-        class="flex flex-col gap-20 justify-between col-start-3 col-span-2 mt-20 p-3"
+        class="flex flex-col gap-20 justify-between col-start-3 col-span-2 mt-20 p-8"
       >
         <div class="livelinks justify-end! gap-5 pr-4">
           <a
@@ -296,7 +352,7 @@
       >
     </button>
     <section
-      class="grid grid-cols-5 col-span-4 py-30 w-full items-center font-medium mb-30 bg-gray-100 mt-80"
+      class="grid grid-cols-5 col-span-4 py-30 w-full items-center font-medium mb-12 bg-gray-100 mt-45"
     >
       <div
         class="flex items-center gap-9 justify-center flex-col -mt-55 col-start-2 col-span-3"
@@ -308,7 +364,7 @@
           width="150px"
           height="150px"
         />
-        <span class="text-2xl">Interested in working together? </span>
+        <span class="text-3xl">Interested in working together? </span>
       </div>
       <div
         class="flex items-center gap-3.5 flex-col mt-50 col-start-2 col-span-3"

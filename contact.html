@@ -9,10 +9,19 @@
   </head>
   <body class="">
     <header class="">
-      <nav class="flex items-center p-3 nav-list flex-wrap">
+      <nav class="flex items-center p-3 nav-list flex-wrap z-40 relative">
         <a href="index.html" class="text-main">Joachim Prügl </a>
 
-        <ul role="menubar" class="gap-2 hidden sm:flex ml-auto">
+        <ul role="menubar" class="gap-8 hidden sm:flex ml-auto">
+          <li>
+            <button
+              class="sm:hidden"
+              aria-label="close Menu"
+              onclick="closeModal()"
+            >
+              <img src="./assets/close.svg" class="bg-white" />
+            </button>
+          </li>
           <li role="presentation">
             <a href="about.html" role="menuitem" class="navigation-list__item"
               >About
@@ -32,10 +41,60 @@
             >
           </li>
         </ul>
-        <button class="sm:hidden ml-auto" aria-label="Toggle Menu">
-          <span class="hamburger">X</span>
+        <button
+          class="sm:hidden ml-auto"
+          aria-label="Toggle Menu"
+          onclick="openModal()"
+        >
+          <img src="./assets/menu.svg" class="bg-white" />
         </button>
       </nav>
+
+      <div
+        id="blur-overlay"
+        class="fixed inset-0 z-30 bg-transparent backdrop-blur-2xl opacity-0 pointer-events-none transition-opacity duration-100 sm:hidden"
+        aria-hidden="true"
+      ></div>
+
+      <!-- mobile nav -->
+      <ul
+        role="menubar"
+        class="fixed hover:cursor-pointer flex-col opacity-0 translate-x-full pointer-events-none transition-all duration-200 ease-in-out w-2/3 z-50 top-0 p-4 bg-[#262828] h-lvh right-0 text-right text-white sm:hidden"
+        id="menu-list"
+      >
+        <button
+          class="sm:hidden"
+          aria-label="close Menu"
+          onclick="closeModal()"
+        >
+          <img src="./assets/close2.svg" class="text-white" />
+        </button>
+
+        <li role="presentation">
+          <a
+            href="about.html"
+            role="menuitem"
+            class="navigation-list__item nav-mobile-item"
+            >About
+          </a>
+        </li>
+        <li role="presentation">
+          <a
+            href="work.html"
+            role="menuitem"
+            class="navigation-list__item nav-mobile-item"
+            >Work</a
+          >
+        </li>
+        <li role="presentation">
+          <a
+            href="contact.html"
+            role="menuitem"
+            class="navigation-list__item nav-mobile-item"
+            >Contact</a
+          >
+        </li>
+      </ul>
     </header>
 
     <main>
@@ -145,7 +204,7 @@
         </div>
         <div class="shadow-md px-8 pt-6 pb-8 mb-4">
           <div class="flex flex-row items-center self-center mb-8 gap-3">
-            <img src="img/me4.webp" width="" class="size-10 rounded-full" />
+            <img src="img/me4.webp" width="" class="size-7 rounded-full" />
             <h2 class="font-bold text-2xl">Get in touch</h2>
           </div>
 
@@ -197,11 +256,7 @@
           </ul>
         </div>
       </div>
-      <img
-        src="./assets/computer_illustration.svg"
-        class="m-auto"
-        width="500"
-      />
+      <img src="./assets/contact.svg" class="m-auto" width="500" />
     </main>
 
     <footer class="page-footer">

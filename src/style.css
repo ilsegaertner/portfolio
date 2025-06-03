@@ -68,6 +68,13 @@ body {
   padding: calc(var(--spacing) * 5);
 }
 
+.source-serif-4 {
+  font-family: "Source Serif 4", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
 header ul a:active,
 .active {
   color: #535bf2;
@@ -102,9 +109,8 @@ main {
 }
 
 h1 {
-  /* font-size: 3.2em; */
-  font-size: clamp(3.3vw, 3.2rem, 3.3rem);
-  /* line-height: 1.1; */
+  /* font-size: clamp(3.3vw, 3.2rem, 3.3rem); */
+  font-size: clamp(35px, 4vw, 3.5rem);
 }
 
 #app {
@@ -159,9 +165,6 @@ button:focus-visible {
   a:hover {
     color: #747bff;
   }
-  /* button {
-    background-color: #f9f9f9;
-  } */
 }
 
 .technologies-item {
@@ -171,29 +174,16 @@ button:focus-visible {
 }
 
 #menu-list li:hover {
-  /* background-color: var(--main-text); */
-
-  background-color: #4e4e4e;
+  background-color: #333535;
+  border-radius: calc(var(--spacing) * 1);
+  outline: 0.1px solid #3c3e5f;
 }
 
 .project-images {
   width: 100%;
   height: 100%;
-
   rotate: 7deg;
-  /* margin: 0 auto; */
-  /* margin: -3px 18px auto; */
   object-fit: cover;
-}
-
-.project-picture-wrapper {
-  /* display: flex;
-  flex-direction: column; */
-  overflow: hidden;
-  width: 100%;
-  height: 180px;
-
-  padding: calc(var(--spacing) * 2);
 }
 
 .project-picture-wrapper img {
@@ -223,6 +213,10 @@ hr {
   margin: 49px 4px -9px -19px;
 }
 
+.skills-heading {
+  font-size: clamp(30px, 3vw, 2.25rem);
+}
+
 .interested {
   margin: 8rem 8rem 2rem 0rem;
 }
@@ -247,7 +241,7 @@ hr {
 .responsive-gap {
   gap: clamp(calc(var(--spacing) * 14), 6vw, 14vw);
 }
-
+/* 
 .project-list li:nth-of-type(1) {
   grid-column: span 3;
 }
@@ -291,7 +285,7 @@ hr {
   grid-column: span 3;
 }
 .project-list li:nth-of-type(5) {
-  grid-column: 1/6;
+  grid-column: 4/9;
 }
 
 .project-list li:nth-of-type(5) .card-heading-wrapper {
@@ -299,32 +293,105 @@ hr {
 }
 .project-list li:nth-of-type(5) .links-wrapper {
   grid-column: 1/6;
-}
+} */
 
 @layer utilities {
-  /* .project-list li:nth-of-type(1),
-  .project-list li:nth-of-type(2),
-  .project-list li:nth-of-type(3),
-  .project-list li:nth-of-type(4),
-  .project-list li:nth-of-type(5),
-  .project-list li:nth-of-type(n) .card-heading-wrapper,
-  .project-list li:nth-of-type(n) .links-wrapper,
-  .project-list li:nth-of-type(n) .project-picture-wrapper {
-    @apply col-span-1 col-start-1 col-end-1;
-  } */
+  .project-list li:nth-of-type(1) {
+    @apply sm:col-start-1 sm:col-end-4 sm:col-span-3;
+  }
+
+  .project-list li:nth-of-type(1) .card-heading-wrapper {
+    @apply col-start-1  lg:col-span-2 sm:col-span-2;
+  }
+
+  .project-list li:nth-of-type(1) .project-picture-wrapper {
+    @apply col-start-2 lg:col-start-auto sm:col-start-3;
+  }
+  .project-list li:nth-of-type(1) .links-wrapper {
+    @apply col-span-2 lg:col-span-3 lg:col-start-1 sm:col-span-3;
+  }
+
+  .project-list li:nth-of-type(2) {
+    @apply col-start-2 col-end-3 lg:col-start-4 lg:col-end-9 sm:col-span-3;
+  }
+
+  .project-list li:nth-of-type(2) .card-heading-wrapper {
+    @apply lg:col-span-3 lg:col-start-1 sm:col-span-2;
+  }
+
+  .project-list li:nth-of-type(2) .project-picture-wrapper {
+    @apply lg:col-span-2 lg:col-start-4;
+  }
+
+  .project-list li:nth-of-type(2) .links-wrapper {
+    @apply col-span-2 sm:col-span-3 lg:col-span-5;
+  }
+
+  .project-list li:nth-of-type(3) {
+    @apply col-start-auto lg:col-span-5 sm:col-span-3;
+  }
+  .project-list li:nth-of-type(3) .card-heading-wrapper {
+    @apply lg:col-span-4 lg:col-start-1 sm:col-span-2;
+  }
+
+  .project-list li:nth-of-type(3) .project-picture-wrapper {
+    @apply col-start-2 lg:col-start-auto sm:col-start-3;
+  }
+  .project-list li:nth-of-type(3) .links-wrapper {
+    @apply col-span-2 sm:col-span-3 lg:col-span-5 lg:col-start-1;
+  }
+
+  .project-list li:nth-of-type(4) {
+    @apply lg:col-span-3 lg:col-start-6 sm:col-span-3;
+  }
+  .project-list li:nth-of-type(4) .card-heading-wrapper {
+    @apply lg:col-span-2 lg:col-start-1 sm:col-span-2;
+  }
+  .project-list li:nth-of-type(4) .project-picture-wrapper {
+    @apply col-start-2 lg:col-start-auto sm:col-start-3;
+  }
+
+  .project-list li:nth-of-type(4) .links-wrapper {
+    @apply col-span-2 sm:col-span-3 lg:col-span-3 lg:col-start-1;
+  }
+
+  .project-list li:nth-of-type(5) {
+    @apply lg:col-span-5 lg:col-start-4 sm:col-span-3;
+  }
+  .project-list li:nth-of-type(5) .card-heading-wrapper {
+    @apply lg:col-span-4 lg:col-start-1 sm:col-span-2;
+  }
+  .project-list li:nth-of-type(5) .project-picture-wrapper {
+    @apply col-start-2 lg:col-start-auto sm:col-start-3;
+  }
+
+  .project-list li:nth-of-type(5) .links-wrapper {
+    @apply col-span-2 sm:col-span-3 lg:col-span-5 lg:col-start-1;
+  }
+
+  .nav-mobile-item {
+    @apply block py-3 px-2 text-lg! font-medium tracking-wide transition-colors duration-150 hover:text-gray-200! hover:underline;
+  }
 
   h1 {
     @apply px-3;
+  }
+
+  .project-picture-wrapper {
+    @apply h-40 sm:h-45 w-full p-2 overflow-hidden;
   }
 
   .skill-flex-container {
     @apply gap-2;
   }
 
+  .project-list {
+    @apply sm:grid sm:grid-cols-6 sm:col-start-1 sm:col-end-3 lg:grid-cols-subgrid gap-y-13 gap-x-3 my-10 lg:col-start-1 lg:col-end-9 px-3;
+  }
+
   .bg-background-gray {
     background-color: var(--background-gray);
   }
-
   .text-main {
     color: var(--main-text);
   }
@@ -376,26 +443,17 @@ hr {
     @apply flex  basis-full bottom-0 mt-4;
   }
 
-  /* .livelinks {
-    @apply flex justify-between gap-8 font-serif rounded-md bg-white px-2 py-1 text-sm font-semibold text-gray-900 shadow-xs ring-1 ring-gray-300 ring-inset hover:bg-gray-50;
-  } */
-
   .livelinks {
     @apply flex justify-between items-end w-full  text-[#535bf2] rounded-md bg-white  font-semibold;
   }
 
   .project-list__item {
-    @apply flex-wrap justify-between grid grid-cols-subgrid  relative bg-white rounded ring-1 ring-gray-300 ring-inset shadow-xs;
+    @apply mb-10 sm:mb-0 flex-wrap justify-between grid sm:grid-cols-subgrid  relative bg-white rounded ring-1 ring-gray-300 ring-inset shadow-xs;
   }
 
   .project-list__item:hover {
     @apply ring-gray-400 shadow-sm cursor-pointer;
   }
-
-  /* .card-heading-wrapper,
-  .project-picture-wrapper {
-    @apply basis-1/2;
-  } */
 
   .card-heading-wrapper h2 {
     @apply leading-5 pb-2;
@@ -417,10 +475,6 @@ hr {
     @apply ring-1 ring-black/15;
   }
 
-  /* .details > * {
-    @apply col-start-1 col-span-2;
-  } */
-
   .details {
     @apply self-start;
   }
@@ -430,7 +484,7 @@ hr {
   }
 
   .details-subheading {
-    @apply font-semibold py-8 col-span-2;
+    @apply font-bold  pt-10 pb-3 col-span-2 text-2xl;
   }
 
   .education-item ul {
@@ -441,9 +495,9 @@ hr {
     @apply text-sm;
   }
 
-  #menu-list li {
+  /* #menu-list li {
     @apply p-2 rounded;
-  }
+  } */
 
   .skill-wrapper {
     @apply self-start  grid grid-cols-subgrid p-12;
