@@ -208,6 +208,12 @@ button:focus-visible {
   margin-top: calc(var(--spacing) * 4);
 }
 
+hr {
+  border-top-width: 0.1px;
+  color: #6d6d6d;
+  margin-block: calc(var(--spacing) * 2);
+}
+
 .skills hr {
   color: #ccc;
   margin-block: calc(var(--spacing) * 1);
@@ -428,7 +434,7 @@ button:focus-visible {
   }
 
   .education-item ul {
-    @apply flex flex-col gap-2;
+    @apply flex flex-col gap-2 mt-2;
   }
 
   .education-item li {
@@ -440,7 +446,7 @@ button:focus-visible {
   }
 
   .skill-wrapper {
-    @apply self-start p-3  grid grid-cols-subgrid ring-1;
+    @apply self-start  grid grid-cols-subgrid p-12;
   }
 
   .technologies-item {
@@ -448,14 +454,11 @@ button:focus-visible {
   }
 
   .education-item {
-    @apply mb-3 p-2;
-  }
-  .education-item ul {
-    @apply mt-2;
+    @apply mb-3 p-2 text-white;
   }
 
   .call-to-action {
-    @apply rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white  shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600;
+    @apply rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white hover:text-white! shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600;
   }
 
   .call-to-action-secondary {
@@ -463,6 +466,6 @@ button:focus-visible {
   }
 
   .picture-wrapper-details {
-    @apply snap-start overflow-hidden min-w-55 sm:min-w-auto rounded-md min-h-76 sm:min-h-auto max-h-70 cursor-grab;
+    @apply snap-start overflow-hidden min-w-55 sm:min-w-auto rounded-md min-h-76 sm:min-h-auto max-h-82 cursor-grab;
   }
 }
