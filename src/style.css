@@ -441,6 +441,10 @@ hr {
     @apply text-sm;
   }
 
+  .social-media-flex {
+    @apply flex flex-row gap-1 lg:gap-2;
+  }
+
   .skill-wrapper {
     @apply self-start  grid grid-cols-subgrid p-12;
   }
