@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/portfolio-vite/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joachim Prügl | Frontend Developer Portfolio</title>
+    <link rel="stylesheet" crossorigin href="/portfolio-vite/assets/style-Bakgaw_n.css">
+  </head>
+
+  <body class="aboutpage">
+    <header class="">
+      <nav class="flex items-center p-3 nav-list flex-wrap z-40 relative">
+        <a href="index.html" class="text-main">Joachim Prügl </a>
+
+        <ul role="menubar" class="gap-8 hidden sm:flex ml-auto">
+          <li>
+            <button
+              class="sm:hidden"
+              aria-label="close Menu"
+              onclick="closeModal()"
+            >
+              <img src="assets/close.svg" class="bg-white" />
+            </button>
+          </li>
+          <li role="presentation">
+            <a
+              href="about.html"
+              role="menuitem"
+              class="navigation-list__item active"
+              >About
+            </a>
+          </li>
+          <li role="presentation">
+            <a href="work.html" role="menuitem" class="navigation-list__item"
+              >Work</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="contact.html" role="menuitem" class="navigation-list__item"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <button
+          class="sm:hidden ml-auto"
+          aria-label="Toggle Menu"
+          onclick="openModal()"
+        >
+          <img src="assets/menu.svg" class="bg-white" />
+        </button>
+      </nav>
+
+      <div
+        id="blur-overlay"
+        class="fixed inset-0 z-30 bg-transparent backdrop-blur-2xl opacity-0 pointer-events-none transition-opacity duration-100 sm:hidden"
+        aria-hidden="true"
+      ></div>
+
+      <!-- mobile nav -->
+      <ul
+        role="menubar"
+        class="fixed hover:cursor-pointer flex-col opacity-0 translate-x-full pointer-events-none transition-all duration-200 ease-in-out w-2/3 z-50 top-0 p-4 bg-[#262828] h-lvh right-0 text-right text-white sm:hidden"
+        id="menu-list"
+      >
+        <button
+          class="sm:hidden"
+          aria-label="close Menu"
+          onclick="closeModal()"
+        >
+          <img src="assets/close2.svg" class="text-white" />
+        </button>
+
+        <li role="presentation">
+          <a
+            href="about.html"
+            role="menuitem"
+            class="navigation-list__item nav-mobile-item"
+            >About
+          </a>
+        </li>
+        <li role="presentation">
+          <a
+            href="work.html"
+            role="menuitem"
+            class="navigation-list__item nav-mobile-item"
+            >Work</a
+          >
+        </li>
+        <li role="presentation">
+          <a
+            href="contact.html"
+            role="menuitem"
+            class="navigation-list__item nav-mobile-item"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </header>
+
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1900 600"
+      preserveAspectRatio="none"
+      class="fixed inset-0 -z-10 w-full h-full"
+    >
+      <path fill="#707070" d="M0 0h1900v1600H0z" />
+      <path
+        fill="#75dec6"
+        d="M1360 1600h152v-400h26V800H868V400h67V0h965v1600Z"
+      />
+      <path
+        fill="#bdc0db"
+        d="M1325 1600h-56v-400h272V800h-41V400h254V0h146v1600Z"
+      />
+    </svg>
+
+    <main class="mx-auto mb-5">
+      <h1
+        class="text-4xl py-20 tracking-tight text-pretty sm:text-5xl text-center font-bold"
+      >
+        About Me
+      </h1>
+      <div
+        class="mt-10 sm:grid sm:grid-cols-1 md:grid-cols-6 sm:mt-16 lg:grid-cols-8 lg:grid-rows-auto gap-x-3 sm:gap-x-6 gap-y-18 sm:gap-y-30"
+      >
+        <div class="img-wrapper col-span-4 p-3 sm:col-span-2">
+          <img
+            class="sm:h-70 object-cover max-w-70 sm:max-w-full"
+            src="./img/me4.webp"
+            alt=""
+          />
+        </div>
+        <div class="col-span-4 sm:col-span-4 p-3">
+          <h3 class="text-sm/4 font-semibold text-gray-400">WebDev path</h3>
+          <p class="mt-2 text-lg font-medium tracking-tight clamped">
+            Hey, I’m Joachim — a web developer with roots in arts and sound,
+            driven by curiosity and a love for learning.
+          </p>
+          <p class="mt-2 max-w-lg text-sm/6 text-gray-800">
+            Over the past 15 years, I’ve worked across electronic music, visual
+            art, and education — crafting room installations, releasing music on
+            international labels, and mentoring creative processes. This path
+            taught me to move fluidly between concept and execution,
+            collaboration and independence, structure and intuition. It also
+            shapes how I approach development: with care, precision, and
+            obsessive attention to detail — while leaving space for
+            outside-the-box thinking.
+          </p>
+          <br />
+        </div>
+
+        <div
+          class="row-start-2 sm:grid sm:grid-cols-subgrid col-start-1 col-end-9 bg-[#252525] text-white"
+        >
+          <h2
+            class="font-bold text-4xl text-gray-800 bg-gray-200 p-3 py-10 sm:py-20 col-span-2 row-span-2 skills-heading"
+          >
+            Skills
+          </h2>
+          <!-- Frontend Skills -->
+          <div
+            class="col-span-2 sm:col-span-5 col-start-1 sm:col-start-3 skill-wrapper"
+          >
+            <img class="object-cover" src="assets/frontend.svg" alt="" />
+            <div class="sm:col-span-5">
+              <!-- <h2 class="text-sm/4 font-semibold text-gray-400">Skills</h2> -->
+              <p class="mt-2 text-lg font-medium tracking-tight clamped">
+                Frontend Development
+              </p>
+              <div
+                class="md:grid grid-cols-5 gap-x-4 text-sm/6 text-gray-800 mt-4"
+              >
+                <div class="education-item">
+                  <h3>Languages</h3>
+                  <hr class="hr_skills" />
+                  <ul class="">
+                    <li>
+                      <div class="skill-flex-container">
+                        <img
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                          width="15px"
+                          height="15px"
+                        />
+                        HTML
+                      </div>
+                    </li>
+                    <li>
+                      <div class="skill-flex-container">
+                        <img
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+                          width="15px"
+                          height="15px"
+                        />
+                        CSS
+                      </div>
+                    </li>
+                    <li>
+                      <div class="skill-flex-container">
+                        <img
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                          width="15px"
+                          height="15px"
+                        />
+                        JavaScript
+                      </div>
+                    </li>
+                    <li>
+                      <div class="skill-flex-container">
+                        <img
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+                          width="15px"
+                          height="15px"
+                        />
+                        TypeScript
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="education-item animated__item">
+                  <h3>Libraries</h3>
+                  <hr class="hr_skills" />
+                  <ul>
+                    <li class="skill-flex-container">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+                        width="15px"
+                        height="15px"
+                      />
+                      React
+                    </li>
+                    <li class="skill-flex-container">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg"
+                        width="15px"
+                        height="15px"
+                      />
+                      Redux
+                    </li>
+                    <li class="skill-flex-container">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg"
+                        width="15px"
+                        height="15px"
+                      />
+                      Angular
+                    </li>
+
+                    <li class="skill-flex-container">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-original.svg"
+                        width="15px"
+                        height="15px"
+                      />
+                      jQuery
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="education-item animated__item">
+                  <h3>Design</h3>
+                  <hr class="hr_skills" />
+                  <ul>
+                    <li class="skill-flex-container">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularmaterial/angularmaterial-original.svg"
+                        width="15px"
+                        height="15px"
+                      />
+                      Material
+                    </li>
+                    <li class="skill-flex-container">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"
+                        width="15px"
+                        height="15px"
+                      />
+                      Bootstrap
+                    </li>
+                    <li class="skill-flex-container">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+                        width="15px"
+                        height="15px"
+                      />
+
+                      Tailwind
+                    </li>
+                    <li class="skill-flex-container">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg"
+                        width="15px"
+                        height="15px"
+                      />
+                      SASS/SCSS
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="education-item animated__item">
+                  <h3>Data Handling</h3>
+                  <hr class="hr_skills" />
+                  <ul>
+                    <li>AJAX, JSON</li>
+                  </ul>
+                </div>
+
+                <div class="education-item animated__item">
+                  <h3>Testing</h3>
+                  <hr class="hr_skills" />
+                  <ul>
+                    <li class="skill-flex-container">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg"
+                        width="15px"
+                        height="15px"
+                      />
+                      Unit
+                    </li>
+                    <li class="skill-flex-container">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg"
+                        width="15px"
+                        height="15px"
+                      />Integration
+                    </li>
+                    <li class="skill-flex-container">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cucumber/cucumber-plain.svg"
+                        width="15px"
+                        height="15px"
+                      />
+                      Acceptance
+                    </li>
+                    <li class="skill-flex-container">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/puppeteer/puppeteer-original.svg"
+                        width="15px"
+                        height="15px"
+                      />
+                      E2E
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="education-item animated__item">
+                  <h3>Mobile</h3>
+                  <hr class="hr_skills" />
+                  <ul>
+                    <li>React Native</li>
+                    <li>Expo</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Backend Skills -->
+          <div class="sm:col-span-4 col-start-4 sm:col-start-3 skill-wrapper">
+            <img class="object-cover" src="assets/backend2.svg" alt="" />
+            <div class="sm:col-span-4 sm:col-start-1">
+              <!-- <h2 class="text-sm/4 font-semibold text-gray-400">Skills</h2> -->
+              <p class="mt-2 text-lg font-medium tracking-tight clamped">
+                Backend Development
+              </p>
+              <div
+                class="mt-2 md:grid grid-cols-4 gap-x-4 text-sm/6 text-gray-800"
+              >
+                <div class="education-item animated__item_from-right">
+                  <h3>Backend</h3>
+                  <hr class="hr_skills" />
+                  <ul>
+                    <li class="skill-flex-container">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
+                        width="15px"
+                        height="15px"
+                      />
+                      NodeJS
+                    </li>
+                    <li class="skill-flex-container">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
+                        width="15px"
+                        height="15px"
+                      />
+
+                      Express
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="education-item animated__item_from-right">
+                  <h3>APIs</h3>
+                  <hr class="hr_skills" />
+                  <ul>
+                    <li class="skill-flex-container">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/json/json-original.svg"
+                        width="15px"
+                        height="15px"
+                      />
+                      JSON, RESTful
+                    </li>
+                    <li class="skill-flex-container">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg"
+                        width="15px"
+                        height="15px"
+                      />
+                      Postman
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="education-item animated__item_from-right">
+                  <h3>Hosting</h3>
+                  <hr class="hr_skills" />
+                  <ul>
+                    <li class="skill-flex-container">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+                        width="15px"
+                        height="15px"
+                      />AWS
+                    </li>
+                    <li class="skill-flex-container">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg"
+                        width="15px"
+                        height="15px"
+                      />Firestore
+                    </li>
+                    <li class="skill-flex-container">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/heroku/heroku-original.svg"
+                        width="15px"
+                        height="15px"
+                      />Heroku
+                    </li>
+                    <li class="skill-flex-container">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/netlify/netlify-original.svg"
+                        width="15px"
+                        height="15px"
+                      />
+                      Netlify
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="education-item animated__item_from-right">
+                  <h3>Databases</h3>
+                  <hr class="hr_skills" />
+                  <ul>
+                    <li class="skill-flex-container">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
+                        width="15px"
+                        height="15px"
+                      />
+                      PostgreSQL
+                    </li>
+                    <li class="skill-flex-container">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
+                        width="15px"
+                        height="15px"
+                      />
+                      MongoDB
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Text rest -->
+        <div
+          class="col-start-2 col-span-8 row-start-3 sm:grid sm:grid-cols-subgrid text-sm/6 mt-10 p-3"
+        >
+          <p class="col-start-1 col-span-3 sm:-mt-20">
+            After completing a Full Stack Web Development Bootcamp, I deepened
+            my skills in UI design, frontend development, and database
+            architecture. I now build modular, accessible, and performant
+            interfaces using technologies like React, TypeScript, and Tailwind
+            CSS. For me, web development is where creativity meets logic — a
+            place to design responsive experiences grounded in visual
+            sensitivity and technical clarity.
+          </p>
+          <div class="text-gray-800 col-start-4 col-end-7">
+            <p>
+              I’m especially drawn to intercultural and social contexts. Whether
+              facilitating group dialogue or mentoring language learners, I’ve
+              always been curious about how people interact — and how
+              well-designed environments can support connection.
+            </p>
+            <br />
+            <p>
+              I’m open to new collaborations — especially those that combine
+              interface design, thoughtful engineering, and a meaningful
+              purpose. If you’re working on something that resonates, feel free
+              to
+              <a
+                href="contact.html"
+                target="_blank"
+                style="color: var(--main-red)"
+                class="unclamped"
+                >reach out</a
+              >.
+            </p>
+            <br />
+          </div>
+        </div>
+      </div>
+    </main>
+    <div
+      class="flex flex-col sm:flex-row justify-center gap-10 items-center mb-45 p-10"
+    >
+      <button class="call-to-action-secondary">
+        <a href="assets/Prügl-Joachim-Resumee.pdf" download>Download Résumé</a>
+      </button>
+      <button class="call-to-action">
+        <a class="hover:text-white! hover:cursor-pointer" href="work.html"
+          >See my Projects</a
+        >
+      </button>
+    </div>
+
+    <img src="assets/computer_illustration.svg" class="m-auto" width="500" />
+
+    <footer class="page-footer">
+      <div class="flex leading-5">
+        <div class="footer-links">
+          <a class="legal-info" href="legal-info.html">Impressum</a>
+          <a href="assets/Pruegl-Joachim-Resumee.pdf" download
+            >Download Résumé</a
+          >
+        </div>
+        <div
+          class="social-media flex sm:flex-row justify-end gap-y-1 gap-x-4 w-full flex-col items-end"
+        >
+          <p>Find me on</p>
+
+          <div class="flex-row flex">
+            <a href="https://github.com/ilsegaertner" target="_blank"
+              ><img
+                src="assets/brand-github.svg"
+                alt="Logo and Link for the Github platform"
+                width="25"
+                height="25" /></a
+            ><span
+              ><a href="https://twitter.com/JoachimPrugl" target="_blank"
+                ><img
+                  src="assets/brand-x.svg"
+                  alt="Logo and Link for the Twitter platform"
+                  width="25"
+                  height="25" /></a></span
+            ><span
+              ><a
+                href="https://www.linkedin.com/in/joachim-pr%C3%BCgl/"
+                target="_blank"
+                ><img
+                  src="assets/brand-linkedin.svg"
+                  alt="Logo and Link for the LinkedIn platform"
+                  width="25"
+                  height="25" /></a
+            ></span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="text-xs -mt-8 text-center sm:-mt-4 pb-3 text-gray-300 flex flex-col sm:flex-row justify-center gap-x-1"
+      >
+        <p>© Copyright 2024 |</p>
+        <p>joachimpruegl.me</p>
+      </div>
+    </footer>
+    <script src="/src/main.js" defer></script>
+  </body>
+</html>
