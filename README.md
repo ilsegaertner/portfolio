@@ -20,7 +20,7 @@ A modern, fully responsive portfolio website built with Tailwind CSS and Vite. I
 
 - **HTML5**
 - **Tailwind CSS 4**
-- **JavaScript (vanilla)**
+- **JavaScript**
 - **Vite** – for development & production builds
 - **GitHub Pages** – for deployment
 - **Cloudflare** – for domain routing
