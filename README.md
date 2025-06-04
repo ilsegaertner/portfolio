@@ -1,4 +1,4 @@
-# – Portfolio Website
+# Portfolio Website
 
 **Live:** [joachimpruegl.me](https://joachimpruegl.me)  
 A modern, fully responsive portfolio website built with Tailwind CSS and Vite. It showcases selected projects, professional background, and contact information — designed to highlight skills and experience for potential employers, collaborators, and creative teams.
@@ -19,11 +19,11 @@ A modern, fully responsive portfolio website built with Tailwind CSS and Vite. I
 ## Tech Stack
 
 - **HTML5**
-- **Tailwind CSS 4** 
+- **Tailwind CSS 4**
 - **JavaScript (vanilla)**
 - **Vite** – for development & production builds
 - **GitHub Pages** – for deployment
-- **Cloudflare** – for domain routing 
+- **Cloudflare** – for domain routing
 
 ---
 
