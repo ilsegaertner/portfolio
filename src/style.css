@@ -446,7 +446,7 @@ hr {
   }
 
   .skill-wrapper {
-    @apply self-start  grid grid-cols-subgrid p-12;
+    @apply self-start  grid grid-cols-subgrid p-5 pt-10 sm:pt-12 sm:p-12;
   }
 
   .technologies-item {
