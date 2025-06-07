@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@import "animate.css";
+
 @tailwind utilities;
 
 @font-face {
