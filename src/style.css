@@ -329,6 +329,34 @@ hr {
   color: var(--main-text);
 }
 
+.welcome-image::after {
+  /* content: "Welcome"; */
+  inset: 0;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(49, 49, 49);
+  font-weight: 600;
+  font-size: 5rem;
+  mix-blend-mode: color-burn;
+}
+
+.welcome-image::before {
+  content: "Welcome";
+  inset: 0;
+  position: absolute;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  color: rgb(255 255 255);
+  margin-top: -2.7rem;
+  font-weight: 500;
+  /* font-size: 5rem; */
+  font-size: clamp(21px, 15vw, 4.5rem);
+  mix-blend-mode: exclusion;
+}
+
 @layer utilities {
   .project-list li:nth-of-type(1) {
     @apply sm:col-start-1 sm:col-end-4 sm:col-span-3;
@@ -432,7 +460,7 @@ hr {
   }
 
   .standard-input {
-    @apply shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-md;
+    @apply shadow appearance-none border-[0.1px] rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-md;
   }
 
   header {
