@@ -121,7 +121,7 @@
         <button
           class="sm:hidden ml-auto"
           aria-label="Toggle Menu"
-          id="menu-open-btn"
+          onclick="openModal()"
         >
           <img src="assets/menu.svg" alt="toggle-menu-icon" class="bg-white" />
         </button>
@@ -139,7 +139,7 @@
         class="fixed hover:cursor-pointer flex-col opacity-0 translate-x-full pointer-events-none transition-all duration-200 ease-in-out w-2/3 z-50 top-0 p-4 bg-[#262828] h-lvh right-0 text-right text-white sm:hidden"
         id="menu-list"
       >
-        <button class="sm:hidden" aria-label="close Menu" id="menu-close-btn">
+        <button class="sm:hidden" aria-label="close Menu">
           <img
             src="assets/close2.svg"
             alt="close-menu-icon"
