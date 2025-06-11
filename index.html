@@ -89,7 +89,7 @@
         <a href="index.html" class="text-main active">Joachim Prügl </a>
 
         <ul role="menubar" class="gap-6 hidden sm:flex ml-auto">
-          <li>
+          <!-- <li>
             <button
               class="sm:hidden"
               aria-label="close Menu"
@@ -101,7 +101,7 @@
                 class="bg-white"
               />
             </button>
-          </li>
+          </li> -->
           <li role="presentation">
             <a href="about.html" role="menuitem" class="navigation-list__item"
               >About
@@ -121,7 +121,7 @@
         <button
           class="sm:hidden ml-auto"
           aria-label="Toggle Menu"
-          onclick="openModal()"
+          id="menu-open-btn"
         >
           <img src="assets/menu.svg" alt="toggle-menu-icon" class="bg-white" />
         </button>
@@ -139,11 +139,7 @@
         class="fixed hover:cursor-pointer flex-col opacity-0 translate-x-full pointer-events-none transition-all duration-200 ease-in-out w-2/3 z-50 top-0 p-4 bg-[#262828] h-lvh right-0 text-right text-white sm:hidden"
         id="menu-list"
       >
-        <button
-          class="sm:hidden"
-          aria-label="close Menu"
-          onclick="closeModal()"
-        >
+        <button class="sm:hidden" aria-label="close Menu" id="menu-close-btn">
           <img
             src="assets/close2.svg"
             alt="close-menu-icon"
@@ -224,7 +220,9 @@
 
           <div class="flex flex-wrap gap-4 items-center justify-center">
             <!-- <a href="about.html" class="">About Me</a> -->
-            <a href="work.html" class="call-to-action-main call-to-action animate__animated animate__pulse"
+            <a
+              href="work.html"
+              class="call-to-action-main call-to-action animate__animated animate__pulse"
               >See my projects</a
             >
             <ul class="flex gap-4 justify-center px-5">
