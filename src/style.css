@@ -231,7 +231,7 @@ hr {
 
 .welcome {
   font-size: clamp(21px, 15vw, 4.5rem);
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .technologies-span {
