@@ -19,6 +19,7 @@ export default defineConfig({
         cubCase: path.resolve(__dirname, "cub-case-study.html"),
         cubAngular: path.resolve(__dirname, "cub-angular.html"),
         chat: path.resolve(__dirname, "chat-app.html"),
+        thankyou: path.resolve(__dirname, "thank-you.html"),
       },
     },
   },
