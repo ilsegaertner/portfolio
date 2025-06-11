@@ -5,39 +5,99 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: Geist;
-  src: url("/img/Geist/Geist-Regular.woff2") format("woff");
-  font-weight: normal;
+  font-family: "Geist";
+  src: url("/img/Geist/Geist-Thin.woff2") format("woff2");
+  font-weight: 100; /* Ultra Thin */
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Geist";
-  src: url("/img/Geist/Geist-Medium.woff2") format("woff");
-  font-weight: 500; /* Medium weight */
+  src: url("/img/Geist/Geist-UltraLight.woff2") format("woff2");
+  font-weight: 200; /* Ultra Light weight */
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Geist";
-  src: url("/img/Geist/GeistVariableVF.woff2") format("woff");
+  src: url("/img/Geist/Geist-Light.woff2") format("woff2");
+  font-weight: 300; /* Light weight */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist";
+  src: url("/img/Geist/Geist-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist";
+  src: url("/img/Geist/Geist-Medium.woff2") format("woff2");
   font-weight: 500; /* Medium weight */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist";
+  src: url("/img/Geist/Geist-SemiBold.woff2") format("woff2");
+  font-weight: 600; /* Semi Bold */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist";
+  src: url("/img/Geist/Geist-Bold.woff2") format("woff2");
+  font-weight: 700; /* Bold */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist";
+  src: url("/img/Geist/Geist-Black.woff2") format("woff2");
+  font-weight: 800; /* Black */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist";
+  src: url("/img/Geist/Geist-UltraBlack.woff2") format("woff2");
+  font-weight: 900; /* Ultra Black */
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Geist mono";
-  src: url("/img/Geist.Mono/GeistMono-Medium.woff2") format("woff");
-  font-weight: normal; /* Medium weight */
+  src: url("/img/Geist.Mono/GeistMono-Medium.woff2") format("woff2");
+  font-weight: 500; /* Medium weight */
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Geist mono ultra-light";
-  src: url("/img/Geist.Mono/GeistMono-UltraLight.woff2") format("woff");
-  font-weight: 100; /* Medium weight */
+  src: url("/img/Geist.Mono/GeistMono-UltraLight.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-  font-family: "Geist";
-  src: url("/img/Geist/Geist-Light.woff2") format("woff");
-  font-weight: 300; /* Light weight */
+  font-family: "Geist Variable";
+  src: url("/img/Geist/GeistVariableVF") format("woff2");
+  font-weight: 500; /* Normal */
+  font-style: normal;
+  font-display: swap;
 }
 
 :root {
@@ -66,6 +126,7 @@ body {
   margin: auto;
   color: var(--main-text);
   background-color: #ffffff;
+  font-weight: 300;
 }
 
 .project-list > * {
@@ -97,7 +158,7 @@ header ul a:active,
 }
 
 a {
-  font-weight: 500;
+  font-weight: 600;
   font-size: clamp(1rem, 1.2vw, 20px);
 
   text-decoration: inherit;
@@ -204,7 +265,7 @@ button:focus-visible {
 
 hr {
   border-top-width: 0.1px;
-  color: #6d6d6d;
+  color: #454545;
   margin-block: calc(var(--spacing) * 2);
 }
 
@@ -219,6 +280,7 @@ hr {
 
 .skills-heading {
   font-size: clamp(30px, 3vw, 2.25rem);
+  /* overflow-wrap: break-word; */
 }
 
 .interested {
@@ -231,6 +293,7 @@ hr {
 
 .welcome {
   font-size: clamp(21px, 15vw, 4.5rem);
+  font-weight: 500;
   /* overflow: hidden; */
 }
 
@@ -246,6 +309,26 @@ hr {
   gap: clamp(calc(var(--spacing) * 14), 6vw, 14vw);
 }
 
+.bg-background-gray {
+  background-color: var(--background-gray);
+}
+.text-main {
+  color: var(--main-text);
+  font-weight: 700;
+}
+
+.skill-heading {
+  font-weight: 700;
+}
+
+.bg-background-main {
+  background-color: var(--main-text);
+}
+
+.background-main {
+  color: var(--main-text);
+}
+
 @layer utilities {
   .project-list li:nth-of-type(1) {
     @apply sm:col-start-1 sm:col-end-4 sm:col-span-3;
@@ -253,6 +336,10 @@ hr {
 
   .project-list li:nth-of-type(1) .card-heading-wrapper {
     @apply col-start-1  lg:col-span-2 sm:col-span-2;
+  }
+
+  a {
+    @apply transition-all duration-200 ease-out;
   }
 
   .project-list li:nth-of-type(1) .project-picture-wrapper {
@@ -340,21 +427,6 @@ hr {
     @apply sm:grid sm:grid-cols-6 sm:col-start-1 sm:col-end-3 lg:grid-cols-subgrid gap-y-13 gap-x-3 my-10 lg:col-start-1 lg:col-end-9 px-3;
   }
 
-  .bg-background-gray {
-    background-color: var(--background-gray);
-  }
-  .text-main {
-    color: var(--main-text);
-  }
-
-  .bg-background-main {
-    background-color: var(--main-text);
-  }
-
-  .background-main {
-    color: var(--main-text);
-  }
-
   .standard-label {
     @apply block text-gray-700 text-sm font-bold mb-2;
   }
@@ -400,7 +472,11 @@ hr {
   }
 
   .project-list__item:hover {
-    @apply ring-gray-400 shadow-sm cursor-pointer;
+    @apply ring-gray-400 shadow-sm cursor-pointer transition-all duration-200 ease-out;
+  }
+
+  .development-heading {
+    @apply mt-2 text-lg font-bold tracking-tight mb-9;
   }
 
   .card-heading-wrapper h2 {
@@ -412,7 +488,11 @@ hr {
   }
 
   .card-stack-info {
-    @apply text-gray-500 text-xs py-2;
+    @apply text-gray-500 text-xs py-2 font-extralight;
+  }
+
+  .card-description {
+    @apply leading-6;
   }
 
   .about-cards {
@@ -440,11 +520,16 @@ hr {
   }
 
   .education-item li {
-    @apply text-sm;
+    @apply text-sm font-light;
   }
 
   .social-media-flex {
     @apply flex flex-row gap-1 lg:gap-2;
+  }
+
+  .socials img,
+  .social-media-flex img {
+    @apply hover:opacity-75 transition-all duration-200 ease-out;
   }
 
   .skill-wrapper {
@@ -460,11 +545,15 @@ hr {
   }
 
   .call-to-action {
-    @apply rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white hover:text-white! shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600;
+    @apply rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white hover:text-white! shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 transition-all duration-200 ease-out;
+  }
+
+  .call-to-action a {
+    @apply font-bold!;
   }
 
   .call-to-action-secondary {
-    @apply rounded-md bg-white px-2.5 py-1.5 text-sm font-semibold text-gray-900 shadow-xs ring-1 ring-gray-300 ring-inset hover:bg-gray-50 hover:cursor-pointer;
+    @apply font-extralight rounded-md bg-white px-2.5 py-1.5 text-sm  text-gray-900 shadow-xs ring-1 ring-gray-300 ring-inset hover:bg-gray-50 hover:cursor-pointer transition-all duration-200 ease-out;
   }
 
   .picture-wrapper-details {
