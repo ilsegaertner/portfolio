@@ -33,6 +33,7 @@ const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
+        entry.target.classList.remove("opacity-0");
         entry.target.classList.add("animate__animated", "animate__fadeInUp");
         observer.unobserve(entry.target);
       }
@@ -42,6 +43,7 @@ const observer = new IntersectionObserver(
 );
 
 cards.forEach((card, i) => {
+  card.classList.add("opacity-0");
+  card.style.animationDelay = `${i * 100}ms`;
   observer.observe(card);
-  card.style.setProperty("--animate-delay", `${i * 100}ms`);
 });
