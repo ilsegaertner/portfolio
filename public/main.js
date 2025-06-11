@@ -1,5 +1,3 @@
-import "../src/style.css";
-
 document.addEventListener("DOMContentLoaded", () => {
   const openBtn = document.getElementById("menu-open-btn");
   const closeBtn = document.getElementById("menu-close-btn");
