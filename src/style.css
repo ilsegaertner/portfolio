@@ -472,7 +472,7 @@ hr {
   }
 
   .project-list__item:hover {
-    @apply ring-gray-400 shadow-sm cursor-pointer transition-all duration-200 ease-out;
+    @apply ring-[oklch(0.47_0.32_263.84)] shadow-sm cursor-pointer transition-all duration-200 ease-out;
   }
 
   .development-heading {
