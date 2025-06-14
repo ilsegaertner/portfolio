@@ -65,578 +65,590 @@
         "image": "https://joachimpruegl.me/portfolio/img/documentation/cub_react_client/cub_film_data_screenshot2_4.png"
       }
     </script>
-    <link rel="stylesheet" crossorigin href="/portfolio/assets/style-BTwFTC7c.css">
+    <link rel="stylesheet" crossorigin href="/portfolio/assets/style-I__131zg.css">
   </head>
 
   <body>
-    <header class="">
-      <nav
-        role="navigation"
-        class="flex items-center p-3 nav-list flex-wrap z-40 relative"
-      >
-        <a href="index.html" class="text-main">Joachim Prügl </a>
+    <div class="max-w-4xl mx-auto h-screen overflow-y-auto lg:max-w-6xl">
+      <header class="">
+        <nav
+          role="navigation"
+          class="flex items-center p-3 nav-list flex-wrap z-40 relative"
+        >
+          <a href="index.html" class="text-main">Joachim Prügl </a>
 
-        <ul role="menubar" class="gap-6 hidden sm:flex ml-auto">
-          <li>
-            <button
-              class="sm:hidden"
-              aria-label="close Menu"
-              onclick="closeModal()"
-            >
-              <img
-                src="assets/close.svg"
-                alt="close-menu-icon"
-                class="bg-white"
-              />
-            </button>
-          </li>
+          <ul role="menubar" class="gap-6 hidden sm:flex ml-auto">
+            <li>
+              <button
+                class="sm:hidden"
+                aria-label="close Menu"
+                onclick="closeModal()"
+              >
+                <img
+                  src="assets/close.svg"
+                  alt="close-menu-icon"
+                  class="bg-white"
+                />
+              </button>
+            </li>
+            <li role="presentation">
+              <a href="about.html" role="menuitem" class="navigation-list__item"
+                >About
+              </a>
+            </li>
+            <li role="presentation">
+              <a href="work.html" role="menuitem" class="navigation-list__item"
+                >Work</a
+              >
+            </li>
+            <li role="presentation">
+              <a
+                href="contact.html"
+                role="menuitem"
+                class="navigation-list__item"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <button
+            class="sm:hidden ml-auto"
+            aria-label="Toggle Menu"
+            onclick="openModal()"
+          >
+            <img src="assets/menu.svg" alt="toggle-menu-icon" />
+          </button>
+        </nav>
+
+        <div
+          id="blur-overlay"
+          class="fixed inset-0 z-30 bg-transparent backdrop-blur-2xl opacity-0 pointer-events-none transition-opacity duration-100 sm:hidden"
+          aria-hidden="true"
+        ></div>
+
+        <!-- mobile nav -->
+        <ul
+          role="menubar"
+          class="fixed hover:cursor-pointer flex-col opacity-0 translate-x-full pointer-events-none transition-all duration-200 ease-in-out w-2/3 z-50 top-0 p-4 bg-[#262828] h-lvh right-0 text-right text-white sm:hidden"
+          id="menu-list"
+        >
+          <button
+            class="sm:hidden"
+            aria-label="close Menu"
+            onclick="closeModal()"
+          >
+            <img
+              src="assets/close2.svg"
+              alt="close-menu-icon"
+              class="text-white"
+            />
+          </button>
+
           <li role="presentation">
-            <a href="about.html" role="menuitem" class="navigation-list__item"
+            <a
+              href="about.html"
+              role="menuitem"
+              class="navigation-list__item nav-mobile-item"
               >About
             </a>
           </li>
           <li role="presentation">
-            <a href="work.html" role="menuitem" class="navigation-list__item"
+            <a
+              href="work.html"
+              role="menuitem"
+              class="navigation-list__item nav-mobile-item"
               >Work</a
             >
           </li>
           <li role="presentation">
-            <a href="contact.html" role="menuitem" class="navigation-list__item"
+            <a
+              href="contact.html"
+              role="menuitem"
+              class="navigation-list__item nav-mobile-item"
               >Contact</a
             >
           </li>
         </ul>
-        <button
-          class="sm:hidden ml-auto"
-          aria-label="Toggle Menu"
-          onclick="openModal()"
-        >
-          <img src="assets/menu.svg" alt="toggle-menu-icon" class="bg-white" />
-        </button>
-      </nav>
+      </header>
 
-      <div
-        id="blur-overlay"
-        class="fixed inset-0 z-30 bg-transparent backdrop-blur-2xl opacity-0 pointer-events-none transition-opacity duration-100 sm:hidden"
-        aria-hidden="true"
-      ></div>
-
-      <!-- mobile nav -->
-      <ul
-        role="menubar"
-        class="fixed hover:cursor-pointer flex-col opacity-0 translate-x-full pointer-events-none transition-all duration-200 ease-in-out w-2/3 z-50 top-0 p-4 bg-[#262828] h-lvh right-0 text-right text-white sm:hidden"
-        id="menu-list"
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1900 600"
+        preserveAspectRatio="none"
+        class="fixed inset-0 -z-10 w-full h-full"
       >
-        <button
-          class="sm:hidden"
-          aria-label="close Menu"
-          onclick="closeModal()"
+        <path fill="#707070" d="M0 0h1900v1600H0z" />
+        <path
+          fill="#75dec6"
+          d="M1360 1600h152v-400h26V800H868V400h67V0h965v1600Z"
+        />
+        <path
+          fill="#bdc0db"
+          d="M1325 1600h-56v-400h272V800h-41V400h254V0h146v1600Z"
+        />
+      </svg>
+
+      <main role="main" class="sm:grid sm:grid-cols-4 gap-y-0 gap-x-10">
+        <div class="col-span-2 col-start-1 p-3 sm:p-8">
+          <h1 class="p-0 leading-14 col-span-2 font-bold">
+            CUB Film Data (React)
+          </h1>
+
+          <h2 class="col-start-1 col-span-2 text-balance py-3">
+            Full-Stack Movie App Built with the MERN Stack
+          </h2>
+          <p class="card-stack-info col-start-1 col-span-2 mb-10">
+            React · JavaScript · MongoDB · Express · CSS
+          </p>
+          <h3 class="font-semibold underline">Case Study</h3>
+        </div>
+        <picture
+          class="picture-wrapper-details col-start-3 col-span-2 p-3 sm:p-8"
         >
           <img
-            src="assets/close2.svg"
-            alt="close-menu-icon"
-            class="text-white"
+            src="img/documentation/cub_react_client/cub_film_data_screenshot2_4.png"
+            alt="Image of the project called Cub Film Angular"
+            class="project-images"
           />
-        </button>
+        </picture>
 
-        <li role="presentation">
-          <a
-            href="about.html"
-            role="menuitem"
-            class="navigation-list__item nav-mobile-item"
-            >About
-          </a>
-        </li>
-        <li role="presentation">
-          <a
-            href="work.html"
-            role="menuitem"
-            class="navigation-list__item nav-mobile-item"
-            >Work</a
-          >
-        </li>
-        <li role="presentation">
-          <a
-            href="contact.html"
-            role="menuitem"
-            class="navigation-list__item nav-mobile-item"
-            >Contact</a
-          >
-        </li>
-      </ul>
-    </header>
-
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 1900 600"
-      preserveAspectRatio="none"
-      class="fixed inset-0 -z-10 w-full h-full"
-    >
-      <path fill="#707070" d="M0 0h1900v1600H0z" />
-      <path
-        fill="#75dec6"
-        d="M1360 1600h152v-400h26V800H868V400h67V0h965v1600Z"
-      />
-      <path
-        fill="#bdc0db"
-        d="M1325 1600h-56v-400h272V800h-41V400h254V0h146v1600Z"
-      />
-    </svg>
-
-    <main role="main" class="sm:grid sm:grid-cols-4 gap-y-0 gap-x-10">
-      <div class="col-span-2 col-start-1 p-3 sm:p-8">
-        <h1 class="p-0 leading-14 col-span-2 font-bold">
-          CUB Film Data (React)
-        </h1>
-
-        <h2 class="col-start-1 col-span-2 text-balance py-3">
-          Full-Stack Movie App Built with the MERN Stack
-        </h2>
-        <p class="card-stack-info col-start-1 col-span-2 mb-10">
-          React · JavaScript · MongoDB · Express · CSS
-        </p>
-        <h3 class="font-semibold underline">Case Study</h3>
-      </div>
-      <picture
-        class="picture-wrapper-details col-start-3 col-span-2 p-3 sm:p-8"
-      >
-        <img
-          src="img/documentation/cub_react_client/cub_film_data_screenshot2_4.png"
-          alt="Image of the project called Cub Film Angular"
-          class="project-images"
-        />
-      </picture>
-
-      <section
-        class="relative col-span-2 col-start-1 sm:grid sm:grid-cols-subgrid bg-gray-100 p-3 sm:p-8 lg:-mt-2"
-      >
-        <div
-          class="sm:grid sm:grid-cols-subgrid sm:col-start-1 sm:col-span-2 details"
+        <section
+          class="relative col-span-2 col-start-1 sm:grid sm:grid-cols-subgrid bg-gray-100 p-3 sm:p-8 lg:-mt-2"
         >
-          <h3 class="details-subheading">Overview</h3>
-          <p class="flex-1 col-span-2">
-            CUB Film Data is a full-stack web application that lets users
-            explore arthouse films, view details about directors and genres, and
-            manage a personal list of favorite movies. I developed both the
-            backend REST API and the client-side React interface, integrating
-            secure user authentication and responsive UI components. The project
-            was built as part of my Full-Stack Web Development course and later
-            refined for inclusion in my professional portfolio.
-          </p>
-          <h4 class="details-subheading">Objective</h4>
-          <p class="col-span-2">
-            The goal was to demonstrate full-stack proficiency using the MERN
-            stack (MongoDB, Express, React, Node.js). I aimed to build a fully
-            functional app from scratch — with real-world features like
-            authentication, data validation, client-server communication, and
-            deployment — while writing clean, modular code.
-          </p>
-          <h5 class="details-subheading">Problem</h5>
-          <p class="col-span-2">
-            How do you design and build a scalable, user-friendly movie database
-            from scratch — handling everything from user authentication to
-            dynamic UI updates — with no starter code or templates? I needed to:
-          </p>
-          <ul class="bullet-list col-span-2 my-3">
-            <li>
-              Create a robust backend that could handle multiple user operations
-            </li>
-            <li>
-              Build a responsive, intuitive frontend from scratch in React
-            </li>
-            <li>Ensure secure, seamless communication between both layers</li>
-            <li>
-              Learn and apply new technologies like JWT, Mongoose, and React
-              Router efficiently
-            </li>
-          </ul>
-
-          <h6 class="details-subheading col-span-2">Approach</h6>
-          <p class="font-semibold">Backend</p>
-          <ul class="col-span-2 bullet-list my-2">
-            <li>
-              Built a REST API using
-              <span class="font-semibold">Node.js</span> and
-              <span class="font-semibold">Express</span>
-            </li>
-            <li>
-              Designed and tested endpoints (GET, POST, PUT, DELETE) using
-              <span class="font-semibold">Postman</span>
-            </li>
-            <li>
-              Integrated <span class="font-semibold">MongoDB</span> and
-              <span class="font-semibold">Mongoose</span> for data modeling and
-              storage
-            </li>
-            <li>
-              Implemented
-              <span class="font-semibold">JWT-based authentication</span> for
-              login and protected routes
-            </li>
-            <li>
-              Deployed backend to <span class="font-semibold">Heroku</span> and
-              <span class="font-semibold">MongoDB Atlas</span>
-            </li>
-          </ul>
-
-          <p class="font-semibold pt-8">Frontend</p>
-          <ul class="col-span-2 bullet-list my-2">
-            <li>
-              Developed the interface in
-              <span class="font-semibold">React</span> with
-              <span class="font-semibold">React Router</span> for navigation
-            </li>
-            <li>
-              Built reusable components: movie cards, modals, forms, and profile
-              views
-            </li>
-            <li>
-              Connected frontend to backend via
-              <span class="font-semibold">Fetch</span> with token-based headers
-            </li>
-            <ul class="bullet-list my-3">
-              Enabled users to:
-              <li>Register, log in, and update their profiles</li>
-              <li>Browse movies and view detailed info (genre, director)</li>
-              <li>Add/remove favorite films</li>
+          <div
+            class="sm:grid sm:grid-cols-subgrid sm:col-start-1 sm:col-span-2 details"
+          >
+            <h3 class="details-subheading">Overview</h3>
+            <p class="flex-1 col-span-2">
+              CUB Film Data is a full-stack web application that lets users
+              explore arthouse films, view details about directors and genres,
+              and manage a personal list of favorite movies. I developed both
+              the backend REST API and the client-side React interface,
+              integrating secure user authentication and responsive UI
+              components. The project was built as part of my Full-Stack Web
+              Development course and later refined for inclusion in my
+              professional portfolio.
+            </p>
+            <h4 class="details-subheading">Objective</h4>
+            <p class="col-span-2">
+              The goal was to demonstrate full-stack proficiency using the MERN
+              stack (MongoDB, Express, React, Node.js). I aimed to build a fully
+              functional app from scratch — with real-world features like
+              authentication, data validation, client-server communication, and
+              deployment — while writing clean, modular code.
+            </p>
+            <h5 class="details-subheading">Problem</h5>
+            <p class="col-span-2">
+              How do you design and build a scalable, user-friendly movie
+              database from scratch — handling everything from user
+              authentication to dynamic UI updates — with no starter code or
+              templates? I needed to:
+            </p>
+            <ul class="bullet-list col-span-2 my-3">
+              <li>
+                Create a robust backend that could handle multiple user
+                operations
+              </li>
+              <li>
+                Build a responsive, intuitive frontend from scratch in React
+              </li>
+              <li>Ensure secure, seamless communication between both layers</li>
+              <li>
+                Learn and apply new technologies like JWT, Mongoose, and React
+                Router efficiently
+              </li>
             </ul>
-            <li>Styled using custom CSS with a focus on responsiveness</li>
-          </ul>
 
-          <h6 class="details-subheading col-span-2">Challenges</h6>
-          <p class="col-span-2">
-            Building the backend taught me how to manage data security and API
-            logic, but the frontend was where I encountered the steepest
-            learning curve. I had to:
-          </p>
-          <ul class="bullet-list col-span-2 my-3">
-            <li>
-              Understand how to manage state effectively with props and
-              conditional rendering
-            </li>
-            <li>
-              Learn React from the ground up — especially routing, lifting
-              state, and error handling
-            </li>
-            <li>Debug connection issues between frontend and backend</li>
-            <li>
-              Build and test a full login flow using real credentials and token
-              handling
-            </li>
-          </ul>
-          <p class="col-span-2">
-            These challenges pushed me to become a more autonomous
-            problem-solver and gave me a much deeper grasp of JavaScript
-            fundamentals.
-          </p>
+            <h6 class="details-subheading col-span-2">Approach</h6>
+            <p class="font-semibold">Backend</p>
+            <ul class="col-span-2 bullet-list my-2">
+              <li>
+                Built a REST API using
+                <span class="font-semibold">Node.js</span> and
+                <span class="font-semibold">Express</span>
+              </li>
+              <li>
+                Designed and tested endpoints (GET, POST, PUT, DELETE) using
+                <span class="font-semibold">Postman</span>
+              </li>
+              <li>
+                Integrated <span class="font-semibold">MongoDB</span> and
+                <span class="font-semibold">Mongoose</span> for data modeling
+                and storage
+              </li>
+              <li>
+                Implemented
+                <span class="font-semibold">JWT-based authentication</span> for
+                login and protected routes
+              </li>
+              <li>
+                Deployed backend to
+                <span class="font-semibold">Heroku</span> and
+                <span class="font-semibold">MongoDB Atlas</span>
+              </li>
+            </ul>
 
-          <h6 class="details-subheading col-span-2">Results</h6>
+            <p class="font-semibold pt-8">Frontend</p>
+            <ul class="col-span-2 bullet-list my-2">
+              <li>
+                Developed the interface in
+                <span class="font-semibold">React</span> with
+                <span class="font-semibold">React Router</span> for navigation
+              </li>
+              <li>
+                Built reusable components: movie cards, modals, forms, and
+                profile views
+              </li>
+              <li>
+                Connected frontend to backend via
+                <span class="font-semibold">Fetch</span> with token-based
+                headers
+              </li>
+              <ul class="bullet-list my-3">
+                Enabled users to:
+                <li>Register, log in, and update their profiles</li>
+                <li>Browse movies and view detailed info (genre, director)</li>
+                <li>Add/remove favorite films</li>
+              </ul>
+              <li>Styled using custom CSS with a focus on responsiveness</li>
+            </ul>
 
-          <ul class="bullet-list col-span-2">
-            <li>
-              Successfully deployed a working full-stack application with user
-              login, persistent data, and dynamic UI
-            </li>
-            <li>
-              Developed a stronger understanding of how APIs and frontend
-              components interact
-            </li>
-            <li>Learned to debug full-stack workflows independently</li>
-            <li>
-              Today, I would improve code modularity and refactor the component
-              structure for scalability
-            </li>
-          </ul>
-        </div>
-      </section>
+            <h6 class="details-subheading col-span-2">Challenges</h6>
+            <p class="col-span-2">
+              Building the backend taught me how to manage data security and API
+              logic, but the frontend was where I encountered the steepest
+              learning curve. I had to:
+            </p>
+            <ul class="bullet-list col-span-2 my-3">
+              <li>
+                Understand how to manage state effectively with props and
+                conditional rendering
+              </li>
+              <li>
+                Learn React from the ground up — especially routing, lifting
+                state, and error handling
+              </li>
+              <li>Debug connection issues between frontend and backend</li>
+              <li>
+                Build and test a full login flow using real credentials and
+                token handling
+              </li>
+            </ul>
+            <p class="col-span-2">
+              These challenges pushed me to become a more autonomous
+              problem-solver and gave me a much deeper grasp of JavaScript
+              fundamentals.
+            </p>
 
-      <div class="flex flex-col gap-20 col-start-3 col-span-2 mt-20 p-3 sm:p-8">
-        <div class="livelinks justify-end! gap-5 pr-4">
-          <a
-            href="https://github.com/ilsegaertner/CUB-film-data-client"
-            target="_blank"
-            class="card-link"
-            >Code
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="15"
-              height="15"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="icon icon-tabler icons-tabler-outline icon-tabler-link"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path d="M9 15l6 -6" />
-              <path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464" />
-              <path
-                d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"
-              />
-            </svg>
-          </a>
+            <h6 class="details-subheading col-span-2">Results</h6>
 
-          <a
-            href="https://cub-film-data.netlify.app/"
-            target="_blank"
-            class="card-link"
-            >Demo
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="15"
-              height="15"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="icon icon-tabler icons-tabler-outline icon-tabler-link"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path d="M9 15l6 -6" />
-              <path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464" />
-              <path
-                d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"
-              />
-            </svg>
-          </a>
-
-          <a href="work.html" class="card-link"
-            >Back
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="15"
-              height="15"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="icon icon-tabler icons-tabler-outline icon-tabler-link"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path d="M9 15l6 -6" />
-              <path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464" />
-              <path
-                d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"
-              />
-            </svg>
-          </a>
-        </div>
-
-        <div
-          class="relative flex gap-3 overflow-x-auto sm:grid sm:grid-cols-1 sm:grid-rows-2 md:grid-cols-2 sm:pl-10 lg:pl-30 py-10 sm:col-span-2 snap-x snap-mandatory col-start-3 col-span-2"
-        >
-          <p
-            class="absolute left-31 sm:left-auto -top-5 sm:right-0 text-start text-gray-500 text-xs mt-8 text-balance self-end"
-          >
-            Project Screenshots
-          </p>
-          <picture class="picture-wrapper-details">
-            <img
-              src="img/documentation/cub_react_client/cub_film_data_screenshot1.webp"
-              alt="Image of the project called Cub Film Angular"
-              class="project-images !rotate-0"
-            />
-          </picture>
-          <picture class="picture-wrapper-details">
-            <img
-              src="img/documentation/cub_react_client/cub_film_data_screenshot5.webp"
-              alt="Image of the project called Cub Film Angular"
-              class="project-images !rotate-0"
-            />
-          </picture>
-          <picture class="picture-wrapper-details">
-            <img
-              src="img/documentation/cub_react_client/cub_film_data_screenshot3.webp"
-              alt="Image of the project called Cub Film Angular"
-              class="project-images !rotate-0"
-            />
-          </picture>
-        </div>
-        <section class="credits-wrapper">
-          <h2 class="details-subheading pb-4!">Credits:</h2>
-          <ul class="credits">
-            <li>Role: Lead Developer</li>
-            <li>Tutor: Emanuel Okello</li>
-            <li>Mentor: Stephen Barungi</li>
-          </ul>
+            <ul class="bullet-list col-span-2">
+              <li>
+                Successfully deployed a working full-stack application with user
+                login, persistent data, and dynamic UI
+              </li>
+              <li>
+                Developed a stronger understanding of how APIs and frontend
+                components interact
+              </li>
+              <li>Learned to debug full-stack workflows independently</li>
+              <li>
+                Today, I would improve code modularity and refactor the
+                component structure for scalability
+              </li>
+            </ul>
+          </div>
         </section>
 
-        <div class="stack-images-skillicons shadow-md p-5">
-          <h4 class="font-bold mb-8 text-center sm:text-start">
-            Technologies used
-          </h4>
+        <div
+          class="flex flex-col gap-20 col-start-3 col-span-2 mt-20 p-3 sm:p-8"
+        >
+          <div class="livelinks justify-end! gap-5 pr-4">
+            <a
+              href="https://github.com/ilsegaertner/CUB-film-data-client"
+              target="_blank"
+              class="card-link"
+              >Code
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="15"
+                height="15"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-link"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M9 15l6 -6" />
+                <path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464" />
+                <path
+                  d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"
+                />
+              </svg>
+            </a>
+
+            <a
+              href="https://cub-film-data.netlify.app/"
+              target="_blank"
+              class="card-link"
+              >Demo
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="15"
+                height="15"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-link"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M9 15l6 -6" />
+                <path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464" />
+                <path
+                  d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"
+                />
+              </svg>
+            </a>
+
+            <a href="work.html" class="card-link"
+              >Back
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="15"
+                height="15"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-link"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M9 15l6 -6" />
+                <path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464" />
+                <path
+                  d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"
+                />
+              </svg>
+            </a>
+          </div>
+
           <div
-            class="grid grid-cols-1 lg:grid-cols-2 gap-x-6 gap-y-3 justify-center mt-3 text-xs text-gray-500"
+            class="relative flex gap-3 overflow-x-auto sm:grid sm:grid-cols-1 sm:grid-rows-2 md:grid-cols-2 sm:pl-10 lg:pl-30 py-10 sm:col-span-2 snap-x snap-mandatory col-start-3 col-span-2"
           >
-            <div class="technologies-item">
-              <span class="technologies-span invisible-item">HTML5</span>
+            <p
+              class="absolute left-31 sm:left-auto -top-5 sm:right-0 text-start text-gray-500 text-xs mt-8 text-balance self-end"
+            >
+              Project Screenshots
+            </p>
+            <picture class="picture-wrapper-details">
               <img
-                class="technologies-images"
-                alt="HTML-icon"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
-                width="20px"
+                src="img/documentation/cub_react_client/cub_film_data_screenshot1.webp"
+                alt="Image of the project called Cub Film Angular"
+                class="project-images !rotate-0"
               />
-            </div>
-            <div class="technologies-item">
-              <span class="technologies-span invisible-item">CSS</span>
+            </picture>
+            <picture class="picture-wrapper-details">
               <img
-                class="technologies-images"
-                alt="CSS-icon"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
-                width="20px"
+                src="img/documentation/cub_react_client/cub_film_data_screenshot5.webp"
+                alt="Image of the project called Cub Film Angular"
+                class="project-images !rotate-0"
               />
-            </div>
+            </picture>
+            <picture class="picture-wrapper-details">
+              <img
+                src="img/documentation/cub_react_client/cub_film_data_screenshot3.webp"
+                alt="Image of the project called Cub Film Angular"
+                class="project-images !rotate-0"
+              />
+            </picture>
+          </div>
+          <section class="credits-wrapper">
+            <h2 class="details-subheading pb-4!">Credits:</h2>
+            <ul class="credits">
+              <li>Role: Lead Developer</li>
+              <li>Tutor: Emanuel Okello</li>
+              <li>Mentor: Stephen Barungi</li>
+            </ul>
+          </section>
 
-            <div class="technologies-item">
-              <span class="technologies-span invisible-item">JavaScript</span>
-              <img
-                class="technologies-images"
-                alt="JavaScript-icon"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
-                width="20px"
-              />
-            </div>
+          <div class="stack-images-skillicons shadow-md p-5">
+            <h4 class="font-bold mb-8 text-center sm:text-start">
+              Technologies used
+            </h4>
+            <div
+              class="grid grid-cols-1 lg:grid-cols-2 gap-x-6 gap-y-3 justify-center mt-3 text-xs text-gray-500"
+            >
+              <div class="technologies-item">
+                <span class="technologies-span invisible-item">HTML5</span>
+                <img
+                  class="technologies-images"
+                  alt="HTML-icon"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                  width="20px"
+                />
+              </div>
+              <div class="technologies-item">
+                <span class="technologies-span invisible-item">CSS</span>
+                <img
+                  class="technologies-images"
+                  alt="CSS-icon"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+                  width="20px"
+                />
+              </div>
 
-            <div class="technologies-item">
-              <span class="technologies-span invisible-item">Typescript</span>
-              <img
-                class="technologies-images"
-                alt="TypeScript-icon"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
-                width="20px"
-              />
-            </div>
+              <div class="technologies-item">
+                <span class="technologies-span invisible-item">JavaScript</span>
+                <img
+                  class="technologies-images"
+                  alt="JavaScript-icon"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                  width="20px"
+                />
+              </div>
 
-            <div class="technologies-item">
-              <span class="technologies-span invisible-item">Angular</span>
-              <img
-                class="technologies-images"
-                alt="Angular-icon"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg"
-                width="20px"
-              />
-            </div>
+              <div class="technologies-item">
+                <span class="technologies-span invisible-item">Typescript</span>
+                <img
+                  class="technologies-images"
+                  alt="TypeScript-icon"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+                  width="20px"
+                />
+              </div>
 
-            <div class="technologies-item">
-              <span class="technologies-span invisible-item">Mongo DB</span>
-              <img
-                class="technologies-images"
-                alt="MongoDB-icon"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
-                width="20px"
-              />
+              <div class="technologies-item">
+                <span class="technologies-span invisible-item">Angular</span>
+                <img
+                  class="technologies-images"
+                  alt="Angular-icon"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg"
+                  width="20px"
+                />
+              </div>
+
+              <div class="technologies-item">
+                <span class="technologies-span invisible-item">Mongo DB</span>
+                <img
+                  class="technologies-images"
+                  alt="MongoDB-icon"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
+                  width="20px"
+                />
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </main>
-    <button class="gap-1 mt-20 call-to-action-secondary ml-3">
-      <a href="./work.html" class="flex items-center">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-left"
-        >
-          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-          <path d="M5 12l14 0" />
-          <path d="M5 12l4 4" />
-          <path d="M5 12l4 -4" />
-        </svg>
-        Go Back</a
-      >
-    </button>
-    <section
-      class="grid grid-cols-5 col-span-4 py-30 w-full items-center font-medium mb-12 bg-gray-100 mt-45"
-    >
-      <div
-        class="flex items-center gap-9 justify-center flex-col -mt-55 col-start-2 col-span-3"
-      >
-        <img
-          class="dev-icon_work"
-          src="assets/website.svg"
-          alt="image of a message icon"
-          width="150px"
-          height="150px"
-        />
-        <span class="text-3xl">Interested in working together? </span>
-      </div>
-      <div
-        class="flex items-center gap-3.5 flex-col mt-50 col-start-2 col-span-3"
-      >
-        <a
-          href="mailto:joachimpruegl@gmail.com"
-          class="text-xl call-to-action-secondary font-extralight!"
-          >Send me a mail</a
-        >
-        <img
-          src="assets/mail3.svg"
-          alt="email-icon"
-          width="25px
-      "
-          height="25px"
-        />
-      </div>
-    </section>
-    <footer class="page-footer">
-      <div class="flex leading-5">
-        <div class="footer-links">
-          <a class="legal-info" href="legal-info.html">Impressum</a>
-          <a class="" href="assets/Pruegl-Joachim-Resumee.pdf" download
-            >Download Résumé</a
+      </main>
+      <button class="gap-1 mt-20 call-to-action-secondary ml-3">
+        <a href="./work.html" class="flex items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-left"
           >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M5 12l14 0" />
+            <path d="M5 12l4 4" />
+            <path d="M5 12l4 -4" />
+          </svg>
+          Go Back</a
+        >
+      </button>
+      <section
+        class="grid grid-cols-5 col-span-4 py-30 w-full items-center font-medium mb-12 bg-gray-100 mt-45"
+      >
+        <div
+          class="flex items-center gap-9 justify-center flex-col -mt-55 col-start-2 col-span-3"
+        >
+          <img
+            class="dev-icon_work"
+            src="assets/website.svg"
+            alt="image of a message icon"
+            width="150px"
+            height="150px"
+          />
+          <span class="text-3xl">Interested in working together? </span>
         </div>
         <div
-          class="social-media flex sm:flex-row justify-end gap-y-1 gap-x-4 w-full flex-col items-end"
+          class="flex items-center gap-3.5 flex-col mt-50 col-start-2 col-span-3"
         >
-          <p>Find me on</p>
+          <a
+            href="mailto:joachimpruegl@gmail.com"
+            class="text-xl call-to-action-secondary font-extralight!"
+            >Send me a mail</a
+          >
+          <img
+            src="assets/mail3.svg"
+            alt="email-icon"
+            width="25px
+      "
+            height="25px"
+          />
+        </div>
+      </section>
+      <footer class="page-footer">
+        <div class="flex leading-5">
+          <div class="footer-links">
+            <a class="legal-info" href="legal-info.html">Impressum</a>
+            <a class="" href="assets/Pruegl-Joachim-Resumee.pdf" download
+              >Download Résumé</a
+            >
+          </div>
+          <div
+            class="social-media flex sm:flex-row justify-end gap-y-1 gap-x-4 w-full flex-col items-end"
+          >
+            <p>Find me on</p>
 
-          <div class="social-media-flex">
-            <a href="https://github.com/ilsegaertner" target="_blank"
-              ><img
-                src="assets/brand-github.svg"
-                alt="Logo and Link for the Github platform"
-                width="25"
-                height="25" /></a
-            ><span
-              ><a href="https://twitter.com/JoachimPrugl" target="_blank"
+            <div class="social-media-flex">
+              <a href="https://github.com/ilsegaertner" target="_blank"
                 ><img
-                  src="assets/brand-x.svg"
-                  alt="Logo and Link for the Twitter platform"
-                  width="25"
-                  height="25" /></a></span
-            ><span
-              ><a
-                href="https://www.linkedin.com/in/joachim-pr%C3%BCgl/"
-                target="_blank"
-                ><img
-                  src="assets/brand-linkedin.svg"
-                  alt="Logo and Link for the LinkedIn platform"
+                  src="assets/brand-github.svg"
+                  alt="Logo and Link for the Github platform"
                   width="25"
                   height="25" /></a
-            ></span>
+              ><span
+                ><a href="https://twitter.com/JoachimPrugl" target="_blank"
+                  ><img
+                    src="assets/brand-x.svg"
+                    alt="Logo and Link for the Twitter platform"
+                    width="25"
+                    height="25" /></a></span
+              ><span
+                ><a
+                  href="https://www.linkedin.com/in/joachim-pr%C3%BCgl/"
+                  target="_blank"
+                  ><img
+                    src="assets/brand-linkedin.svg"
+                    alt="Logo and Link for the LinkedIn platform"
+                    width="25"
+                    height="25" /></a
+              ></span>
+            </div>
           </div>
         </div>
-      </div>
-      <div
-        class="text-xs -mt-8 text-center sm:-mt-4 pb-3 text-gray-300 flex flex-col sm:flex-row justify-center gap-x-1"
-      >
-        <p>© Copyright 2024 |</p>
-        <p>joachimpruegl.me</p>
-      </div>
-    </footer>
+        <div
+          class="text-xs -mt-8 text-center sm:-mt-4 pb-3 text-gray-300 flex flex-col sm:flex-row justify-center gap-x-1"
+        >
+          <p>© Copyright 2024 |</p>
+          <p>joachimpruegl.me</p>
+        </div>
+      </footer>
+    </div>
     <script src="/portfolio/main.js" defer></script>
     <!-- <script src="js/tota11y.min.js"></script> -->
   </body>
