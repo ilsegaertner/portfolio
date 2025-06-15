@@ -125,7 +125,6 @@
 }
 
 body {
-  /* margin: auto; */
   color: var(--main-text);
   background-color: #ffffff;
   font-weight: 300;
@@ -492,12 +491,8 @@ hr {
     @apply text-2xl font-bold;
   }
 
-  /* body {
-    @apply max-w-4xl lg:max-w-6xl;
-  } */
-
   body {
-    @apply min-h-screen max-w-4xl lg:max-w-6xl mx-auto;
+    @apply max-w-4xl lg:max-w-6xl mx-auto;
   }
 
   picture {
