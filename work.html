@@ -74,92 +74,33 @@
         ]
       }
     </script>
-    <link rel="stylesheet" crossorigin href="/portfolio/assets/style-I__131zg.css">
+    <link rel="stylesheet" crossorigin href="/portfolio/assets/style-C75RJs7Q.css">
   </head>
 
   <body>
-    <div class="max-w-4xl mx-auto h-screen overflow-y-auto lg:max-w-6xl">
-      <header class="">
-        <nav
-          role="navigation"
-          class="flex items-center p-3 nav-list flex-wrap z-40 relative"
-        >
-          <a href="index.html" class="text-main">Joachim Prügl </a>
+    <header class="">
+      <nav
+        role="navigation"
+        class="flex items-center p-3 nav-list flex-wrap z-40 relative"
+      >
+        <a href="index.html" class="text-main">Joachim Prügl </a>
 
-          <ul role="menubar" class="gap-6 hidden sm:flex ml-auto">
-            <li>
-              <button
-                class="sm:hidden"
-                aria-label="close Menu"
-                onclick="closeModal()"
-              >
-                <img
-                  src="assets/close.svg"
-                  alt="close-menu-icon"
-                  class="bg-white"
-                />
-              </button>
-            </li>
-            <li role="presentation">
-              <a href="about.html" role="menuitem" class="navigation-list__item"
-                >About
-              </a>
-            </li>
-            <li role="presentation">
-              <a
-                href="work.html"
-                role="menuitem"
-                class="navigation-list__item active"
-                >Work</a
-              >
-            </li>
-            <li role="presentation">
-              <a
-                href="contact.html"
-                role="menuitem"
-                class="navigation-list__item"
-                >Contact</a
-              >
-            </li>
-          </ul>
-          <button
-            class="sm:hidden ml-auto"
-            aria-label="Toggle Menu"
-            onclick="openModal()"
-          >
-            <img src="assets/menu.svg" alt="toggle-menu-icon" />
-          </button>
-        </nav>
-
-        <div
-          id="blur-overlay"
-          class="fixed inset-0 z-30 bg-transparent backdrop-blur-2xl opacity-0 pointer-events-none transition-opacity duration-100 sm:hidden"
-          aria-hidden="true"
-        ></div>
-
-        <!-- mobile nav -->
-        <ul
-          role="menubar"
-          class="fixed hover:cursor-pointer flex-col opacity-0 translate-x-full pointer-events-none transition-all duration-200 ease-in-out w-2/3 z-50 top-0 p-4 bg-[#262828] h-lvh right-0 text-right text-white sm:hidden"
-          id="menu-list"
-        >
-          <button
-            class="sm:hidden"
-            aria-label="close Menu"
-            onclick="closeModal()"
-          >
-            <img
-              src="assets/close2.svg"
-              alt="close-menu-icon"
-              class="text-white"
-            />
-          </button>
-
+        <ul role="menubar" class="gap-6 hidden sm:flex ml-auto">
+          <li>
+            <button
+              class="sm:hidden"
+              aria-label="close Menu"
+              onclick="closeModal()"
+            >
+              <img
+                src="assets/close.svg"
+                alt="close-menu-icon"
+                class="bg-white"
+              />
+            </button>
+          </li>
           <li role="presentation">
-            <a
-              href="about.html"
-              role="menuitem"
-              class="navigation-list__item nav-mobile-item"
+            <a href="about.html" role="menuitem" class="navigation-list__item"
               >About
             </a>
           </li>
@@ -167,511 +108,162 @@
             <a
               href="work.html"
               role="menuitem"
-              class="navigation-list__item nav-mobile-item active"
+              class="navigation-list__item active"
               >Work</a
             >
           </li>
           <li role="presentation">
-            <a
-              href="contact.html"
-              role="menuitem"
-              class="navigation-list__item nav-mobile-item"
+            <a href="contact.html" role="menuitem" class="navigation-list__item"
               >Contact</a
             >
           </li>
         </ul>
-      </header>
+        <button
+          class="sm:hidden ml-auto"
+          aria-label="Toggle Menu"
+          onclick="openModal()"
+        >
+          <img src="assets/menu.svg" alt="toggle-menu-icon" />
+        </button>
+      </nav>
 
-      <main
-        role="main"
-        class="sm:grid sm:grid-cols-2 lg:gap-x-3 lg:grid-cols-9 bg-gray-100"
+      <div
+        id="blur-overlay"
+        class="fixed inset-0 z-30 bg-transparent backdrop-blur-2xl opacity-0 pointer-events-none transition-opacity duration-100 sm:hidden"
+        aria-hidden="true"
+      ></div>
+
+      <!-- mobile nav -->
+      <ul
+        role="menubar"
+        class="fixed hover:cursor-pointer flex-col opacity-0 translate-x-full pointer-events-none transition-all duration-200 ease-in-out w-2/3 z-50 top-0 p-4 bg-[#262828] h-lvh right-0 text-right text-white sm:hidden"
+        id="menu-list"
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1900 600"
-          preserveAspectRatio="none"
-          class="fixed inset-0 -z-10 w-full h-full"
+        <button
+          class="sm:hidden"
+          aria-label="close Menu"
+          onclick="closeModal()"
         >
-          <path fill="#707070" d="M0 0h1900v1600H0z" />
-          <path
-            fill="#75dec6"
-            d="M1360 1600h152v-400h26V800H868V400h67V0h965v1600Z"
+          <img
+            src="assets/close2.svg"
+            alt="close-menu-icon"
+            class="text-white"
           />
-          <path
-            fill="#bdc0db"
-            d="M1325 1600h-56v-400h272V800h-41V400h254V0h146v1600Z"
-          />
-        </svg>
+        </button>
 
-        <h1
-          class="animate__animated animate__fadeIn animate__delay-1s text-balance text-center sm:text-start px-10 lg:px-0 py-20 leading-10 lg:leading-17 sm:col-span-6 lg:col-span-7 lg:col-start-3 main-heading"
-        >
-          What I've been working on...
-        </h1>
+        <li role="presentation">
+          <a
+            href="about.html"
+            role="menuitem"
+            class="navigation-list__item nav-mobile-item"
+            >About
+          </a>
+        </li>
+        <li role="presentation">
+          <a
+            href="work.html"
+            role="menuitem"
+            class="navigation-list__item nav-mobile-item active"
+            >Work</a
+          >
+        </li>
+        <li role="presentation">
+          <a
+            href="contact.html"
+            role="menuitem"
+            class="navigation-list__item nav-mobile-item"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </header>
 
-        <ul class="project-list lg:pt-15">
-          <li id="Weather-App" class="project-list__item opacity-0 group">
-            <div class="card-heading-wrapper">
-              <h2 class="gradient-title">
+    <main
+      role="main"
+      class="sm:grid sm:grid-cols-2 lg:gap-x-3 lg:grid-cols-9 bg-gray-100"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1900 600"
+        preserveAspectRatio="none"
+        class="fixed inset-0 -z-10 w-full h-full"
+      >
+        <path fill="#707070" d="M0 0h1900v1600H0z" />
+        <path
+          fill="#75dec6"
+          d="M1360 1600h152v-400h26V800H868V400h67V0h965v1600Z"
+        />
+        <path
+          fill="#bdc0db"
+          d="M1325 1600h-56v-400h272V800h-41V400h254V0h146v1600Z"
+        />
+      </svg>
+
+      <h1
+        class="animate__animated animate__fadeIn animate__delay-1s text-balance text-center sm:text-start px-10 lg:px-0 py-20 leading-10 lg:leading-17 sm:col-span-6 lg:col-span-7 lg:col-start-3 main-heading"
+      >
+        What I've been working on...
+      </h1>
+
+      <ul class="project-list lg:pt-15">
+        <li id="Weather-App" class="project-list__item opacity-0 group">
+          <div class="card-heading-wrapper">
+            <h2 class="gradient-title">
+              <a
+                href="weather-app.html"
+                class="group-hover:text-[oklch(0.5573_0.222_274.27)]"
+                >World Weather App</a
+              >
+            </h2>
+            <h4 class="text-balance text-xs">
+              Responsive Weather Dashboard with Browser Extension
+            </h4>
+            <p class="card-stack-info">
+              React · OpenWeatherMap API · Radix UI · Leaflet · Framer Motion
+            </p>
+
+            <p class="card-description">
+              Real-time weather app with animated gradients, 5-day forecasts,
+              interactive maps, and a custom Chrome extension.
+            </p>
+
+            <div class="description hidden">
+              <div>
+                <span class="font-bold">Weather Application</span>, a
+                React-based project, provides users with real-time weather
+                updates for cities around the world through a dynamic and
+                responsive interface. Users can search for any city to view
+                current weather conditions, a five-day forecast, and live
+                weather icons. <button class="inline">See more</button>
+
+                The app also features a browser extension for quick access to
+                weather data and maps directly from the browser. Additionally,
+                the application adapts its background gradient to match current
+                weather conditions, such as sunny, cloudy, or nighttime
+                settings, creating a visual feedback. This project enhanced my
+                skills in
+                <span class="font-bold">React</span>, allowed me to integrate
+                the <span class="font-bold">OpenWeatherMap API</span>, and
+                taught me how to create smooth animations with
+                <span class="font-bold">Framer Motion</span>. The interactive
+                maps are powered by <span class="font-bold">Leaflet</span>.
+              </div>
+            </div>
+          </div>
+          <picture
+            class="project-picture-wrapper animate__animated animate__flipInX"
+          >
+            <img
+              src="img/documentation/weather-app/weather-app-iphone.png"
+              alt="Image of the project called Appsource"
+              class="project-images"
+            />
+          </picture>
+          <div class="links-wrapper">
+            <div class="livelinks">
+              <div class="flex flex-col-reverse flex-wrap">
                 <a
-                  href="weather-app.html"
-                  class="group-hover:text-[oklch(0.5573_0.222_274.27)]"
-                  >World Weather App</a
-                >
-              </h2>
-              <h4 class="text-balance text-xs">
-                Responsive Weather Dashboard with Browser Extension
-              </h4>
-              <p class="card-stack-info">
-                React · OpenWeatherMap API · Radix UI · Leaflet · Framer Motion
-              </p>
-
-              <p class="card-description">
-                Real-time weather app with animated gradients, 5-day forecasts,
-                interactive maps, and a custom Chrome extension.
-              </p>
-
-              <div class="description hidden">
-                <div>
-                  <span class="font-bold">Weather Application</span>, a
-                  React-based project, provides users with real-time weather
-                  updates for cities around the world through a dynamic and
-                  responsive interface. Users can search for any city to view
-                  current weather conditions, a five-day forecast, and live
-                  weather icons. <button class="inline">See more</button>
-
-                  The app also features a browser extension for quick access to
-                  weather data and maps directly from the browser. Additionally,
-                  the application adapts its background gradient to match
-                  current weather conditions, such as sunny, cloudy, or
-                  nighttime settings, creating a visual feedback. This project
-                  enhanced my skills in
-                  <span class="font-bold">React</span>, allowed me to integrate
-                  the <span class="font-bold">OpenWeatherMap API</span>, and
-                  taught me how to create smooth animations with
-                  <span class="font-bold">Framer Motion</span>. The interactive
-                  maps are powered by <span class="font-bold">Leaflet</span>.
-                </div>
-              </div>
-            </div>
-            <picture
-              class="project-picture-wrapper animate__animated animate__flipInX"
-            >
-              <img
-                src="img/documentation/weather-app/weather-app-iphone.png"
-                alt="Image of the project called Appsource"
-                class="project-images"
-              />
-            </picture>
-            <div class="links-wrapper">
-              <div class="livelinks">
-                <div class="flex flex-col-reverse flex-wrap">
-                  <a
-                    href="https://github.com/ilsegaertner/world-weather"
-                    target="_blank"
-                    class="card-link"
-                    >Github
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="15"
-                      height="15"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="icon icon-tabler icons-tabler-outline icon-tabler-link"
-                    >
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                      <path d="M9 15l6 -6" />
-                      <path
-                        d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464"
-                      />
-                      <path
-                        d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"
-                      />
-                    </svg>
-                  </a>
-                  <a
-                    href="https://global-weather-info.netlify.app/"
-                    target="_blank"
-                    class="card-link"
-                    >Live
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="15"
-                      height="15"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="icon icon-tabler icons-tabler-outline icon-tabler-link"
-                    >
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                      <path d="M9 15l6 -6" />
-                      <path
-                        d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464"
-                      />
-                      <path
-                        d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"
-                      />
-                    </svg>
-                  </a>
-                </div>
-                <a href="weather-app.html" class="card-link"
-                  >View
-
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="15"
-                    height="15"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="icon icon-tabler icons-tabler-outline icon-tabler-link"
-                  >
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M9 15l6 -6" />
-                    <path
-                      d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464"
-                    />
-                    <path
-                      d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </li>
-
-          <li id="Angular-App" class="project-list__item opacity-0 group">
-            <div class="card-heading-wrapper">
-              <h2 class="gradient-title">
-                <a
-                  href="cub-angular.html"
-                  class="group-hover:text-[oklch(0.5573_0.222_274.27)]"
-                  >CUB Film Data (Angular)</a
-                ><br />
-              </h2>
-              <h4 class="text-balance text-xs">
-                Angular Web App for an Arthouse Movie Database
-              </h4>
-              <p class="card-stack-info">
-                Angular · TypeScript · MongoDB · Express · SCSS
-              </p>
-
-              <p class="card-description">
-                A responsive SPA for exploring arthouse films with user
-                accounts, search/filtering, and detailed movie modals — built
-                with Angular and TypeScript.
-              </p>
-              <div class="description hidden">
-                <div>
-                  <span class="">CUB Film Data (Angular)</span>, an
-                  Angular-based project, stands as the frontend interface of a
-                  movie database (which I built previously as
-                  <a href="#Rest-Api">REST-Api</a>
-                  for the backend). Users can browse through movies, get data
-                  about directors and genres, or edit their profile.
-                  <br /><br />
-                  <button>See More</button>
-                  For the project I learnt
-                  <span class="">Typescript</span> and
-                  <span class="">Angular</span> which I found easier than React,
-                  generally structured and pleasant to work with. <br /><br />
-                  Prior to implementation,
-                  <a
-                    href="https://github.com/ilsegaertner/CUB-Film-Angular-client#user-content-user-storiesuser-flow-created-prior"
-                    target="_blank"
-                    class="Geist"
-                    >user stories</a
-                  >
-                  helped me to visualize necessary interfaces and routes (see
-                  link), aiding in the understanding of required operations and
-                  serving as a helpful visualization tool.
-                </div>
-              </div>
-            </div>
-            <picture
-              class="project-picture-wrapper animate__animated animate__flipInY"
-            >
-              <img
-                src="img/documentation/CUB-Film-Angular-client_documentation/cub-angular-iphone.png"
-                alt="Image of the project called Cub Film Angular"
-                class="project-images"
-              />
-            </picture>
-            <div class="links-wrapper">
-              <div class="livelinks">
-                <div class="flex flex-col-reverse flex-wrap">
-                  <a
-                    href="https://github.com/ilsegaertner/CUB-Film-Angular-client"
-                    target="_blank"
-                    class="card-link"
-                    >Github
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="15"
-                      height="15"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="icon icon-tabler icons-tabler-outline icon-tabler-link"
-                    >
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                      <path d="M9 15l6 -6" />
-                      <path
-                        d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464"
-                      />
-                      <path
-                        d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"
-                      />
-                    </svg>
-                  </a>
-                  <a
-                    href="https://ilsegaertner.github.io/CUB-Film-Angular-client/"
-                    target="_blank"
-                    class="card-link"
-                    >Live
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="15"
-                      height="15"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="icon icon-tabler icons-tabler-outline icon-tabler-link"
-                    >
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                      <path d="M9 15l6 -6" />
-                      <path
-                        d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464"
-                      />
-                      <path
-                        d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"
-                      />
-                    </svg>
-                  </a>
-                </div>
-                <a class="card-link" href="cub-angular.html"
-                  >View
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="15"
-                    height="15"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="icon icon-tabler icons-tabler-outline icon-tabler-link"
-                  >
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M9 15l6 -6" />
-                    <path
-                      d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464"
-                    />
-                    <path
-                      d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </li>
-
-          <li id="Meet-App" class="project-list__item opacity-0 group">
-            <div class="card-heading-wrapper">
-              <h2 class="gradient-title">
-                <a
-                  href="./meet-app.html"
-                  class="group-hover:text-[oklch(0.5573_0.222_274.27)]"
-                  >Meet App</a
-                ><br />
-              </h2>
-
-              <h4 class="text-balance text-xs">
-                Progressive Web App for browsing and visualizing local events
-              </h4>
-              <p class="card-stack-info">
-                React · AWS Lambda · OAuth · TDD · D3.js · Service Workers
-              </p>
-              <p class="card-description">
-                Search and visualize local events in real time — with offline
-                support, OAuth authentication, and interactive charts.
-              </p>
-
-              <div class="description hidden">
-                <div>
-                  <span class="">Meet App</span> is a PWA (Progressive Web
-                  Application) built in React. The application gathers and
-                  displays upcoming developer-centric events in different cities
-                  worldwide by connecting to a Google Calendar API using OAuth
-                  authorization. <button>See more</button> <br /><br />Designed
-                  to function across browsers, it also offers desktop
-                  installation and offline functionality providing users with a
-                  dynamic and accessible event exploration experience.
-                  <br /><br />
-                  This project was written in TDD (Test-Driven Development),
-                  prioritizing test-writing before code implementation to ensure
-                  robustness and reliability.
-                </div>
-              </div>
-            </div>
-
-            <picture
-              class="project-picture-wrapper animate__animated animate__flipInX"
-            >
-              <img
-                src="img/documentation/Meet-App_documentation/meet-iphone.png"
-                alt="Image of the project called Meet App"
-                class="project-images"
-              />
-            </picture>
-            <div class="links-wrapper">
-              <div class="livelinks">
-                <div class="flex flex-col-reverse flex-wrap">
-                  <a
-                    href="https://github.com/ilsegaertner/Meet-app"
-                    target="_blank"
-                    class="card-link"
-                    >Github
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="15"
-                      height="15"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="icon icon-tabler icons-tabler-outline icon-tabler-link"
-                    >
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                      <path d="M9 15l6 -6" />
-                      <path
-                        d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464"
-                      />
-                      <path
-                        d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"
-                      />
-                    </svg>
-                  </a>
-                  <a
-                    href="https://joachimpruegl.me/Meet-app/"
-                    target="_blank"
-                    class="card-link"
-                    >Live
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="15"
-                      height="15"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="icon icon-tabler icons-tabler-outline icon-tabler-link"
-                    >
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                      <path d="M9 15l6 -6" />
-                      <path
-                        d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464"
-                      />
-                      <path
-                        d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"
-                      />
-                    </svg>
-                  </a>
-                </div>
-                <a href="./meet-app.html" class="card-link"
-                  >View
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="15"
-                    height="15"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="icon icon-tabler icons-tabler-outline icon-tabler-link"
-                  >
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M9 15l6 -6" />
-                    <path
-                      d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464"
-                    />
-                    <path
-                      d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </li>
-
-          <li id="Chat-App" class="project-list__item opacity-0 group">
-            <div class="card-heading-wrapper">
-              <h2 class="gradient-title">
-                <a
-                  href="./chat-app.html"
-                  class="group-hover:text-[oklch(0.5573_0.222_274.27)]"
-                  >Mobile Chat App</a
-                >
-              </h2>
-
-              <h4 class="text-balance text-xs">
-                React Native Mobile App for Real-Time Messaging
-              </h4>
-              <p class="card-stack-info">
-                React Native · Firebase · Expo · AsyncStorage · Gifted Chat
-              </p>
-              <p class="card-description">
-                Real-time mobile chat app with anonymous login, media sharing,
-                offline message caching, and customizable UI themes.
-              </p>
-
-              <div class="description hidden">
-                <p>
-                  <span class="">Mobile Chat App</span> is an intuitive mobile
-                  chat application developed with React Native.
-                  <br /><br />Users can interact in a chat interface, share
-                  real-time messages and have options to access the camera, send
-                  images and their location.
-                  <button>See more</button>
-                </p>
-              </div>
-            </div>
-            <picture
-              class="project-picture-wrapper animate__animated animate__flipInY"
-            >
-              <img
-                src="img/documentation/chat-app-documentation/chat-app-iphone.png"
-                alt="Gif of the project called Chat-App"
-                class="project-images"
-              />
-            </picture>
-            <div class="links-wrapper">
-              <div class="livelinks">
-                <a
-                  href="https://github.com/ilsegaertner/chat-app"
+                  href="https://github.com/ilsegaertner/world-weather"
                   target="_blank"
                   class="card-link"
                   >Github
@@ -697,178 +289,11 @@
                     />
                   </svg>
                 </a>
-                <a href="./chat-app.html" class="card-link"
-                  >View
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="15"
-                    height="15"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="icon icon-tabler icons-tabler-outline icon-tabler-link"
-                  >
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M9 15l6 -6" />
-                    <path
-                      d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464"
-                    />
-                    <path
-                      d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </li>
-
-          <li id="React-App" class="project-list__item opacity-0 group">
-            <div class="card-heading-wrapper">
-              <h2 class="gradient-title">
                 <a
-                  href="./cub-react.html"
-                  class="group-hover:text-[oklch(0.5573_0.222_274.27)]"
-                  >CUB Film Data (React)</a
-                ><br />
-              </h2>
-              <h4 class="text-balance text-xs">
-                Client-Side React App for Arthouse Movie Database
-              </h4>
-              <p class="card-stack-info">
-                React · JavaScript · MongoDB · Express · CSS
-              </p>
-              <p class="card-description">
-                Interactive movie database with user accounts, favorites list,
-                and dynamic filtering — built in React as the frontend of a full
-                MERN stack app.
-              </p>
-
-              <div class="description hidden">
-                <p class="text-class">
-                  <span class="">CUB Film Data (React)</span>, a React-based
-                  project, stands as the frontend interface of a movie database
-                  (which I built previously as
-                  <a href="#Rest-Api">REST-Api</a>
-                  for the backend).<br /><br />
-
-                  Users are able to create and edit a profile, browse and filter
-                  through all movies, get detailed information on a movie, and
-                  add movies to their list of favorites.
-                </p>
-                <button>Show more</button>
-                This Full-Stack Project comprehends the communication between
-                both client-side and server-side components showcasing
-                proficiency in APIs, web server frameworks, databases, business
-                logic, authentication, and data security.
-                <br />
-                <br />
-                This is a sister-project to
-                <a href="#Angular-App" class="">CUB Film Data, Angular</a>.
-              </div>
-            </div>
-
-            <picture
-              class="project-picture-wrapper animate__animated animate__flipInX"
-            >
-              <img
-                src="img/documentation/cub_react_client/cub_film_data_screenshot2_4.png"
-                alt="Image of the project called CUB Film Data"
-                class="project-images"
-              />
-            </picture>
-            <div class="links-wrapper">
-              <div class="livelinks">
-                <div class="flex flex-col flex-wrap">
-                  <a
-                    href="https://github.com/ilsegaertner/CUB-film-data-client"
-                    target="_blank"
-                    class="card-link"
-                    >Github
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="15"
-                      height="15"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="icon icon-tabler icons-tabler-outline icon-tabler-link"
-                    >
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                      <path d="M9 15l6 -6" />
-                      <path
-                        d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464"
-                      />
-                      <path
-                        d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"
-                      />
-                    </svg>
-                  </a>
-                  <a
-                    href="https://cub-film-data.netlify.app/"
-                    target="_blank"
-                    class="card-link"
-                    >Live
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="15"
-                      height="15"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="icon icon-tabler icons-tabler-outline icon-tabler-link"
-                    >
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                      <path d="M9 15l6 -6" />
-                      <path
-                        d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464"
-                      />
-                      <path
-                        d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"
-                      />
-                    </svg>
-                  </a>
-
-                  <a
-                    href="cub-case-study.html"
-                    target="_blank"
-                    class="card-link"
-                  >
-                    Case Study
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="15"
-                      height="15"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="icon icon-tabler icons-tabler-outline icon-tabler-link"
-                    >
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                      <path d="M9 15l6 -6" />
-                      <path
-                        d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464"
-                      />
-                      <path
-                        d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"
-                      />
-                    </svg>
-                  </a>
-                </div>
-                <a class="card-link" href="./cub-react.html"
-                  >See more
-
+                  href="https://global-weather-info.netlify.app/"
+                  target="_blank"
+                  class="card-link"
+                  >Live
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="15"
@@ -892,93 +317,647 @@
                   </svg>
                 </a>
               </div>
+              <a href="weather-app.html" class="card-link"
+                >View
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-link"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M9 15l6 -6" />
+                  <path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464" />
+                  <path
+                    d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"
+                  />
+                </svg>
+              </a>
             </div>
-          </li>
-        </ul>
+          </div>
+        </li>
 
-        <section
-          class="flex flex-col items-center font-medium py-45 text-center bg-white col-span-9 -mt-50 px-3 sm:mx-0"
-        >
-          <div
-            class="flex items-center gap-9 w-full justify-center interested animate__animated animate__fadeInUp"
-          >
-            <img
-              class="dev-icon_work"
-              src="assets/website.svg"
-              alt="image of a message icon"
-              width="150px"
-              height="150px"
-            />
-            <span class="text-3xl! lg:text-5xl"
-              >Interested in working together?
-            </span>
-          </div>
-          <div
-            class="flex items-center gap-3.5 send-mail animate__animated animate__pulse"
-          >
-            <a
-              href="mailto:joachimpruegl@gmail.com"
-              class="text-xl call-to-action-secondary font-extralight!"
-            >
-              Send me a mail
-            </a>
-            <img
-              src="assets/mail3.svg"
-              width="25px
-      "
-              height="25px"
-            />
-          </div>
-        </section>
-      </main>
-      <footer class="page-footer">
-        <div class="flex leading-5">
-          <div class="footer-links">
-            <a class="legal-info" href="legal-info.html">Impressum</a>
-            <a class="" href="assets/Pruegl-Joachim-Resumee.pdf" download
-              >Download Résumé</a
-            >
-          </div>
-          <div
-            class="social-media flex sm:flex-row justify-end gap-y-1 gap-x-4 w-full flex-col items-end"
-          >
-            <p>Find me on</p>
+        <li id="Angular-App" class="project-list__item opacity-0 group">
+          <div class="card-heading-wrapper">
+            <h2 class="gradient-title">
+              <a
+                href="cub-angular.html"
+                class="group-hover:text-[oklch(0.5573_0.222_274.27)]"
+                >CUB Film Data (Angular)</a
+              ><br />
+            </h2>
+            <h4 class="text-balance text-xs">
+              Angular Web App for an Arthouse Movie Database
+            </h4>
+            <p class="card-stack-info">
+              Angular · TypeScript · MongoDB · Express · SCSS
+            </p>
 
-            <div class="social-media-flex">
-              <a href="https://github.com/ilsegaertner" target="_blank"
-                ><img
-                  src="assets/brand-github.svg"
-                  alt="Logo and Link for the Github platform"
-                  width="25"
-                  height="25" /></a
-              ><span
-                ><a href="https://twitter.com/JoachimPrugl" target="_blank"
-                  ><img
-                    src="assets/brand-x.svg"
-                    alt="Logo and Link for the Twitter platform"
-                    width="25"
-                    height="25" /></a></span
-              ><span
-                ><a
-                  href="https://www.linkedin.com/in/joachim-pr%C3%BCgl/"
+            <p class="card-description">
+              A responsive SPA for exploring arthouse films with user accounts,
+              search/filtering, and detailed movie modals — built with Angular
+              and TypeScript.
+            </p>
+            <div class="description hidden">
+              <div>
+                <span class="">CUB Film Data (Angular)</span>, an Angular-based
+                project, stands as the frontend interface of a movie database
+                (which I built previously as
+                <a href="#Rest-Api">REST-Api</a>
+                for the backend). Users can browse through movies, get data
+                about directors and genres, or edit their profile.
+                <br /><br />
+                <button>See More</button>
+                For the project I learnt
+                <span class="">Typescript</span> and
+                <span class="">Angular</span> which I found easier than React,
+                generally structured and pleasant to work with. <br /><br />
+                Prior to implementation,
+                <a
+                  href="https://github.com/ilsegaertner/CUB-Film-Angular-client#user-content-user-storiesuser-flow-created-prior"
                   target="_blank"
-                  ><img
-                    src="assets/brand-linkedin.svg"
-                    alt="Logo and Link for the LinkedIn platform"
-                    width="25"
-                    height="25" /></a
-              ></span>
+                  class="Geist"
+                  >user stories</a
+                >
+                helped me to visualize necessary interfaces and routes (see
+                link), aiding in the understanding of required operations and
+                serving as a helpful visualization tool.
+              </div>
             </div>
           </div>
+          <picture
+            class="project-picture-wrapper animate__animated animate__flipInY"
+          >
+            <img
+              src="img/documentation/CUB-Film-Angular-client_documentation/cub-angular-iphone.png"
+              alt="Image of the project called Cub Film Angular"
+              class="project-images"
+            />
+          </picture>
+          <div class="links-wrapper">
+            <div class="livelinks">
+              <div class="flex flex-col-reverse flex-wrap">
+                <a
+                  href="https://github.com/ilsegaertner/CUB-Film-Angular-client"
+                  target="_blank"
+                  class="card-link"
+                  >Github
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="15"
+                    height="15"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-link"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M9 15l6 -6" />
+                    <path
+                      d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464"
+                    />
+                    <path
+                      d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://ilsegaertner.github.io/CUB-Film-Angular-client/"
+                  target="_blank"
+                  class="card-link"
+                  >Live
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="15"
+                    height="15"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-link"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M9 15l6 -6" />
+                    <path
+                      d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464"
+                    />
+                    <path
+                      d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <a class="card-link" href="cub-angular.html"
+                >View
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-link"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M9 15l6 -6" />
+                  <path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464" />
+                  <path
+                    d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </li>
+
+        <li id="Meet-App" class="project-list__item opacity-0 group">
+          <div class="card-heading-wrapper">
+            <h2 class="gradient-title">
+              <a
+                href="./meet-app.html"
+                class="group-hover:text-[oklch(0.5573_0.222_274.27)]"
+                >Meet App</a
+              ><br />
+            </h2>
+
+            <h4 class="text-balance text-xs">
+              Progressive Web App for browsing and visualizing local events
+            </h4>
+            <p class="card-stack-info">
+              React · AWS Lambda · OAuth · TDD · D3.js · Service Workers
+            </p>
+            <p class="card-description">
+              Search and visualize local events in real time — with offline
+              support, OAuth authentication, and interactive charts.
+            </p>
+
+            <div class="description hidden">
+              <div>
+                <span class="">Meet App</span> is a PWA (Progressive Web
+                Application) built in React. The application gathers and
+                displays upcoming developer-centric events in different cities
+                worldwide by connecting to a Google Calendar API using OAuth
+                authorization. <button>See more</button> <br /><br />Designed to
+                function across browsers, it also offers desktop installation
+                and offline functionality providing users with a dynamic and
+                accessible event exploration experience. <br /><br />
+                This project was written in TDD (Test-Driven Development),
+                prioritizing test-writing before code implementation to ensure
+                robustness and reliability.
+              </div>
+            </div>
+          </div>
+
+          <picture
+            class="project-picture-wrapper animate__animated animate__flipInX"
+          >
+            <img
+              src="img/documentation/Meet-App_documentation/meet-iphone.png"
+              alt="Image of the project called Meet App"
+              class="project-images"
+            />
+          </picture>
+          <div class="links-wrapper">
+            <div class="livelinks">
+              <div class="flex flex-col-reverse flex-wrap">
+                <a
+                  href="https://github.com/ilsegaertner/Meet-app"
+                  target="_blank"
+                  class="card-link"
+                  >Github
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="15"
+                    height="15"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-link"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M9 15l6 -6" />
+                    <path
+                      d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464"
+                    />
+                    <path
+                      d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://joachimpruegl.me/Meet-app/"
+                  target="_blank"
+                  class="card-link"
+                  >Live
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="15"
+                    height="15"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-link"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M9 15l6 -6" />
+                    <path
+                      d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464"
+                    />
+                    <path
+                      d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <a href="./meet-app.html" class="card-link"
+                >View
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-link"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M9 15l6 -6" />
+                  <path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464" />
+                  <path
+                    d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </li>
+
+        <li id="Chat-App" class="project-list__item opacity-0 group">
+          <div class="card-heading-wrapper">
+            <h2 class="gradient-title">
+              <a
+                href="./chat-app.html"
+                class="group-hover:text-[oklch(0.5573_0.222_274.27)]"
+                >Mobile Chat App</a
+              >
+            </h2>
+
+            <h4 class="text-balance text-xs">
+              React Native Mobile App for Real-Time Messaging
+            </h4>
+            <p class="card-stack-info">
+              React Native · Firebase · Expo · AsyncStorage · Gifted Chat
+            </p>
+            <p class="card-description">
+              Real-time mobile chat app with anonymous login, media sharing,
+              offline message caching, and customizable UI themes.
+            </p>
+
+            <div class="description hidden">
+              <p>
+                <span class="">Mobile Chat App</span> is an intuitive mobile
+                chat application developed with React Native. <br /><br />Users
+                can interact in a chat interface, share real-time messages and
+                have options to access the camera, send images and their
+                location.
+                <button>See more</button>
+              </p>
+            </div>
+          </div>
+          <picture
+            class="project-picture-wrapper animate__animated animate__flipInY"
+          >
+            <img
+              src="img/documentation/chat-app-documentation/chat-app-iphone.png"
+              alt="Gif of the project called Chat-App"
+              class="project-images"
+            />
+          </picture>
+          <div class="links-wrapper">
+            <div class="livelinks">
+              <a
+                href="https://github.com/ilsegaertner/chat-app"
+                target="_blank"
+                class="card-link"
+                >Github
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-link"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M9 15l6 -6" />
+                  <path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464" />
+                  <path
+                    d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"
+                  />
+                </svg>
+              </a>
+              <a href="./chat-app.html" class="card-link"
+                >View
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-link"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M9 15l6 -6" />
+                  <path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464" />
+                  <path
+                    d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </li>
+
+        <li id="React-App" class="project-list__item opacity-0 group">
+          <div class="card-heading-wrapper">
+            <h2 class="gradient-title">
+              <a
+                href="./cub-react.html"
+                class="group-hover:text-[oklch(0.5573_0.222_274.27)]"
+                >CUB Film Data (React)</a
+              ><br />
+            </h2>
+            <h4 class="text-balance text-xs">
+              Client-Side React App for Arthouse Movie Database
+            </h4>
+            <p class="card-stack-info">
+              React · JavaScript · MongoDB · Express · CSS
+            </p>
+            <p class="card-description">
+              Interactive movie database with user accounts, favorites list, and
+              dynamic filtering — built in React as the frontend of a full MERN
+              stack app.
+            </p>
+
+            <div class="description hidden">
+              <p class="text-class">
+                <span class="">CUB Film Data (React)</span>, a React-based
+                project, stands as the frontend interface of a movie database
+                (which I built previously as
+                <a href="#Rest-Api">REST-Api</a>
+                for the backend).<br /><br />
+
+                Users are able to create and edit a profile, browse and filter
+                through all movies, get detailed information on a movie, and add
+                movies to their list of favorites.
+              </p>
+              <button>Show more</button>
+              This Full-Stack Project comprehends the communication between both
+              client-side and server-side components showcasing proficiency in
+              APIs, web server frameworks, databases, business logic,
+              authentication, and data security.
+              <br />
+              <br />
+              This is a sister-project to
+              <a href="#Angular-App" class="">CUB Film Data, Angular</a>.
+            </div>
+          </div>
+
+          <picture
+            class="project-picture-wrapper animate__animated animate__flipInX"
+          >
+            <img
+              src="img/documentation/cub_react_client/cub_film_data_screenshot2_4.png"
+              alt="Image of the project called CUB Film Data"
+              class="project-images"
+            />
+          </picture>
+          <div class="links-wrapper">
+            <div class="livelinks">
+              <div class="flex flex-col flex-wrap">
+                <a
+                  href="https://github.com/ilsegaertner/CUB-film-data-client"
+                  target="_blank"
+                  class="card-link"
+                  >Github
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="15"
+                    height="15"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-link"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M9 15l6 -6" />
+                    <path
+                      d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464"
+                    />
+                    <path
+                      d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://cub-film-data.netlify.app/"
+                  target="_blank"
+                  class="card-link"
+                  >Live
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="15"
+                    height="15"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-link"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M9 15l6 -6" />
+                    <path
+                      d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464"
+                    />
+                    <path
+                      d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"
+                    />
+                  </svg>
+                </a>
+
+                <a href="cub-case-study.html" target="_blank" class="card-link">
+                  Case Study
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="15"
+                    height="15"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-link"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M9 15l6 -6" />
+                    <path
+                      d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464"
+                    />
+                    <path
+                      d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <a class="card-link" href="./cub-react.html"
+                >See more
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-link"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M9 15l6 -6" />
+                  <path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464" />
+                  <path
+                    d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <section
+        class="flex flex-col items-center font-medium py-45 text-center bg-white col-span-9 -mt-50 px-3 sm:mx-0"
+      >
+        <div
+          class="flex items-center gap-9 w-full justify-center interested animate__animated animate__fadeInUp"
+        >
+          <img
+            class="dev-icon_work"
+            src="assets/website.svg"
+            alt="image of a message icon"
+            width="150px"
+            height="150px"
+          />
+          <span class="text-3xl! lg:text-5xl"
+            >Interested in working together?
+          </span>
         </div>
         <div
-          class="text-xs -mt-8 text-center sm:-mt-4 pb-3 text-gray-300 flex flex-col sm:flex-row justify-center gap-x-1"
+          class="flex items-center gap-3.5 send-mail animate__animated animate__pulse"
         >
-          <p>© Copyright 2024 |</p>
-          <p>joachimpruegl.me</p>
+          <a
+            href="mailto:joachimpruegl@gmail.com"
+            class="text-xl call-to-action-secondary font-extralight!"
+          >
+            Send me a mail
+          </a>
+          <img
+            src="assets/mail3.svg"
+            width="25px
+      "
+            height="25px"
+          />
         </div>
-      </footer>
-    </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="flex leading-5">
+        <div class="footer-links">
+          <a class="legal-info" href="legal-info.html">Impressum</a>
+          <a class="" href="assets/Pruegl-Joachim-Resumee.pdf" download
+            >Download Résumé</a
+          >
+        </div>
+        <div
+          class="social-media flex sm:flex-row justify-end gap-y-1 gap-x-4 w-full flex-col items-end"
+        >
+          <p>Find me on</p>
+
+          <div class="social-media-flex">
+            <a href="https://github.com/ilsegaertner" target="_blank"
+              ><img
+                src="assets/brand-github.svg"
+                alt="Logo and Link for the Github platform"
+                width="25"
+                height="25" /></a
+            ><span
+              ><a href="https://twitter.com/JoachimPrugl" target="_blank"
+                ><img
+                  src="assets/brand-x.svg"
+                  alt="Logo and Link for the Twitter platform"
+                  width="25"
+                  height="25" /></a></span
+            ><span
+              ><a
+                href="https://www.linkedin.com/in/joachim-pr%C3%BCgl/"
+                target="_blank"
+                ><img
+                  src="assets/brand-linkedin.svg"
+                  alt="Logo and Link for the LinkedIn platform"
+                  width="25"
+                  height="25" /></a
+            ></span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="text-xs -mt-8 text-center sm:-mt-4 pb-3 text-gray-300 flex flex-col sm:flex-row justify-center gap-x-1"
+      >
+        <p>© Copyright 2024 |</p>
+        <p>joachimpruegl.me</p>
+      </div>
+    </footer>
+
     <script src="/portfolio/main.js" defer></script>
   </body>
 </html>
