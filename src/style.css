@@ -470,7 +470,7 @@ hr {
   }
 
   header {
-    @apply sticky top-0 z-10 bg-[#ffffff6b] backdrop-blur-xs;
+    @apply fixed w-full max-w-4xl lg:max-w-6xl top-0 z-10 bg-[#ffffff6b] backdrop-blur-xs;
   }
 
   .gradient-title {
@@ -482,7 +482,7 @@ hr {
   } */
 
   body {
-    @apply min-h-screen overflow-hidden;
+    @apply min-h-screen max-w-4xl lg:max-w-6xl mx-auto;
   }
 
   picture {
