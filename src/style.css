@@ -147,6 +147,21 @@ header ul a:active,
   color: #535bf2;
 }
 
+header::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.4),
+    rgba(255, 255, 255, 0.2)
+  );
+  mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+  backdrop-filter: blur(10px);
+  pointer-events: none;
+}
+
 .intro-section p {
   font-size: clamp(1rem, 1.1vw, 1.6vw);
   max-width: 70%;
@@ -172,7 +187,7 @@ a:hover {
 main {
   padding-top: calc(var(--spacing) * 19);
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 h1 {
@@ -470,7 +485,7 @@ hr {
   }
 
   header {
-    @apply fixed w-full max-w-4xl lg:max-w-6xl top-0 z-10 bg-[#ffffff6b] backdrop-blur-xs;
+    @apply sticky max-w-4xl lg:max-w-6xl top-0 z-10 bg-[#ffffff6b];
   }
 
   .gradient-title {
