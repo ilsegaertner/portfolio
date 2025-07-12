@@ -460,6 +460,14 @@ hr {
     @apply block py-3 px-2 text-lg! font-medium tracking-wide transition-colors duration-150 hover:text-gray-200! hover:underline;
   }
 
+  .arrow-left-icon {
+    @apply transition-transform duration-300 group-hover:-translate-x-0.5;
+  }
+
+  .arrow-right-icon {
+    @apply group-hover:translate-x-0.5 transition-transform duration-300;
+  }
+
   h1 {
     @apply px-3;
   }
