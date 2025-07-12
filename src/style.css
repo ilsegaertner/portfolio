@@ -123,6 +123,7 @@
   --background-main: #213547;
 
   --highlight: oklch(0.5573 0.222 274.27);
+  --default-link: #535bf2;
 }
 
 body {
@@ -478,6 +479,10 @@ hr {
 
   .skill-flex-container {
     @apply gap-2;
+  }
+
+  .default-link {
+    color: var(--default-link);
   }
 
   .project-list {
