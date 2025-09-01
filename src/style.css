@@ -255,7 +255,7 @@ button:focus-visible {
 }
 
 .serif {
-  font-family: "Times New Roman", Times, serif;
+  /* font-family: "Times New Roman", Times, serif; */
   background-color: #4f39f6;
   letter-spacing: 0.02em;
 }
