@@ -166,6 +166,7 @@ header::after {
 .intro-section p {
   font-size: clamp(1rem, 1.1vw, 1.6vw);
   max-width: 70%;
+  color: #f3f4f6;
 }
 .intro-section p span {
   font-size: (20px, 1.7vw, 1.8rem);
@@ -188,12 +189,15 @@ a:hover {
 main {
   padding-top: calc(var(--spacing) * 19);
   position: relative;
+  background-color: #1f2030;
   /* overflow: hidden; */
 }
 
 h1 {
   /* font-size: clamp(3.3vw, 3.2rem, 3.3rem); */
   font-size: clamp(35px, 4vw, 3.5rem);
+  color: #eff0ff;
+  letter-spacing: 0.01em;
 }
 
 #app {
@@ -248,6 +252,12 @@ button:focus-visible {
   a:hover {
     color: #747bff;
   }
+}
+
+.serif {
+  font-family: "Times New Roman", Times, serif;
+  background-color: #4f39f6;
+  letter-spacing: 0.02em;
 }
 
 .technologies-item {
@@ -368,7 +378,7 @@ hr {
   align-items: flex-start;
   justify-content: center;
   color: rgb(255 255 255);
-  margin-top: -1.2rem;
+  margin-top: 0.8rem;
   font-weight: 500;
   /* font-size: 5rem; */
   font-size: clamp(21px, 15vw, 4.5rem);
@@ -377,6 +387,12 @@ hr {
 
 .project-list__item {
   animation-delay: 0.4s;
+}
+
+.contact-illustration {
+  z-index: 10;
+  position: relative;
+  margin-left: auto;
 }
 
 @layer utilities {
@@ -490,11 +506,11 @@ hr {
   }
 
   .standard-label {
-    @apply block text-gray-700 text-sm font-bold mb-2;
+    @apply block text-sm font-bold mb-2 text-gray-200;
   }
 
   .standard-input {
-    @apply shadow appearance-none border-[0.1px] rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-md;
+    @apply shadow appearance-none border-[0.1px] rounded w-full py-2 px-3 text-gray-200 leading-tight focus:outline-none focus:shadow-md;
   }
 
   header {
