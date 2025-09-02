@@ -190,13 +190,15 @@ main {
   padding-top: calc(var(--spacing) * 19);
   position: relative;
   background-color: #1f2030;
+  /* padding: 1em; */
   /* overflow: hidden; */
 }
 
 h1 {
   /* font-size: clamp(3.3vw, 3.2rem, 3.3rem); */
   font-size: clamp(35px, 4vw, 3.5rem);
-  color: #eff0ff;
+  /* color: #eff0ff; */
+  color: #75dec6;
   letter-spacing: 0.01em;
 }
 
@@ -326,6 +328,11 @@ hr {
 }
 
 .technologies-span {
+  font-size: clamp(1vw, 1rem, 2rem);
+  color: white;
+}
+
+.technologies-span-2 {
   font-size: clamp(1vw, 1rem, 2rem);
 }
 
@@ -502,7 +509,7 @@ hr {
   }
 
   .project-list {
-    @apply sm:grid sm:grid-cols-6 sm:col-start-1 sm:col-end-3 lg:grid-cols-subgrid gap-y-13 gap-x-3 my-10 lg:col-start-1 lg:col-end-9 px-3;
+    @apply sm:grid sm:grid-cols-6 sm:col-start-1 sm:col-end-3 lg:grid-cols-subgrid gap-y-13 gap-x-7 my-10 lg:col-start-1 lg:col-end-9 px-10;
   }
 
   .standard-label {
