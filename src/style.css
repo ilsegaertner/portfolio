@@ -397,7 +397,7 @@ hr {
 }
 
 .contact-illustration {
-  z-index: 10;
+  z-index: 2;
   position: relative;
   margin-left: auto;
 }
@@ -509,7 +509,7 @@ hr {
   }
 
   .project-list {
-    @apply sm:grid sm:grid-cols-6 sm:col-start-1 sm:col-end-3 lg:grid-cols-subgrid gap-y-13 gap-x-7 my-10 lg:col-start-1 lg:col-end-9 px-10;
+    @apply sm:grid sm:grid-cols-6 sm:col-start-1 sm:col-end-3 lg:grid-cols-subgrid gap-y-26 gap-x-7 my-10 lg:col-start-1 lg:col-end-9 px-10;
   }
 
   .standard-label {
@@ -618,7 +618,7 @@ hr {
   }
 
   .skill-wrapper {
-    @apply self-start  grid grid-cols-subgrid p-5 pt-10 sm:pt-12 sm:p-12;
+    @apply self-start  grid grid-cols-subgrid p-5 pt-10 sm:pt-24 sm:p-12;
   }
 
   .technologies-item {
