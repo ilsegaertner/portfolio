@@ -46,454 +46,442 @@
   </head>
 
   <body>
-     
-      <header class="">
-        <nav
-          role="navigation"
-          class="flex items-center p-3 nav-list flex-wrap z-40 relative"
-        >
-          <a href="index.html" class="text-main">Joachim Prügl </a>
+    <header class="">
+      <nav
+        role="navigation"
+        class="flex items-center p-3 nav-list flex-wrap z-40 relative"
+      >
+        <a href="index.html" class="text-main">Joachim Prügl </a>
 
-          <ul role="menubar" class="gap-6 hidden sm:flex ml-auto">
-            <li>
-              <button
-                class="sm:hidden"
-                aria-label="close Menu"
-                onclick="closeModal()"
-              >
-                <img
-                  src="assets/close.svg"
-                  alt="close-menu-icon"
-                  class="bg-white"
-                />
-              </button>
-            </li>
-            <li role="presentation">
-              <a href="about.html" role="menuitem" class="navigation-list__item"
-                >About
-              </a>
-            </li>
-            <li role="presentation">
-              <a href="work.html" role="menuitem" class="navigation-list__item"
-                >Work</a
-              >
-            </li>
-            <li role="presentation">
-              <a
-                href="contact.html"
-                role="menuitem"
-                class="navigation-list__item"
-                >Contact</a
-              >
-            </li>
-          </ul>
-          <button
-            class="sm:hidden ml-auto"
-            aria-label="Toggle Menu"
-            onclick="openModal()"
-          >
-            <img src="assets/menu.svg" alt="toggle-menu-icon" />
-          </button>
-        </nav>
-
-        <div
-          id="blur-overlay"
-          class="fixed inset-0 z-30 bg-transparent backdrop-blur-2xl opacity-0 pointer-events-none transition-opacity duration-100 sm:hidden"
-          aria-hidden="true"
-        ></div>
-
-        <!-- mobile nav -->
-        <ul
-          role="menubar"
-          class="fixed hover:cursor-pointer flex-col opacity-0 translate-x-full pointer-events-none transition-all duration-200 ease-in-out w-2/3 z-50 top-0 p-4 bg-[#262828] h-lvh right-0 text-right text-white sm:hidden"
-          id="menu-list"
-        >
-          <button
-            class="sm:hidden"
-            aria-label="close Menu"
-            onclick="closeModal()"
-          >
-            <img
-              src="assets/close2.svg"
-              alt="close-menu-icon"
-              class="text-white"
-            />
-          </button>
-
+        <ul role="menubar" class="gap-6 hidden sm:flex ml-auto">
+          <li>
+            <button
+              class="sm:hidden"
+              aria-label="close Menu"
+              onclick="closeModal()"
+            >
+              <img
+                src="assets/close.svg"
+                alt="close-menu-icon"
+                class="bg-white"
+              />
+            </button>
+          </li>
           <li role="presentation">
-            <a
-              href="about.html"
-              role="menuitem"
-              class="navigation-list__item nav-mobile-item"
+            <a href="about.html" role="menuitem" class="navigation-list__item"
               >About
             </a>
           </li>
           <li role="presentation">
-            <a
-              href="work.html"
-              role="menuitem"
-              class="navigation-list__item nav-mobile-item"
+            <a href="work.html" role="menuitem" class="navigation-list__item"
               >Work</a
             >
           </li>
           <li role="presentation">
-            <a
-              href="contact.html"
-              role="menuitem"
-              class="navigation-list__item nav-mobile-item"
+            <a href="contact.html" role="menuitem" class="navigation-list__item"
               >Contact</a
             >
           </li>
         </ul>
-      </header>
+        <button
+          class="sm:hidden ml-auto"
+          aria-label="Toggle Menu"
+          onclick="openModal()"
+        >
+          <img src="assets/menu.svg" alt="toggle-menu-icon" />
+        </button>
+      </nav>
 
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1900 600"
-        preserveAspectRatio="none"
-        class="fixed inset-0 -z-10 w-full h-full"
+      <div
+        id="blur-overlay"
+        class="fixed inset-0 z-30 bg-transparent backdrop-blur-2xl opacity-0 pointer-events-none transition-opacity duration-100 sm:hidden"
+        aria-hidden="true"
+      ></div>
+
+      <!-- mobile nav -->
+      <ul
+        role="menubar"
+        class="fixed hover:cursor-pointer flex-col opacity-0 translate-x-full pointer-events-none transition-all duration-200 ease-in-out w-2/3 z-50 top-0 p-4 bg-[#262828] h-lvh right-0 text-right text-white sm:hidden"
+        id="menu-list"
       >
-        <path fill="#707070" d="M0 0h1900v1600H0z" />
-        <path
-          fill="#75dec6"
-          d="M1360 1600h152v-400h26V800H868V400h67V0h965v1600Z"
-        />
-        <path
-          fill="#bdc0db"
-          d="M1325 1600h-56v-400h272V800h-41V400h254V0h146v1600Z"
-        />
-      </svg>
+        <button
+          class="sm:hidden"
+          aria-label="close Menu"
+          onclick="closeModal()"
+        >
+          <img
+            src="assets/close2.svg"
+            alt="close-menu-icon"
+            class="text-white"
+          />
+        </button>
 
-      <main role="main">
-        <section class="flex gap-15 flex-wrap pb-40 px-3">
-          <div class="english_version flex-1">
-            <h1 class="p-0 animate-blurred-fade-in">
-              Legal Disclosure
-            </h1>
-            <p>( Information in accordance with § 5 TMG )</p>
-            <br />
+        <li role="presentation">
+          <a
+            href="about.html"
+            role="menuitem"
+            class="navigation-list__item nav-mobile-item"
+            >About
+          </a>
+        </li>
+        <li role="presentation">
+          <a
+            href="work.html"
+            role="menuitem"
+            class="navigation-list__item nav-mobile-item"
+            >Work</a
+          >
+        </li>
+        <li role="presentation">
+          <a
+            href="contact.html"
+            role="menuitem"
+            class="navigation-list__item nav-mobile-item"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </header>
 
-            <address>
-              Joachim Prügl <br />
-              Badstr. 64 <br />
-              13357 Berlin, Germany <br />
-            </address>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1900 600"
+      preserveAspectRatio="none"
+      class="fixed inset-0 -z-10 w-full h-full"
+    >
+      <path fill="#707070" d="M0 0h1900v1600H0z" />
+      <path
+        fill="#75dec6"
+        d="M1360 1600h152v-400h26V800H868V400h67V0h965v1600Z"
+      />
+      <path
+        fill="#bdc0db"
+        d="M1325 1600h-56v-400h272V800h-41V400h254V0h146v1600Z"
+      />
+    </svg>
 
+    <main role="main">
+      <section class="flex gap-15 flex-wrap pb-40 px-3 text-[#6c7a86]">
+        <div class="english_version flex-1">
+          <h1 class="p-0 animate-blurred-fade-in">Legal Disclosure</h1>
+          <p>( Information in accordance with § 5 TMG )</p>
+          <br />
+
+          <address>
+            Joachim Prügl <br />
+            Badstr. 64 <br />
+            13357 Berlin, Germany <br />
+          </address>
+
+          <p>
+            E-Mail:
+            <a href="mailto:joachimpruegl@gmail.com"
+              >joachimpruegl[at]gmail.com</a
+            ><br />
+            Internet address:
+            <a href="https://www.joachimpruegl.me">www.joachimpruegl.me</a>
+          </p>
+
+          <br />
+          <br />
+
+          <p><strong>Privacy Policy</strong></p>
+          <br />
+          <p>
+            This Privacy Policy describes how Joachim Prügl ("we" or "us")
+            collects, uses, and discloses personal information obtained through
+            this website.
+          </p>
+          <p>
+            Information Collection and Use: We collect personal information,
+            such as name and email address, through the contact form on this
+            website. We use this information to respond to inquiries and provide
+            requested services.
+          </p>
+          <p>
+            Information Sharing: We do not share personal information with third
+            parties unless required by law or with your consent.
+          </p>
+
+          <p>
+            Data Security: We take reasonable precautions to protect personal
+            information from loss, misuse, or unauthorized access.
+          </p>
+          <p>
+            Changes to this Privacy Policy: We may update this Privacy Policy
+            from time to time. The updated version will be posted on this page.
+          </p>
+
+          <p>
+            Contact Us: If you have any questions about this Privacy Policy,
+            please contact us at joachimpruegl[at]gmail.com.
+          </p>
+          <br />
+          <p><strong>Disclaimer</strong></p>
+          <br />
+          <p>
+            Accountability for content<br />
+            The contents of our pages have been created with the utmost care.
+            However, we cannot guarantee the contents‘ accuracy, completeness or
+            topicality. According to statutory provisions, we are furthermore
+            responsible for our own content on these web pages. In this matter,
+            please note that we are not obliged to monitor the transmitted or
+            saved information of third parties, or investigate circumstances
+            pointing to illegal activity. Our obligations to remove or block the
+            use of information under generally applicable laws remain unaffected
+            by this as per §§ 8 to 10 of the Telemedia Act (TMG).
+          </p>
+          <p><strong>Accountability for links</strong></p>
+          <p>
+            Responsibility for the content of external links (to web pages of
+            third parties) lies solely with the operators of the linked pages.
+            No violations were evident to us at the time of linking. Should any
+            legal infringement become known to us, we will remove the respective
+            link immediately.
+          </p>
+          <br />
+          <p><strong>Terms and Conditions</strong></p>
+          <br />
+          <p>
+            By accessing and using this website, you agree to comply with and be
+            bound by the following terms and conditions:
+          </p>
+          <p>
+            Intellectual Property: All content on this website, including text,
+            images, graphics, and logos, is the property of Joachim Prügl and is
+            protected by copyright laws.
+          </p>
+          <p>
+            Use of Content: You may not reproduce, modify, distribute, or
+            republish any content from this website without prior written
+            consent from Joachim Prügl.
+          </p>
+          <p>
+            Disclaimer: The content on this website is provided "as is" without
+            warranties of any kind. Joachim Prügl shall not be liable for any
+            errors or omissions in the content. Governing Law: These terms and
+            conditions are governed by the laws of Germany.
+          </p>
+          <p>
+            Contact Us: If you have any questions about these terms and
+            conditions, please contact us at joachimpruegl[at]gmail.com.
+          </p>
+          <br />
+          <p><strong>Copyright</strong></p>
+          <br />
+          <p>
+            Our web pages and their contents are subject to German copyright
+            law. Unless expressly permitted by law, every form of utilizing,
+            reproducing or processing works subject to copyright protection on
+            our web pages requires the prior consent of the respective owner of
+            the rights. Individual reproductions of a work are only allowed for
+            private use. The materials from these pages are copyrighted and any
+            unauthorized use may violate copyright laws.
+          </p>
+          <br />
+          <p><strong>© 2024 Joachim Prügl</strong></p>
+        </div>
+
+        <div class="german_version_impressum flex-1">
+          <div class="impressum">
+            <h1 class="p-0">Impressum</h1>
+            <p>Angaben gemäß § 5 TMG</p>
             <p>
+              Joachim Prügl <br />
+              Badstraße 64<br />
+              13357 Berlin <br />
+            </p>
+            <br />
+            <p>
+              <strong>Kontakt:</strong> <br />
+
               E-Mail:
               <a href="mailto:joachimpruegl@gmail.com"
-                >joachimpruegl@gmail.com</a
-              ><br />
-              Internet address:
-              <a href="https://www.joachimpruegl.me">www.joachimpruegl.me</a>
-            </p>
-
-            <br />
-            <br />
-
-            <p><strong>Privacy Policy</strong></p>
-            <br />
-            <p>
-              This Privacy Policy describes how Joachim Prügl ("we" or "us")
-              collects, uses, and discloses personal information obtained
-              through this website.
-            </p>
-            <p>
-              Information Collection and Use: We collect personal information,
-              such as name and email address, through the contact form on this
-              website. We use this information to respond to inquiries and
-              provide requested services.
-            </p>
-            <p>
-              Information Sharing: We do not share personal information with
-              third parties unless required by law or with your consent.
-            </p>
-
-            <p>
-              Data Security: We take reasonable precautions to protect personal
-              information from loss, misuse, or unauthorized access.
-            </p>
-            <p>
-              Changes to this Privacy Policy: We may update this Privacy Policy
-              from time to time. The updated version will be posted on this
-              page.
-            </p>
-
-            <p>
-              Contact Us: If you have any questions about this Privacy Policy,
-              please contact us at joachimpruegl@gmail.com.
-            </p>
-            <br />
-            <p><strong>Disclaimer</strong></p>
-            <br />
-            <p>
-              Accountability for content<br />
-              The contents of our pages have been created with the utmost care.
-              However, we cannot guarantee the contents‘ accuracy, completeness
-              or topicality. According to statutory provisions, we are
-              furthermore responsible for our own content on these web pages. In
-              this matter, please note that we are not obliged to monitor the
-              transmitted or saved information of third parties, or investigate
-              circumstances pointing to illegal activity. Our obligations to
-              remove or block the use of information under generally applicable
-              laws remain unaffected by this as per §§ 8 to 10 of the Telemedia
-              Act (TMG).
-            </p>
-            <p><strong>Accountability for links</strong></p>
-            <p>
-              Responsibility for the content of external links (to web pages of
-              third parties) lies solely with the operators of the linked pages.
-              No violations were evident to us at the time of linking. Should
-              any legal infringement become known to us, we will remove the
-              respective link immediately.
-            </p>
-            <br />
-            <p><strong>Terms and Conditions</strong></p>
-            <br />
-            <p>
-              By accessing and using this website, you agree to comply with and
-              be bound by the following terms and conditions:
-            </p>
-            <p>
-              Intellectual Property: All content on this website, including
-              text, images, graphics, and logos, is the property of Joachim
-              Prügl and is protected by copyright laws.
-            </p>
-            <p>
-              Use of Content: You may not reproduce, modify, distribute, or
-              republish any content from this website without prior written
-              consent from Joachim Prügl.
-            </p>
-            <p>
-              Disclaimer: The content on this website is provided "as is"
-              without warranties of any kind. Joachim Prügl shall not be liable
-              for any errors or omissions in the content. Governing Law: These
-              terms and conditions are governed by the laws of Germany.
-            </p>
-            <p>
-              Contact Us: If you have any questions about these terms and
-              conditions, please contact us at joachimpruegl@gmail.com.
-            </p>
-            <br />
-            <p><strong>Copyright</strong></p>
-            <br />
-            <p>
-              Our web pages and their contents are subject to German copyright
-              law. Unless expressly permitted by law, every form of utilizing,
-              reproducing or processing works subject to copyright protection on
-              our web pages requires the prior consent of the respective owner
-              of the rights. Individual reproductions of a work are only allowed
-              for private use. The materials from these pages are copyrighted
-              and any unauthorized use may violate copyright laws.
-            </p>
-            <br />
-            <p><strong>© 2024 Joachim Prügl</strong></p>
-          </div>
-
-          <div class="german_version_impressum flex-1">
-            <div class="impressum">
-              <h1 class="p-0">Impressum</h1>
-              <p>Angaben gemäß § 5 TMG</p>
-              <p>
-                Joachim Prügl <br />
-                Badstraße 64<br />
-                13357 Berlin <br />
-              </p>
-              <br />
-              <p>
-                <strong>Kontakt:</strong> <br />
-
-                E-Mail:
-                <a href="mailto:joachimpruegl@gmail.com"
-                  >joachimpruegl[at]gmail.com</a
-                >
-              </p>
-              <br /><br />
-              <p>
-                <strong>Haftung für Inhalte</strong><br /><br />
-                Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt.
-                Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte
-                können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter
-                sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen
-                Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8
-                bis 10 TMG sind wir als Diensteanbieter jedoch nicht
-                verpflichtet, übermittelte oder gespeicherte fremde
-                Informationen zu überwachen oder nach Umständen zu forschen, die
-                auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur
-                Entfernung oder Sperrung der Nutzung von Informationen nach den
-                allgemeinen Gesetzen bleiben hiervon unberührt. Eine
-                diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der
-                Kenntnis einer konkreten Rechtsverletzung möglich. Bei
-                Bekanntwerden von entsprechenden Rechtsverletzungen werden wir
-                diese Inhalte umgehend entfernen.<br /><br /><strong
-                  >Haftung für Links</strong
-                ><br /><br />
-                Unser Angebot enthält Links zu externen Webseiten Dritter, auf
-                deren Inhalte wir keinen Einfluss haben. Deshalb können wir für
-                diese fremden Inhalte auch keine Gewähr übernehmen. Für die
-                Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter
-                oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten
-                wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße
-                überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der
-                Verlinkung nicht erkennbar. Eine permanente inhaltliche
-                Kontrolle der verlinkten Seiten ist jedoch ohne konkrete
-                Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei
-                Bekanntwerden von Rechtsverletzungen werden wir derartige Links
-                umgehend entfernen.<br /><br /><strong>Urheberrecht</strong
-                ><br /><br />
-                Die durch die Seitenbetreiber erstellten Inhalte und Werke auf
-                diesen Seiten unterliegen dem deutschen Urheberrecht. Die
-                Vervielfältigung, Bearbeitung, Verbreitung und jede Art der
-                Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der
-                schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
-                Downloads und Kopien dieser Seite sind nur für den privaten,
-                nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf
-                dieser Seite nicht vom Betreiber erstellt wurden, werden die
-                Urheberrechte Dritter beachtet. Insbesondere werden Inhalte
-                Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine
-                Urheberrechtsverletzung aufmerksam werden, bitten wir um einen
-                entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen
-                werden wir derartige Inhalte umgehend entfernen.<br /><br /><strong
-                  >Datenschutz</strong
-                ><br /><br />
-                Die Nutzung unserer Webseite ist in der Regel ohne Angabe
-                personenbezogener Daten möglich. Soweit auf unseren Seiten
-                personenbezogene Daten (beispielsweise Name, Anschrift oder
-                eMail-Adressen) erhoben werden, erfolgt dies, soweit möglich,
-                stets auf freiwilliger Basis. Diese Daten werden ohne Ihre
-                ausdrückliche Zustimmung nicht an Dritte weitergegeben. <br />
-                Wir weisen darauf hin, dass die Datenübertragung im Internet
-                (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken
-                aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff
-                durch Dritte ist nicht möglich. <br />
-                Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten
-                Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich
-                angeforderter Werbung und Informationsmaterialien wird hiermit
-                ausdrücklich widersprochen. Die Betreiber der Seiten behalten
-                sich ausdrücklich rechtliche Schritte im Falle der unverlangten
-                Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.<br />
-                <br /><br /><strong>Google Analytics</strong><br /><br />
-                Diese Website benutzt Google Analytics, einen Webanalysedienst
-                der Google Inc. (''Google''). Google Analytics verwendet sog.
-                ''Cookies'', Textdateien, die auf Ihrem Computer gespeichert
-                werden und die eine Analyse der Benutzung der Website durch Sie
-                ermöglicht. Die durch den Cookie erzeugten Informationen über
-                Ihre Benutzung dieser Website (einschließlich Ihrer IP-Adresse)
-                wird an einen Server von Google in den USA übertragen und dort
-                gespeichert. Google wird diese Informationen benutzen, um Ihre
-                Nutzung der Website auszuwerten, um Reports über die
-                Websiteaktivitäten für die Websitebetreiber zusammenzustellen
-                und um weitere mit der Websitenutzung und der Internetnutzung
-                verbundene Dienstleistungen zu erbringen. Auch wird Google diese
-                Informationen gegebenenfalls an Dritte übertragen, sofern dies
-                gesetzlich vorgeschrieben oder soweit Dritte diese Daten im
-                Auftrag von Google verarbeiten. Google wird in keinem Fall Ihre
-                IP-Adresse mit anderen Daten der Google in Verbindung bringen.
-                Sie können die Installation der Cookies durch eine entsprechende
-                Einstellung Ihrer Browser Software verhindern; wir weisen Sie
-                jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht
-                sämtliche Funktionen dieser Website voll umfänglich nutzen
-                können. Durch die Nutzung dieser Website erklären Sie sich mit
-                der Bearbeitung der über Sie erhobenen Daten durch Google in der
-                zuvor beschriebenen Art und Weise und zu dem zuvor benannten
-                Zweck einverstanden.<br /><br /><strong>Google AdSense</strong
-                ><br /><br />
-                Diese Website benutzt Google Adsense, einen Webanzeigendienst
-                der Google Inc., USA (''Google''). Google Adsense verwendet sog.
-                ''Cookies'' (Textdateien), die auf Ihrem Computer gespeichert
-                werden und die eine Analyse der Benutzung der Website durch Sie
-                ermöglicht. Google Adsense verwendet auch sog. ''Web Beacons''
-                (kleine unsichtbare Grafiken) zur Sammlung von Informationen.
-                Durch die Verwendung des Web Beacons können einfache Aktionen
-                wie der Besucherverkehr auf der Webseite aufgezeichnet und
-                gesammelt werden. Die durch den Cookie und/oder Web Beacon
-                erzeugten Informationen über Ihre Benutzung dieser Website
-                (einschließlich Ihrer IP-Adresse) werden an einen Server von
-                Google in den USA übertragen und dort gespeichert. Google wird
-                diese Informationen benutzen, um Ihre Nutzung der Website im
-                Hinblick auf die Anzeigen auszuwerten, um Reports über die
-                Websiteaktivitäten und Anzeigen für die Websitebetreiber
-                zusammenzustellen und um weitere mit der Websitenutzung und der
-                Internetnutzung verbundene Dienstleistungen zu erbringen. Auch
-                wird Google diese Informationen gegebenenfalls an Dritte
-                übertragen, sofern dies gesetzlich vorgeschrieben oder soweit
-                Dritte diese Daten im Auftrag von Google verarbeiten. Google
-                wird in keinem Fall Ihre IP-Adresse mit anderen Daten der Google
-                in Verbindung bringen. Das Speichern von Cookies auf Ihrer
-                Festplatte und die Anzeige von Web Beacons können Sie
-                verhindern, indem Sie in Ihren Browser-Einstellungen ''keine
-                Cookies akzeptieren'' wählen (Im MS Internet-Explorer unter
-                ''Extras > Internetoptionen > Datenschutz > Einstellung''; im
-                Firefox unter ''Extras > Einstellungen > Datenschutz >
-                Cookies''); wir weisen Sie jedoch darauf hin, dass Sie in diesem
-                Fall gegebenenfalls nicht sämtliche Funktionen dieser Website
-                voll umfänglich nutzen können. Durch die Nutzung dieser Website
-                erklären Sie sich mit der Bearbeitung der über Sie erhobenen
-                Daten durch Google in der zuvor beschriebenen Art und Weise und
-                zu dem zuvor benannten Zweck einverstanden.
-              </p>
-              <br />
-              Website Impressum erstellt durch
-              <a href="https://www.impressum-generator.de"
-                >impressum-generator.de</a
+                >joachimpruegl[at]gmail.com</a
               >
-              von der
-              <a href="https://www.kanzlei-hasselbach.de/" rel="nofollow"
-                >Kanzlei Hasselbach</a
-              >
-            </div>
-          </div>
-        </section>
-      </main>
-
-      <footer class="page-footer">
-        <div class="flex leading-5">
-          <div class="footer-links">
-            <a class="legal-info active" href="legal-info.html">Impressum</a>
-            <a class="" href="assets/Pruegl-Joachim-Resumee.pdf" download
-              >Download Résumé</a
+            </p>
+            <br /><br />
+            <p>
+              <strong>Haftung für Inhalte</strong><br /><br />
+              Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt.
+              Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte
+              können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter
+              sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten
+              nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG
+              sind wir als Diensteanbieter jedoch nicht verpflichtet,
+              übermittelte oder gespeicherte fremde Informationen zu überwachen
+              oder nach Umständen zu forschen, die auf eine rechtswidrige
+              Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung
+              der Nutzung von Informationen nach den allgemeinen Gesetzen
+              bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch
+              erst ab dem Zeitpunkt der Kenntnis einer konkreten
+              Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden
+              Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.<br /><br /><strong
+                >Haftung für Links</strong
+              ><br /><br />
+              Unser Angebot enthält Links zu externen Webseiten Dritter, auf
+              deren Inhalte wir keinen Einfluss haben. Deshalb können wir für
+              diese fremden Inhalte auch keine Gewähr übernehmen. Für die
+              Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter
+              oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten
+              wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße
+              überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der
+              Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle
+              der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer
+              Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von
+              Rechtsverletzungen werden wir derartige Links umgehend
+              entfernen.<br /><br /><strong>Urheberrecht</strong><br /><br />
+              Die durch die Seitenbetreiber erstellten Inhalte und Werke auf
+              diesen Seiten unterliegen dem deutschen Urheberrecht. Die
+              Vervielfältigung, Bearbeitung, Verbreitung und jede Art der
+              Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der
+              schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
+              Downloads und Kopien dieser Seite sind nur für den privaten, nicht
+              kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser
+              Seite nicht vom Betreiber erstellt wurden, werden die
+              Urheberrechte Dritter beachtet. Insbesondere werden Inhalte
+              Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine
+              Urheberrechtsverletzung aufmerksam werden, bitten wir um einen
+              entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen
+              werden wir derartige Inhalte umgehend entfernen.<br /><br /><strong
+                >Datenschutz</strong
+              ><br /><br />
+              Die Nutzung unserer Webseite ist in der Regel ohne Angabe
+              personenbezogener Daten möglich. Soweit auf unseren Seiten
+              personenbezogene Daten (beispielsweise Name, Anschrift oder
+              eMail-Adressen) erhoben werden, erfolgt dies, soweit möglich,
+              stets auf freiwilliger Basis. Diese Daten werden ohne Ihre
+              ausdrückliche Zustimmung nicht an Dritte weitergegeben. <br />
+              Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B.
+              bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen
+              kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch
+              Dritte ist nicht möglich. <br />
+              Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten
+              Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich
+              angeforderter Werbung und Informationsmaterialien wird hiermit
+              ausdrücklich widersprochen. Die Betreiber der Seiten behalten sich
+              ausdrücklich rechtliche Schritte im Falle der unverlangten
+              Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.<br />
+              <br /><br /><strong>Google Analytics</strong><br /><br />
+              Diese Website benutzt Google Analytics, einen Webanalysedienst der
+              Google Inc. (''Google''). Google Analytics verwendet sog.
+              ''Cookies'', Textdateien, die auf Ihrem Computer gespeichert
+              werden und die eine Analyse der Benutzung der Website durch Sie
+              ermöglicht. Die durch den Cookie erzeugten Informationen über Ihre
+              Benutzung dieser Website (einschließlich Ihrer IP-Adresse) wird an
+              einen Server von Google in den USA übertragen und dort
+              gespeichert. Google wird diese Informationen benutzen, um Ihre
+              Nutzung der Website auszuwerten, um Reports über die
+              Websiteaktivitäten für die Websitebetreiber zusammenzustellen und
+              um weitere mit der Websitenutzung und der Internetnutzung
+              verbundene Dienstleistungen zu erbringen. Auch wird Google diese
+              Informationen gegebenenfalls an Dritte übertragen, sofern dies
+              gesetzlich vorgeschrieben oder soweit Dritte diese Daten im
+              Auftrag von Google verarbeiten. Google wird in keinem Fall Ihre
+              IP-Adresse mit anderen Daten der Google in Verbindung bringen. Sie
+              können die Installation der Cookies durch eine entsprechende
+              Einstellung Ihrer Browser Software verhindern; wir weisen Sie
+              jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht
+              sämtliche Funktionen dieser Website voll umfänglich nutzen können.
+              Durch die Nutzung dieser Website erklären Sie sich mit der
+              Bearbeitung der über Sie erhobenen Daten durch Google in der zuvor
+              beschriebenen Art und Weise und zu dem zuvor benannten Zweck
+              einverstanden.<br /><br /><strong>Google AdSense</strong
+              ><br /><br />
+              Diese Website benutzt Google Adsense, einen Webanzeigendienst der
+              Google Inc., USA (''Google''). Google Adsense verwendet sog.
+              ''Cookies'' (Textdateien), die auf Ihrem Computer gespeichert
+              werden und die eine Analyse der Benutzung der Website durch Sie
+              ermöglicht. Google Adsense verwendet auch sog. ''Web Beacons''
+              (kleine unsichtbare Grafiken) zur Sammlung von Informationen.
+              Durch die Verwendung des Web Beacons können einfache Aktionen wie
+              der Besucherverkehr auf der Webseite aufgezeichnet und gesammelt
+              werden. Die durch den Cookie und/oder Web Beacon erzeugten
+              Informationen über Ihre Benutzung dieser Website (einschließlich
+              Ihrer IP-Adresse) werden an einen Server von Google in den USA
+              übertragen und dort gespeichert. Google wird diese Informationen
+              benutzen, um Ihre Nutzung der Website im Hinblick auf die Anzeigen
+              auszuwerten, um Reports über die Websiteaktivitäten und Anzeigen
+              für die Websitebetreiber zusammenzustellen und um weitere mit der
+              Websitenutzung und der Internetnutzung verbundene Dienstleistungen
+              zu erbringen. Auch wird Google diese Informationen gegebenenfalls
+              an Dritte übertragen, sofern dies gesetzlich vorgeschrieben oder
+              soweit Dritte diese Daten im Auftrag von Google verarbeiten.
+              Google wird in keinem Fall Ihre IP-Adresse mit anderen Daten der
+              Google in Verbindung bringen. Das Speichern von Cookies auf Ihrer
+              Festplatte und die Anzeige von Web Beacons können Sie verhindern,
+              indem Sie in Ihren Browser-Einstellungen ''keine Cookies
+              akzeptieren'' wählen (Im MS Internet-Explorer unter ''Extras >
+              Internetoptionen > Datenschutz > Einstellung''; im Firefox unter
+              ''Extras > Einstellungen > Datenschutz > Cookies''); wir weisen
+              Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls
+              nicht sämtliche Funktionen dieser Website voll umfänglich nutzen
+              können. Durch die Nutzung dieser Website erklären Sie sich mit der
+              Bearbeitung der über Sie erhobenen Daten durch Google in der zuvor
+              beschriebenen Art und Weise und zu dem zuvor benannten Zweck
+              einverstanden.
+            </p>
+            <br />
+            Website Impressum erstellt durch
+            <a href="https://www.impressum-generator.de"
+              >impressum-generator.de</a
+            >
+            von der
+            <a href="https://www.kanzlei-hasselbach.de/" rel="nofollow"
+              >Kanzlei Hasselbach</a
             >
           </div>
-          <div
-            class="social-media flex sm:flex-row justify-end gap-y-1 gap-x-4 w-full flex-col items-end"
-          >
-            <p>Find me on</p>
+        </div>
+      </section>
+    </main>
 
-            <div class="social-media-flex">
-              <a href="https://github.com/ilsegaertner" target="_blank"
-                ><img
-                  src="assets/brand-github.svg"
-                  alt="Logo and Link for the Github platform"
-                  width="25"
-                  height="25" /></a
-              ><span
-                ><a href="https://twitter.com/JoachimPrugl" target="_blank"
-                  ><img
-                    src="assets/brand-x.svg"
-                    alt="Logo and Link for the Twitter platform"
-                    width="25"
-                    height="25" /></a></span
-              ><span
-                ><a
-                  href="https://www.linkedin.com/in/joachim-pr%C3%BCgl/"
-                  target="_blank"
-                  ><img
-                    src="assets/brand-linkedin.svg"
-                    alt="Logo and Link for the LinkedIn platform"
-                    width="25"
-                    height="25" /></a
-              ></span>
-            </div>
-          </div>
+    <footer class="page-footer">
+      <div class="flex leading-5">
+        <div class="footer-links">
+          <a class="legal-info active" href="legal-info.html">Impressum</a>
+          <a class="" href="assets/Pruegl-Joachim-Resumee.pdf" download
+            >Download Résumé</a
+          >
         </div>
         <div
-          class="text-xs -mt-8 text-center sm:-mt-4 pb-3 text-gray-300 flex flex-col sm:flex-row justify-center gap-x-1"
+          class="social-media flex sm:flex-row justify-end gap-y-1 gap-x-4 w-full flex-col items-end"
         >
-          <p>© Copyright 2024 |</p>
-          <p>joachimpruegl.me</p>
+          <p>Find me on</p>
+
+          <div class="social-media-flex">
+            <a href="https://github.com/ilsegaertner" target="_blank"
+              ><img
+                src="assets/brand-github.svg"
+                alt="Logo and Link for the Github platform"
+                width="25"
+                height="25" /></a
+            ><span
+              ><a href="https://twitter.com/JoachimPrugl" target="_blank"
+                ><img
+                  src="assets/brand-x.svg"
+                  alt="Logo and Link for the Twitter platform"
+                  width="25"
+                  height="25" /></a></span
+            ><span
+              ><a
+                href="https://www.linkedin.com/in/joachim-pr%C3%BCgl/"
+                target="_blank"
+                ><img
+                  src="assets/brand-linkedin.svg"
+                  alt="Logo and Link for the LinkedIn platform"
+                  width="25"
+                  height="25" /></a
+            ></span>
+          </div>
         </div>
-      </footer>
-    </div>
+      </div>
+      <div
+        class="text-xs -mt-8 text-center sm:-mt-4 pb-3 text-gray-300 flex flex-col sm:flex-row justify-center gap-x-1"
+      >
+        <p>© Copyright 2024 |</p>
+        <p>joachimpruegl.me</p>
+      </div>
+    </footer>
 
     <script src="/main.js" defer></script>
   </body>
