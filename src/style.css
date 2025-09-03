@@ -509,7 +509,7 @@ hr {
   }
 
   .project-list {
-    @apply sm:grid sm:grid-cols-6 sm:col-start-1 sm:col-end-3 lg:grid-cols-subgrid gap-y-26 gap-x-7 my-10 lg:col-start-1 lg:col-end-9 px-10;
+    @apply sm:grid sm:grid-cols-6 sm:col-start-1 sm:col-end-3 lg:grid-cols-subgrid gap-y-26 gap-x-7 my-10 lg:col-start-1 lg:col-end-9  px-3 md:px-10;
   }
 
   .standard-label {
