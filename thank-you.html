@@ -12,6 +12,19 @@
     <title>Form submitted successfully | Joachim Prügl</title>
 
     <link href="/src/style.css" rel="stylesheet" />
+    <script type="speculationrules">
+      {
+        "prerender": [
+          {
+            "where": { "href_matches": "/products/*" },
+            "eagerness": "moderate"
+          }
+        ],
+        "prefetch": [
+          { "where": { "href_matches": "/blog/*" }, "eagerness": "moderate" }
+        ]
+      }
+    </script>
   </head>
   <body>
     <header class="">

@@ -75,6 +75,19 @@
         ]
       }
     </script>
+    <script type="speculationrules">
+      {
+        "prerender": [
+          {
+            "where": { "href_matches": "/products/*" },
+            "eagerness": "moderate"
+          }
+        ],
+        "prefetch": [
+          { "where": { "href_matches": "/blog/*" }, "eagerness": "moderate" }
+        ]
+      }
+    </script>
   </head>
 
   <body>
