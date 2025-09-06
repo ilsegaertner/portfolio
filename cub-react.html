@@ -66,6 +66,19 @@
         "image": "https://joachimpruegl.me/portfolio/img/documentation/cub_react_client/cub_film_data_screenshot2_4.png"
       }
     </script>
+    <script type="speculationrules">
+      {
+        "prerender": [
+          {
+            "where": { "href_matches": "/products/*" },
+            "eagerness": "moderate"
+          }
+        ],
+        "prefetch": [
+          { "where": { "href_matches": "/blog/*" }, "eagerness": "moderate" }
+        ]
+      }
+    </script>
     <link rel="stylesheet" crossorigin href="/portfolio/assets/style-ChfOWnOG.css">
   </head>
 

@@ -70,6 +70,19 @@
         ]
       }
     </script>
+    <script type="speculationrules">
+      {
+        "prerender": [
+          {
+            "where": { "href_matches": "/products/*" },
+            "eagerness": "moderate"
+          }
+        ],
+        "prefetch": [
+          { "where": { "href_matches": "/blog/*" }, "eagerness": "moderate" }
+        ]
+      }
+    </script>
     <link rel="stylesheet" crossorigin href="/portfolio/assets/style-ChfOWnOG.css">
   </head>
 

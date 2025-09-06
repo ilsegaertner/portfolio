@@ -71,6 +71,19 @@
         "image": "https://joachimpruegl.me/portfolio/img/documentation/CUB-Film-Angular-client_documentation/cub-angular-iphone.png"
       }
     </script>
+    <script type="speculationrules">
+      {
+        "prerender": [
+          {
+            "where": { "href_matches": "/products/*" },
+            "eagerness": "moderate"
+          }
+        ],
+        "prefetch": [
+          { "where": { "href_matches": "/blog/*" }, "eagerness": "moderate" }
+        ]
+      }
+    </script>
     <link rel="stylesheet" crossorigin href="/portfolio/assets/style-ChfOWnOG.css">
   </head>
 

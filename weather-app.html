@@ -72,6 +72,19 @@
         "image": "https://joachimpruegl.me/portfolio/img/documentation/weather-app/weather-app-iphone.png"
       }
     </script>
+    <script type="speculationrules">
+      {
+        "prerender": [
+          {
+            "where": { "href_matches": "/products/*" },
+            "eagerness": "moderate"
+          }
+        ],
+        "prefetch": [
+          { "where": { "href_matches": "/blog/*" }, "eagerness": "moderate" }
+        ]
+      }
+    </script>
     <link rel="stylesheet" crossorigin href="/portfolio/assets/style-ChfOWnOG.css">
   </head>
 
