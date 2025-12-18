@@ -130,6 +130,7 @@ body {
   color: var(--main-text);
   background-color: #ffffff;
   font-weight: 300;
+  text-transform: uppercase;
 }
 
 .project-list > * {
@@ -152,7 +153,6 @@ header::after {
   content: "";
   position: absolute;
   inset: 0;
-
   background: linear-gradient(
     to bottom,
     rgba(255, 255, 255, 0.4),
@@ -167,6 +167,7 @@ header::after {
   font-size: clamp(1rem, 1.1vw, 1.6vw);
   max-width: 70%;
   color: #f3f4f6;
+  text-transform: none;
 }
 .intro-section p span {
   font-size: (20px, 1.7vw, 1.8rem);
@@ -176,10 +177,13 @@ header::after {
   font-size: clamp(1.7rem, 1.7vw, 32px);
 }
 
+.call-to-action {
+  text-transform: uppercase;
+}
+
 a {
   font-weight: 600;
   font-size: clamp(1rem, 1.2vw, 20px);
-
   text-decoration: inherit;
 }
 a:hover {
@@ -190,14 +194,10 @@ main {
   padding-top: calc(var(--spacing) * 19);
   position: relative;
   background-color: #1f2030;
-  /* padding: 1em; */
-  /* overflow: hidden; */
 }
 
 h1 {
-  /* font-size: clamp(3.3vw, 3.2rem, 3.3rem); */
   font-size: clamp(35px, 4vw, 3.5rem);
-  /* color: #eff0ff; */
   color: #75dec6;
   letter-spacing: 0.01em;
 }
@@ -392,6 +392,10 @@ hr {
   mix-blend-mode: exclusion;
 }
 
+.card-description {
+  text-transform: none;
+}
+
 .project-list__item {
   animation-delay: 0.4s;
 }
@@ -520,8 +524,12 @@ hr {
     @apply shadow appearance-none border-[0.1px] rounded w-full py-2 px-3 text-gray-200 leading-tight focus:outline-none focus:shadow-md;
   }
 
+  .details :not(.details-subheading) {
+    text-transform: none;
+  }
+
   header {
-    @apply sticky max-w-4xl lg:max-w-6xl top-0 z-10 bg-[#ffffff6b];
+    @apply sticky  top-0 z-10 bg-[#ffffff6b];
   }
 
   .gradient-title {
@@ -529,7 +537,7 @@ hr {
   }
 
   body {
-    @apply max-w-4xl lg:max-w-6xl mx-auto;
+    @apply mx-auto;
   }
 
   picture {
