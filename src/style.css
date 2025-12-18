@@ -102,7 +102,8 @@
 }
 
 :root {
-  font-family: Geist, sans-serif;
+  /* font-family: Geist, sans-serif; */
+  font-family: monospace;
 
   line-height: 1.5;
   font-weight: 400;
@@ -124,6 +125,13 @@
 
   --highlight: oklch(0.5573 0.222 274.27);
   --default-link: #535bf2;
+
+  --background-blue: linear-gradient(
+    135deg,
+    #27293c 0%,
+    #1f2030 42%,
+    #191a2c 100%
+  );
 }
 
 body {
@@ -193,7 +201,8 @@ a:hover {
 main {
   padding-top: calc(var(--spacing) * 19);
   position: relative;
-  background-color: #1f2030;
+  /* background-color: #1f2030; */
+  background: var(--background-blue);
 }
 
 h1 {
