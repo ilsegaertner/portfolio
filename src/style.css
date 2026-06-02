@@ -102,8 +102,10 @@
 }
 
 :root {
-  /* font-family: Geist, sans-serif; */
-  font-family: monospace;
+  font-family: Geist, sans-serif;
+  /* font-family: monospace; */
+
+  font-size: 20px;
 
   line-height: 1.5;
   font-weight: 400;
@@ -139,6 +141,7 @@ body {
   background-color: #ffffff;
   font-weight: 300;
   text-transform: uppercase;
+  max-width: 1300px;
 }
 
 .project-list > * {
