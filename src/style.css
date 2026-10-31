@@ -134,6 +134,9 @@
     #1f2030 42%,
     #191a2c 100%
   );
+
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-drawer: cubic-bezier(0.32, 0.72, 0, 1);
 }
 
 body {
@@ -284,6 +287,23 @@ button:focus-visible {
   background-color: #333535;
   border-radius: calc(var(--spacing) * 1);
   outline: 0.1px solid #3c3e5f;
+}
+
+/* Mobile nav drawer: enter slower/deliberate with ease-out, exit snappier */
+#menu-list {
+  transition: transform 220ms var(--ease-drawer), opacity 220ms var(--ease-out);
+}
+#menu-list.translate-x-full {
+  transition-duration: 150ms;
+}
+
+header button[aria-label],
+#menu-list button[aria-label] {
+  transition: transform 150ms var(--ease-out);
+}
+header button[aria-label]:active,
+#menu-list button[aria-label]:active {
+  transform: scale(0.9);
 }
 
 .project-images {
@@ -573,11 +593,15 @@ hr {
   }
 
   .project-list__item {
-    @apply mb-10 sm:mb-0 flex-wrap justify-between grid sm:grid-cols-subgrid  relative bg-white rounded ring-1 ring-gray-300 ring-inset shadow-xs;
+    @apply mb-10 sm:mb-0 flex-wrap justify-between grid sm:grid-cols-subgrid  relative bg-white rounded ring-1 ring-gray-300 ring-inset shadow-xs transition-transform duration-150 ease-out;
   }
 
   .project-list__item:hover {
     @apply ring-[oklch(0.5573_0.222_274.27)] shadow-2xl cursor-pointer transition-all duration-200 ease-out;
+  }
+
+  .project-list__item:active {
+    @apply scale-[0.98];
   }
 
   .development-heading {
@@ -650,7 +674,7 @@ hr {
   }
 
   .call-to-action {
-    @apply rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white hover:text-white! shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 transition-all duration-200 ease-out;
+    @apply rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white hover:text-white! shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 transition-all duration-200 ease-out active:scale-[0.97];
   }
 
   .call-to-action a {
@@ -658,7 +682,7 @@ hr {
   }
 
   .call-to-action-secondary {
-    @apply font-extralight rounded-md bg-white px-2.5 py-1.5 text-sm  text-gray-900 shadow-xs ring-1 ring-gray-300 ring-inset hover:bg-gray-50 hover:cursor-pointer transition-all duration-200 ease-out;
+    @apply font-extralight rounded-md bg-white px-2.5 py-1.5 text-sm  text-gray-900 shadow-xs ring-1 ring-gray-300 ring-inset hover:bg-gray-50 hover:cursor-pointer transition-all duration-200 ease-out active:scale-[0.97];
   }
 
   .picture-wrapper-details {
