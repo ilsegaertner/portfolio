@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- @include head title="Joachim Prügl, frontend developer in Berlin" description="Frontend developer in Berlin working in React and TypeScript, with a background in fine art, electronic music and teaching. Selected work and contact." path="" -->
+    <!-- @include head title="Joachim Prügl, frontend developer in Berlin" description="Frontend developer in Berlin, building Angular applications for the space industry at OKAPI:Orbits. Background in fine art, electronic music and teaching." path="" -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -10,7 +10,8 @@
         "jobTitle": "Frontend developer",
         "url": "https://joachimpruegl.me/portfolio/",
         "address": { "@type": "PostalAddress", "addressLocality": "Berlin", "addressCountry": "DE" },
-        "knowsAbout": ["React", "TypeScript", "Frontend development", "Interface design"],
+        "worksFor": { "@type": "Organization", "name": "OKAPI:Orbits" },
+        "knowsAbout": ["Angular", "React", "TypeScript", "Frontend development", "Interface design"],
         "sameAs": ["https://github.com/ilsegaertner", "https://www.linkedin.com/in/joachim-pruegl/"]
       }
     </script>
@@ -23,21 +24,34 @@
         <section class="row wide settle">
           <img class="portrait side" src="/img/joachim-pruegl.webp" width="44" height="44" alt="" style="--i: 0" />
           <div class="main" style="--i: 1">
-            <h1 class="statement">I’m Joachim Prügl, a frontend developer in Berlin.</h1>
-            <p class="statement">I build interfaces in React and TypeScript, and I care how they read as much as how they run.</p>
+            <h1 class="statement marked"><span class="marker">I’m Joachim Prügl, a frontend developer in Berlin.</span></h1>
+            <p class="statement">I build web applications for the space industry, and I care how an interface reads as much as how it runs.</p>
           </div>
         </section>
 
-        <section class="row settle" aria-labelledby="selected-work">
-          <h2 class="side" id="selected-work" style="--i: 3">Selected work</h2>
+        <section class="row settle" aria-labelledby="experience">
+          <h2 class="side" id="experience" style="--i: 3">Experience</h2>
           <ul class="works main" style="--i: 3">
             <li>
               <div class="work">
-                <span class="work-title">Dashboards for machine-learning data</span>
-                <span class="year">2024–25</span>
-                <span class="work-note">Frontend development at 4Cast in Potsdam, on a React and TypeScript application.</span>
+                <span class="work-title">Web developer, OKAPI:Orbits</span>
+                <span class="year">Now</span>
+                <span class="work-note">Angular applications for space situational awareness and for space agencies.</span>
               </div>
             </li>
+            <li>
+              <div class="work">
+                <span class="work-title">Frontend developer, 4Cast</span>
+                <span class="year">2024–25</span>
+                <span class="work-note">Dashboards for machine-learning data in React and TypeScript.</span>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="row" aria-labelledby="projects">
+          <h2 class="side" id="projects">Projects</h2>
+          <ul class="works main">
             <li>
               <a class="work" href="cub-film.html">
                 <span class="work-title">CUB Film</span>

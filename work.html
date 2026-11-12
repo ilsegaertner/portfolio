@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- @include head title="Work | Joachim Prügl" description="Frontend work by Joachim Prügl: React and TypeScript dashboards at 4Cast, and three projects in React, Angular and React Native with code and live demos." path="work.html" -->
+    <!-- @include head title="Work | Joachim Prügl" description="Work by Joachim Prügl: Angular applications for the space industry at OKAPI:Orbits, React dashboards at 4Cast, and three projects with code and live demos." path="work.html" -->
   </head>
   <body>
     <div class="page">
@@ -10,65 +10,89 @@
       <main id="content" class="stack" style="--gap: 4rem">
         <header class="indent">
           <h1 class="title">Work</h1>
-          <p class="deck">One year of professional frontend work, and the three projects I learned on.</p>
+          <p class="deck">Professional work in Angular and React, and the three projects I learned on.</p>
         </header>
 
-        <ol class="entries" reversed>
-          <li class="row">
-            <p class="side year">2024–25</p>
-            <div class="main">
-              <h2 class="entry-title">Dashboards for machine-learning data</h2>
-              <p class="entry-place small">Frontend developer, 4Cast GmbH, Potsdam</p>
-              <div class="prose" style="margin-top: 0.75rem">
+        <section aria-labelledby="experience">
+          <h2 class="indent section-head" id="experience">Experience</h2>
+          <ol class="entries" reversed>
+            <li class="row">
+              <p class="side year">Now</p>
+              <div class="main">
+                <h3 class="entry-title">Angular applications for the space industry</h3>
+                <p class="entry-place small">Web developer, <a href="https://okapiorbits.space/">OKAPI:Orbits<!-- @include icon-out --></a></p>
+                <div class="prose" style="margin-top: 0.75rem">
+                  <p>
+                    I work as an Angular developer on software for space
+                    situational awareness, the tracking of satellites and
+                    debris in orbit. The projects serve the main
+                    <abbr>SSA</abbr> sectors and space agencies.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="row">
+              <p class="side year">2024–25</p>
+              <div class="main">
+                <h3 class="entry-title">Dashboards for machine-learning data</h3>
+                <p class="entry-place small">Frontend developer, 4Cast GmbH, Potsdam</p>
+                <div class="prose" style="margin-top: 0.75rem">
+                  <p>
+                    I worked on a React and TypeScript application that manages
+                    more than 10,000 machine-learning data entries and the
+                    relationships between them. I built dashboard features,
+                    wrote modular, strictly typed components and documented
+                    them in Storybook.
+                  </p>
+                  <p>
+                    I also set up the testing with Vitest and Playwright, and
+                    took part in code reviews and sprint planning.
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ol>
+        </section>
+
+        <section aria-labelledby="projects">
+          <h2 class="indent section-head" id="projects">Projects</h2>
+          <ol class="entries" reversed>
+            <li class="row">
+              <p class="side year">2023–24</p>
+              <div class="main">
+                <h3 class="entry-title"><a href="cub-film.html">CUB Film</a></h3>
                 <p>
-                  I worked on a React and TypeScript application that manages
-                  more than 10,000 machine-learning data entries and the
-                  relationships between them. I built dashboard features, wrote
-                  modular, strictly typed components and documented them in
-                  Storybook.
-                </p>
-                <p>
-                  I also set up the testing with Vitest and Playwright, and
-                  took part in code reviews and sprint planning.
+                  An arthouse film database, built twice. One
+                  <abbr>REST API</abbr> in Node.js and MongoDB, one client in
+                  React and a second in Angular.
                 </p>
               </div>
-            </div>
-          </li>
+            </li>
 
-          <li class="row">
-            <p class="side year">2023–24</p>
-            <div class="main">
-              <h2 class="entry-title"><a href="cub-film.html">CUB Film</a></h2>
-              <p>
-                An arthouse film database, built twice. One
-                <abbr>REST API</abbr> in Node.js and MongoDB, one client in
-                React and a second in Angular.
-              </p>
-            </div>
-          </li>
+            <li class="row">
+              <p class="side year">2023</p>
+              <div class="main">
+                <h3 class="entry-title"><a href="meet-app.html">Meet App</a></h3>
+                <p>
+                  A progressive web app for finding developer events by city. It
+                  installs, works offline, and was written test-first.
+                </p>
+              </div>
+            </li>
 
-          <li class="row">
-            <p class="side year">2023</p>
-            <div class="main">
-              <h2 class="entry-title"><a href="meet-app.html">Meet App</a></h2>
-              <p>
-                A progressive web app for finding developer events by city. It
-                installs, works offline, and was written test-first.
-              </p>
-            </div>
-          </li>
-
-          <li class="row">
-            <p class="side year">2023–24</p>
-            <div class="main">
-              <h2 class="entry-title"><a href="chat-app.html">Chat App</a></h2>
-              <p>
-                A mobile chat in React Native and Firebase, with photo and
-                location sharing and an offline cache.
-              </p>
-            </div>
-          </li>
-        </ol>
+            <li class="row">
+              <p class="side year">2023–24</p>
+              <div class="main">
+                <h3 class="entry-title"><a href="chat-app.html">Chat App</a></h3>
+                <p>
+                  A mobile chat in React Native and Firebase, with photo and
+                  location sharing and an offline cache.
+                </p>
+              </div>
+            </li>
+          </ol>
+        </section>
       </main>
 
       <!-- @include footer -->
