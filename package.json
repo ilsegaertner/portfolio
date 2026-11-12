@@ -16,8 +16,6 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.7",
-    "animate": {},
-    "animate.css": "^4.1.1",
     "tailwindcss": "^4.1.7"
   }
 }

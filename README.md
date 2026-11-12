@@ -49,3 +49,33 @@ column to its left (`--margin`) for side heads and years. A `.row` puts a
 Copy `meet-app.html`, change the `head` values and the content, then add the
 project to the lists in `index.html` and `work.html` and to
 `public/sitemap.xml`.
+
+## Images and video
+
+A case study shows images in plates. The first one can fill the plate:
+
+```html
+<figure class="plate lead indent">
+  <div class="plate-images">
+    <img src="/img/work/name.webp" width="2000" height="1151" alt="…" />
+  </div>
+  <figcaption class="caption">…</figcaption>
+</figure>
+```
+
+A screen recording goes in the same place. Convert a GIF to video first, it
+is far smaller: `ffmpeg -i in.gif -movflags faststart -pix_fmt yuv420p out.mp4`.
+
+```html
+<video controls muted loop playsinline preload="none" poster="/img/work/name.webp">
+  <source src="/img/work/name.mp4" type="video/mp4" />
+</video>
+```
+
+`scripts/capture.mjs` takes every screenshot at the same viewport and at
+double resolution. The usage is at the top of the file.
+
+## Marker
+
+`<span class="marker">` inside a heading with the class `marked` draws a dark
+marker stroke behind the phrase. Use it once per page at most.

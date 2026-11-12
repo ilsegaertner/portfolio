@@ -308,7 +308,36 @@
   }
   .statement + .statement {
     color: var(--muted);
-    margin-top: 0.4em;
+    margin-top: 0.5em;
+  }
+
+  /* A marker stroke behind a phrase: the one dark area on a page.
+     The stroke is an SVG stretched over each line of the phrase, so it
+     follows the text when it wraps. Colours are repeated here because a
+     data URI cannot read custom properties. */
+  .marked {
+    margin-left: -0.34em;
+    line-height: 1.56;
+  }
+  .marker {
+    padding: 0 0.34em;
+    color: #ffffff;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 20' preserveAspectRatio='none'%3E%3Cpath fill='%23213547' d='M0.9 2.2C18 1.2 39 2.1 61 1.3S93 0.9 99.3 1.9L99.7 17.9C83 18.9 60 18 38 18.8S8 18.6 0.4 17.8Z'/%3E%3C/svg%3E")
+      no-repeat center / 100% 100%;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+  }
+  @media (prefers-color-scheme: dark) {
+    .marker {
+      color: #1f2030;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 20' preserveAspectRatio='none'%3E%3Cpath fill='%23e6e7ee' d='M0.9 2.2C18 1.2 39 2.1 61 1.3S93 0.9 99.3 1.9L99.7 17.9C83 18.9 60 18 38 18.8S8 18.6 0.4 17.8Z'/%3E%3C/svg%3E");
+    }
+  }
+  @media (forced-colors: active) {
+    .marker {
+      background: none;
+      color: inherit;
+    }
   }
 
   .title {
@@ -483,6 +512,19 @@
     flex: 0 1 auto;
     border-radius: 2px;
     box-shadow: 0 0 0 1px var(--rule);
+  }
+  .plate-images video {
+    min-width: 0;
+    max-height: 28rem;
+    max-width: 100%;
+    border-radius: 2px;
+    box-shadow: 0 0 0 1px var(--rule);
+  }
+  /* The opening image of a case study fills the plate. */
+  .plate.lead .plate-images img,
+  .plate.lead .plate-images video {
+    max-height: none;
+    width: 100%;
   }
   .caption {
     margin-top: 0.75rem;
