@@ -74,8 +74,3 @@ is far smaller: `ffmpeg -i in.gif -movflags faststart -pix_fmt yuv420p out.mp4`.
 
 `scripts/capture.mjs` takes every screenshot at the same viewport and at
 double resolution. The usage is at the top of the file.
-
-## Marker
-
-`<span class="marker">` inside a heading with the class `marked` draws a dark
-marker stroke behind the phrase. Use it once per page at most.
