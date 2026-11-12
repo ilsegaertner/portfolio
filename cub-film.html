@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- @include head title="CUB Film: a film database built in React and Angular | Joachim Prügl" description="Case study: an arthouse film database with a Node.js and MongoDB REST API and two clients, one in React and one in Angular and TypeScript." path="cub-film.html" -->
+  </head>
+  <body>
+    <div class="page">
+      <!-- @include header current="work" -->
+
+      <main id="content">
+        <article class="stack" style="--gap: 3.5rem">
+          <header class="indent">
+            <h1 class="title">CUB Film</h1>
+            <p class="deck">An arthouse film database, built twice: one server, one client in React and a second in Angular.</p>
+            <dl class="facts">
+              <dt>Year</dt>
+              <dd>2023–24</dd>
+              <dt>Context</dt>
+              <dd>Course project at CareerFoundry, built solo</dd>
+              <dt>Stack</dt>
+              <dd>Node.js, Express, MongoDB, React, Angular, TypeScript, SCSS</dd>
+              <dt>React</dt>
+              <dd>
+                <a href="https://cub-film-data.netlify.app/">Live<!-- @include icon-out --></a>
+                <a href="https://github.com/ilsegaertner/CUB-film-data-client">Code<!-- @include icon-out --></a>
+              </dd>
+              <dt>Angular</dt>
+              <dd>
+                <a href="https://ilsegaertner.github.io/CUB-Film-Angular-client/">Live<!-- @include icon-out --></a>
+                <a href="https://github.com/ilsegaertner/CUB-Film-Angular-client">Code<!-- @include icon-out --></a>
+              </dd>
+            </dl>
+          </header>
+
+          <div class="indent prose">
+            <p>
+              CUB Film is a catalog of arthouse films. Visitors create an
+              account, browse and filter the films, read about directors and
+              genres, and keep a list of favorites. I built it during my
+              full-stack course without starter code, and then wrote the
+              client a second time in a different framework.
+            </p>
+          </div>
+
+          <section class="row" aria-labelledby="api">
+            <h2 class="side" id="api">The server</h2>
+            <div class="main prose">
+              <p>
+                The server is a <abbr>REST API</abbr> in Node.js and Express.
+                Films and users are stored in MongoDB and modeled with
+                Mongoose. Login and every protected route use
+                <abbr>JWT</abbr> authentication. I tested the endpoints in
+                Postman, then deployed the <abbr>API</abbr> to Heroku with the
+                database on MongoDB Atlas.
+              </p>
+            </div>
+          </section>
+
+          <section class="row" aria-labelledby="react">
+            <h2 class="side" id="react">First client, in React</h2>
+            <div class="main prose">
+              <p>
+                The React client uses React Router for navigation and talks to
+                the server through Fetch with token headers. It is assembled
+                from a few reusable parts: film cards, dialogs, forms and a
+                profile view. Users can register, log in, edit or delete their
+                profile, and add or remove favorites.
+              </p>
+              <p>
+                This is where I learned the most. React was new to me, and
+                routing, lifting state and error handling all arrived at once.
+                The hard parts were debugging the connection between client
+                and server, and getting a complete login flow to work with
+                real tokens.
+              </p>
+            </div>
+          </section>
+
+          <figure class="plate indent">
+            <div class="plate-images">
+              <img src="/img/work/cub-film-react.webp" width="1600" height="939" loading="lazy" alt="The React client showing a row of film posters under a search field." />
+            </div>
+            <figcaption class="caption">The catalog in the React client.</figcaption>
+          </figure>
+
+          <section class="row" aria-labelledby="angular">
+            <h2 class="side" id="angular">Second client, in Angular</h2>
+            <div class="main prose">
+              <p>
+                A few months later I rebuilt the client in Angular and
+                TypeScript against the same server. Before writing code I
+                mapped the views and routes with
+                <a href="https://github.com/ilsegaertner/CUB-Film-Angular-client#user-content-user-storiesuser-flow-created-prior">user stories</a>.
+                The app is split into a main view, film cards, dialogs for
+                director and genre details, and a profile section. Routing,
+                form validation and the calls to the server sit in their own
+                services.
+              </p>
+              <p>
+                Angular suited me. Its separation of concerns gave the project
+                a structure I had needed to invent for myself in React, and I
+                organized the <abbr>SCSS</abbr> around design tokens from the
+                start.
+              </p>
+            </div>
+          </section>
+
+          <figure class="plate indent">
+            <div class="plate-images">
+              <img src="/img/work/cub-film-angular.webp" width="1276" height="1354" loading="lazy" alt="The Angular client on a desktop screen, listing films with director, genre and synopsis links." />
+              <img src="/img/work/cub-film-angular-mobile.webp" width="750" height="1334" loading="lazy" alt="The Angular client on a phone." />
+            </div>
+            <figcaption class="caption">The Angular client on desktop and phone.</figcaption>
+          </figure>
+
+          <section class="row" aria-labelledby="change">
+            <h2 class="side" id="change">What I would change</h2>
+            <div class="main prose">
+              <p>
+                The React client was my first, and it shows. Today I would
+                split its components further and restructure them so the app
+                could grow.
+              </p>
+            </div>
+          </section>
+
+          <nav class="row" aria-label="More work">
+            <p class="side year">Next</p>
+            <p class="main entry-title"><a href="meet-app.html">Meet App</a></p>
+          </nav>
+        </article>
+      </main>
+
+      <!-- @include footer -->
+    </div>
+  </body>
+</html>

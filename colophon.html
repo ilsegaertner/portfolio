@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- @include head title="Colophon | Joachim Prügl" description="How this site is made: typefaces, build and hosting." path="colophon.html" -->
+  </head>
+  <body>
+    <div class="page">
+      <!-- @include header current="none" -->
+
+      <main id="content" class="stack" style="--gap: 3.5rem">
+        <header class="indent">
+          <h1 class="title">Colophon</h1>
+          <p class="deck">How this site is made.</p>
+        </header>
+
+        <section class="row" aria-labelledby="type">
+          <h2 class="side" id="type">Type</h2>
+          <div class="main prose">
+            <p>
+              Text is set in Source Serif 4, designed by Frank Grießhammer for
+              Adobe, with old-style figures and small caps for abbreviations.
+              Navigation, dates and labels are set in Geist by Vercel. Both
+              are variable fonts under the <abbr>SIL</abbr> Open Font License
+              and are served from this domain.
+            </p>
+          </div>
+        </section>
+
+        <section class="row" aria-labelledby="layout">
+          <h2 class="side" id="layout">Layout</h2>
+          <div class="main prose">
+            <p>
+              Every page has a reading column of about 66 characters and a
+              narrow margin to its left for headings and years, the way side
+              notes sit in a printed book. There are three colors: paper, ink
+              and one indigo.
+            </p>
+          </div>
+        </section>
+
+        <section class="row" aria-labelledby="build">
+          <h2 class="side" id="build">Build</h2>
+          <div class="main prose">
+            <p>
+              The pages are static <abbr>HTML</abbr>, assembled with Vite from
+              a few shared partials and styled with Tailwind
+              <abbr>CSS</abbr>. They ship no JavaScript of their own and set
+              no cookies. Page transitions and the short entrance on the home
+              page are <abbr>CSS</abbr>, and both are switched off for
+              visitors who prefer reduced motion. The site is hosted on GitHub
+              Pages, and the
+              <a href="https://github.com/ilsegaertner/portfolio">source is public<!-- @include icon-out --></a>.
+            </p>
+          </div>
+        </section>
+      </main>
+
+      <!-- @include footer -->
+    </div>
+  </body>
+</html>
